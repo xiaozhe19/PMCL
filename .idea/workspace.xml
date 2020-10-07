@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7addea28-9507-403a-9614-7722b5f731fd" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1gnvBKvwjdQR9oPq8BWDxw436RJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/Programs/Python/Python38/python.exe" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7addea28-9507-403a-9614-7722b5f731fd" name="默认更改列表" comment="" />
+      <created>1598763033715</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598763033715</updated>
+      <workItem from="1598763039615" duration="160000" />
+      <workItem from="1598763241128" duration="496000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="489" y="75" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1598763658850">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="489" y="75" key="#com.intellij.ide.macro.MacrosDialog/0.0.1366.728@0.0.1366.728" timestamp="1598763658850" />
+    <state x="472" y="199" width="474" height="345" key="#com.intellij.tools.ToolEditorDialog" timestamp="1598763660015">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="472" y="199" width="474" height="345" key="#com.intellij.tools.ToolEditorDialog/0.0.1366.728@0.0.1366.728" timestamp="1598763660015" />
+    <state x="489" y="127" key="FileChooserDialogImpl" timestamp="1598763694492">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="489" y="127" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1598763694492" />
+    <state x="210" y="12" key="SettingsEditor" timestamp="1598763673367">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="210" y="12" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1598763673367" />
+    <state x="386" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1598763246716">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="386" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1598763246716" />
+  </component>
+</project>
