@@ -1,7 +1,7 @@
 <RCC>
     <qresource>
 
-        <file>img/background.jpg</file>
-
+        <file>img/background.png</file>
+        <file>img/sidebar.png</file>
     </qresource>
 </RCC>

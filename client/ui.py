@@ -9,15 +9,18 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtWidgets import QMessageBox,QWidget
+import resources_rc
 import luncher
-import correctDic                                                                               
+import correctDic
+import autoUpdate
 
-class Ui_MainWindow(object):
+class Ui_MainWindow(QWidget):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(543, 375)
-        MainWindow.setMinimumSize(QtCore.QSize(543, 375))
-        MainWindow.setMaximumSize(QtCore.QSize(543, 375))
+        MainWindow.resize(643, 425)
+        MainWindow.setMinimumSize(QtCore.QSize(643, 425))
+        MainWindow.setMaximumSize(QtCore.QSize(643, 425))
         font = QtGui.QFont()
         font.setFamily("YaHei Consolas Hybrid")
         font.setPointSize(9)
@@ -33,11 +36,11 @@ class Ui_MainWindow(object):
         self.centralwidget.setStyleSheet("")
         self.centralwidget.setObjectName("centralwidget")
         self.Lunch = QtWidgets.QPushButton(self.centralwidget)
-        self.Lunch.setGeometry(QtCore.QRect(370, 270, 141, 51))
+        self.Lunch.setGeometry(QtCore.QRect(440, 300, 151, 61))
         self.Lunch.setStyleSheet("font: 11pt \"YaHei Consolas Hybrid\";")
         self.Lunch.setObjectName("Lunch")
         self.formLayoutWidget = QtWidgets.QWidget(self.centralwidget)
-        self.formLayoutWidget.setGeometry(QtCore.QRect(20, 20, 131, 121))
+        self.formLayoutWidget.setGeometry(QtCore.QRect(30, 20, 191, 161))
         self.formLayoutWidget.setObjectName("formLayoutWidget")
         self.formLayout = QtWidgets.QFormLayout(self.formLayoutWidget)
         self.formLayout.setContentsMargins(0, 0, 0, 0)
@@ -51,30 +54,38 @@ class Ui_MainWindow(object):
         self.formLayout.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.settingsComboBox)
         self.versions = QtWidgets.QLabel(self.formLayoutWidget)
         self.versions.setObjectName("versions")
-        self.formLayout.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.versions)
+        self.formLayout.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.versions)
         self.versionsComboBox = QtWidgets.QComboBox(self.formLayoutWidget)
         self.versionsComboBox.setObjectName("versionsComboBox")
-        self.versionsComboBox.addItems(correctDic.getVersion())#显示所有版本
-        self.formLayout.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.versionsComboBox)
+        self.versionsComboBox.addItems(correctDic.getVersion(r".minecraft\versions"))#显示所有版本
+        self.formLayout.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.versionsComboBox)
         self.sign_in = QtWidgets.QLabel(self.formLayoutWidget)
         self.sign_in.setObjectName("sign_in")
-        self.formLayout.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.sign_in)
+        self.formLayout.setWidget(4, QtWidgets.QFormLayout.LabelRole, self.sign_in)
         self.sign_inComboBox = QtWidgets.QComboBox(self.formLayoutWidget)
         self.sign_inComboBox.setStyleSheet("")
         self.sign_inComboBox.setObjectName("sign_inComboBox")
         self.sign_inComboBox.addItem("")
         self.sign_inComboBox.addItem("")
         self.sign_inComboBox.addItem("")
-        self.formLayout.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.sign_inComboBox)
+        self.formLayout.setWidget(4, QtWidgets.QFormLayout.FieldRole, self.sign_inComboBox)
         self.nickName = QtWidgets.QLabel(self.formLayoutWidget)
         self.nickName.setObjectName("nickName")
-        self.formLayout.setWidget(3, QtWidgets.QFormLayout.LabelRole, self.nickName)
+        self.formLayout.setWidget(6, QtWidgets.QFormLayout.LabelRole, self.nickName)
         self.nickNameLineEdit = QtWidgets.QLineEdit(self.formLayoutWidget)
         self.nickNameLineEdit.setObjectName("nickNameLineEdit")
-        self.formLayout.setWidget(3, QtWidgets.QFormLayout.FieldRole, self.nickNameLineEdit)
+        self.formLayout.setWidget(6, QtWidgets.QFormLayout.FieldRole, self.nickNameLineEdit)
+        spacerItem = QtWidgets.QSpacerItem(40, 5, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.formLayout.setItem(1, QtWidgets.QFormLayout.FieldRole, spacerItem)
+        spacerItem1 = QtWidgets.QSpacerItem(40, 5, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.formLayout.setItem(3, QtWidgets.QFormLayout.FieldRole, spacerItem1)
+        spacerItem2 = QtWidgets.QSpacerItem(40, 5, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.formLayout.setItem(5, QtWidgets.QFormLayout.FieldRole, spacerItem2)
+        spacerItem3 = QtWidgets.QSpacerItem(40, 5, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.formLayout.setItem(7, QtWidgets.QFormLayout.FieldRole, spacerItem3)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menuBar = QtWidgets.QMenuBar(MainWindow)
-        self.menuBar.setGeometry(QtCore.QRect(0, 0, 543, 23))
+        self.menuBar.setGeometry(QtCore.QRect(0, 0, 643, 23))
         self.menuBar.setObjectName("menuBar")
         self.menu = QtWidgets.QMenu(self.menuBar)
         self.menu.setObjectName("menu")
@@ -118,8 +129,13 @@ class Ui_MainWindow(object):
         self.menuPython_Minecraft_Luncher_0_0_1_Beta.setTitle(_translate("MainWindow", "Python Minecraft Luncher 0.0.1-Beta"))
 
     def addNum(self):
-        nick_name = self.nickNameLineEdit.text()
-        sign_in_method = self.sign_inComboBox.currentText()
-        version = self.versionsComboBox.currentText()
-        luncher.forgeLuncher('F:/Java8/bin/javaw.exe','./.minecraft',version,nick_name,"480","854")        
+        if self.nickNameLineEdit.text() == "":
+            reply = QMessageBox.warning(self,'警告',"请填写你的昵称") 
+        else:         
+            nick_name = self.nickNameLineEdit.text()
+            sign_in_method = self.sign_inComboBox.currentText()
+            version = self.versionsComboBox.currentText()
+            autoUpdate.lunchCount("http://127.0.0.1:5000/count")
+            luncher.forgeLuncher('java','./.minecraft',version,nick_name,"480","854")
+            
 import resources_rc
