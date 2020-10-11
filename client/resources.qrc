@@ -3,5 +3,7 @@
 
         <file>img/background.png</file>
         <file>img/sidebar.png</file>
+        <file>img/logo.png</file>
+        <file>img/hahaha.jpg</file>
     </qresource>
 </RCC>
