@@ -31,7 +31,7 @@ app = Flask(__name__)
 @app.route("/")
 def indexHtml():
     return render_template("index.html", count = count)
-@app.route("/count")
+@app.route("/count")#计数
 def countlin():
     global count 
     count  = count+1
