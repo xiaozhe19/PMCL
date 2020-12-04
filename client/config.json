@@ -1,0 +1,7 @@
+{
+    "version":"0.0.1-beta",
+    "update-url":"http://localhost:5000",
+    "java-path":"java",
+    ".minecraft-path":"./.minecraft"
+    
+}

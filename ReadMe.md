@@ -1,6 +1,4 @@
 # TODO LIST
-Qt添加背景
-Qt切换界面
 自动获取java路径
 mod列表
 正版登录
