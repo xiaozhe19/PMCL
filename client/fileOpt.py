@@ -19,7 +19,9 @@ def getVersion(path):#获取所有存在的版本
     for root,dirs,files in os.walk(path):
             for file in files:
                 if 'json' in file:#获取json文档
-                    versions.append(os.path.splitext(file)[0]) 
+                    versions.append(os.path.splitext(file)[0])
+                else:
+                    versions.append("None") 
     return versions
 
 
