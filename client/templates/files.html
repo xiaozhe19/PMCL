@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+
+
+{% block container %}
+<div class="mdui-list">
+    {%for dir in dirs%}
+    <a class="mdui-list-item mdui-ripple" href="#">
+        <i class="mdui-list-item-icon mdui-icon material-icons">folder</i>
+        <div class="mdui-list-item-content">{{ dir }}</div>
+    </a>
+
+    {% endfor %}
+    {%for file in files%}
+    <a class="mdui-list-item mdui-ripple" href="#">
+        <i class="mdui-list-item-icon mdui-icon material-icons">insert_drive_file</i>
+        <div class="mdui-list-item-content">{{ file }}</div>
+    </a>
+
+    {% endfor %}
+</div>
+{% endblock %}

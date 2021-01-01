@@ -14,17 +14,29 @@ def correctMinecraftMainDic():
     return _minecraft,assets,lib,versions
     '''
 
-def getVersion(path):#获取所有存在的版本   
+
+def getVersion(path):  # 获取所有存在的版本
     versions = []
-    for root,dirs,files in os.walk(path):
-            for file in files:
-                if 'json' in file:#获取json文档
-                    versions.append(os.path.splitext(file)[0])
-                else:
-                    versions.append("None") 
+    for root, dirs, files in os.walk(path):
+        for file in files:
+            if 'json' in file:  # 获取json文档
+                versions.append(os.path.splitext(file)[0])
+            else:
+                versions.append("None")
     return versions
 
 
-
-
-
+def allFiles(path):
+    results = {"dirs": 0,
+               "files": 0, }
+    files = []
+    dirs = []
+    path = os.listdir(path)
+    for p in path:
+        if os.path.isdir(p):
+            dirs.append(p)
+        elif os.path.isfile(p):
+            files.append(p)
+    results["dirs"] = dirs
+    results['files'] = files
+    return results
