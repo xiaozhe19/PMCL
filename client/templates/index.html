@@ -1,66 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="renderer" content="webkit" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
-  <meta http-equiv="Cache-Control" content="no-siteapp" />
-  <meta name="theme-color" content="#ffffff">
-  <title>PMCL</title>
-  <!-- MDUI CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
-    integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw" crossorigin="anonymous" />
-
-  <!-- MDUI JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
-    integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
-    crossorigin="anonymous"></script>
-</head>
-
-<body class="mdui-drawer-body-left">
-  <div class="mdui-appbar-with-toolbar mg-app">
-    <div class="mc-appbar mdui-appbar mdui-appbar-fixed">
-      <div class="toolbar mdui-toolbar">
-        <button class="drawer mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer'}">
-          <i class="mdui-icon material-icons">menu</i>
-        </button>
-        <a class="mdui-typo-headline" href="/">PMCL</a>
-        <div class="mdui-typo-title">主页</div>
-        <div class="mdui-toolbar-spacer"></div>
-        <button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '切换主题'}"><i
-            class="mdui-icon material-icons">color_lens</i></button>
-        <button mdui-dialog="{target: '#login'}" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '账户'}"><i
-            class="mdui-icon material-icons">account_circle</i></button>
-      </div>
-    </div>
-    <div class="mc-drawer mdui-drawer" id="left-drawer">
-      <div class="mdui-list">
-        <a class="mdui-list-item mdui-ripple mdui-list-item-active" href="/">
-          <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
-          <div class="mdui-list-item-content">主页</div>
-        </a>
-        <a class="mdui-list-item mdui-ripple" href="/files">
-          <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
-          <div class="mdui-list-item-content">游戏文件</div>
-        </a>
-        <a class="mdui-list-item mdui-ripple" href="/mods">
-          <i class="mdui-list-item-icon mdui-icon material-icons">dashboard</i>
-          <div class="mdui-list-item-content">Mod管理</div>
-        </a>
-        <a class="mdui-list-item mdui-ripple" href="/downloads">
-          <i class="mdui-list-item-icon mdui-icon material-icons">file_download</i>
-          <div class="mdui-list-item-content">游戏下载</div>
-        </a>
-        <div class="mdui-divider"></div>
-        <a class="mdui-list-item mdui-ripple" href="/settings">
-          <i class="mdui-list-item-icon mdui-icon material-icons">settings</i>
-          <div class="mdui-list-item-content">设置</div>
-        </a>
-      </div>
-    </div>
-
+{% extends "base.html" %}
 
     <div id="page-index" class="mdui-container">
       {% block container %}
@@ -71,13 +9,12 @@
         <div class="mdui-typo-display-2">Hello , xiao_zhe</div>
 
         </br>
-        <button class="self-lunch mdui-btn mdui-btn-raised"><div class="mdui-typo-headline">开始游戏</div></button>
+        <button onclick="window.location.href='./lunch'" id="lunch" class="self-lunch mdui-btn mdui-btn-raised"><div class="mdui-typo-headline">开始游戏</div></button>
       </div>
-      {% endblock %}
     </div>
 
 
-  </div>
+
 
 
   <div class="mdui-dialog mdui-container" id="login">
@@ -100,7 +37,7 @@
       <button class="mdui-btn mdui-ripple">注册（Color OS）</button>
     </div>
   </div>
-</body>
+
 <style>
   .to img {
     width: 300px;
@@ -115,12 +52,12 @@
   }
 
   .main {
-    text-align: center;
+    margin-left: 35%;
   }
   .self-lunch{
     width: 300px;
     height: 60px;
   }
 </style>
-
-</html>
+<script></script>
+{% endblock %}

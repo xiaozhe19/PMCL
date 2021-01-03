@@ -51,6 +51,7 @@ def forgeLuncher(java_path,game_path,game_version,username,height,width):
     command = java_path+' '+_XX+' '+maxMem+' '+Dsettings+' '+' '+javaPackage+' '+mainClass+' '+minecraftArguments
     #执行
     os.system(command)
+    print("[log]starting game,please wait")
 
 
 

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="renderer" content="webkit" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="theme-color" content="#ffffff">
+  <title>PMCL</title>
+  <!-- MDUI CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
+    integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw" crossorigin="anonymous" />
+
+  <!-- MDUI JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
+    integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
+    crossorigin="anonymous"></script>
+
+
+</head>
+
+<body id="body" class="mdui-drawer-body-left mdui-theme-accent-pink mdui-theme-layout-light">
+  <div class="mdui-appbar-with-toolbar mg-app">
+    <div class="mc-appbar mdui-appbar mdui-appbar-fixed">
+      <div class="toolbar mdui-toolbar">
+        <button class="drawer mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer'}">
+          <i class="mdui-icon material-icons">menu</i>
+        </button>
+        <a class="mdui-typo-headline" href="/">PMCL</a>
+        <div class="mdui-typo-title">主页</div>
+        <div class="mdui-toolbar-spacer"></div>
+        <button class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#dialog-docs-theme'}"
+          mdui-tooltip="{content: '切换主题'}"><i class="mdui-icon material-icons">color_lens</i></button>
+        <button mdui-dialog="{target: '#login'}" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '账户'}"><i
+            class="mdui-icon material-icons">account_circle</i></button>
+      </div>
+    </div>
+    <div class="mc-drawer mdui-drawer" id="left-drawer">
+      <div class="mdui-list">
+        <a class="mdui-list-item mdui-ripple {{home_active}}" href="/">
+          <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+          <div class="mdui-list-item-content">主页</div>
+        </a>
+        <a class="mdui-list-item mdui-ripple {{files_active}}" href="/files">
+          <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+          <div class="mdui-list-item-content">游戏文件</div>
+        </a>
+        <a class="mdui-list-item mdui-ripple {{mods_active}}" href="/mods">
+          <i class="mdui-list-item-icon mdui-icon material-icons">dashboard</i>
+          <div class="mdui-list-item-content">Mod管理</div>
+        </a>
+        <a class="mdui-list-item mdui-ripple {{downloads_active}}" href="/downloads">
+          <i class="mdui-list-item-icon mdui-icon material-icons">file_download</i>
+          <div class="mdui-list-item-content">游戏下载</div>
+        </a>
+        <div class="mdui-divider"></div>
+        <a class="mdui-list-item mdui-ripple {{settings_active}}" href="/settings">
+          <i class="mdui-list-item-icon mdui-icon material-icons">settings</i>
+          <div class="mdui-list-item-content">设置</div>
+        </a>
+      </div>
+    </div>
+
+
+    <div id="page-index" class="mdui-container">
+      {% block container %}
+
+      {% endblock %}
+    </div>
+
+
+  </div>
+  <div class="mdui-dialog" id="dialog-docs-theme">
+    <div class="mdui-dialog-title">设置主题</div>
+    <div class="mdui-dialog-content">
+
+      <p class="mdui-typo-title">主题色</p>
+      <div class="mdui-row-xs-1 mdui-row-sm-2 mdui-row-md-3">
+        <div class="mdui-col">
+          <label class="mdui-radio mdui-m-b-1">
+            <input type="radio" name="doc-theme-layout" value="auto" />
+            <i class="mdui-radio-icon"></i>
+            Auto
+          </label>
+        </div>
+        <div class="mdui-col">
+          <label class="mdui-radio mdui-m-b-1">
+            <input type="radio" name="doc-theme-layout" value="light" />
+            <i class="mdui-radio-icon"></i>
+            Light
+          </label>
+        </div>
+        <div class="mdui-col">
+          <label class="mdui-radio mdui-m-b-1">
+            <input type="radio" name="doc-theme-layout" value="dark" checked />
+            <i class="mdui-radio-icon"></i>
+            Dark
+          </label>
+        </div>
+      </div>
+
+      <p class="mdui-typo-title mdui-text-color-theme">主题</p>
+      <form class="mdui-row-xs-1 mdui-row-sm-2 mdui-row-md-3">
+        <div class="mdui-col mdui-text-color-blue">
+          <label class="mdui-radio mdui-m-b-1">
+            <input type="radio" name="doc-theme-primary" value="default" checked />
+            <i class="mdui-radio-icon"></i>
+            Default
+          </label>
+        </div>
+
+      </form>
+
+    </div>
+    <div class="mdui-divider"></div>
+    <div class="mdui-dialog-actions">
+      <button class="mdui-btn mdui-ripple mdui-float-left" mdui-dialog-cancel>恢复默认主题</button>
+      <button class="mdui-btn mdui-ripple" onclick="changeTheme()" mdui-dialog-confirm>ok</button>
+    </div>
+  </div>
+  <script>
+    function setCookie(c_name, value, expiredays) {//写cookies
+      var exdate = new Date();
+      exdate.setTime(exdate.getTime() + expiredays * 24 * 60 * 60 * 1000);
+      document.cookie = c_name + "=" + escape(value) + ((expiredays == null) ? "" : ";expires=" + exdate.toGMTString());
+    }
+    function getCookie(name) {//读取cookies
+      var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+      if (arr = document.cookie.match(reg))
+        return (arr[2]);
+      else
+        return null;
+    }
+    
+    function delCookie(name) {//删除cookies
+      var exp = new Date();
+      exp.setTime(exp.getTime() - 1);
+      var cval = getCookie(name);
+      if (cval != null)
+        document.cookie = name + "=" + cval + ";expires=" + exp.toGMTString();
+    }
+
+    function changeTheme() {//修改主题
+      var obj = document.getElementsByName("doc-theme-layout");
+      for (var i = 0; i < obj.length; i++) {
+        if (obj[i].checked) {
+          var body = document.getElementById('body');
+          obj[i].checked = true;
+          setCookie("PMCL_theme", obj[i].value, 30)
+          body.className = "mdui-drawer-body-left mdui-theme-accent-pink mdui-theme-layout-" + obj[i].value;
+        }
+      }
+      return true
+    }
+    //查找历史主题，有效期30天
+    cookieContent = getCookie("PMCL_theme")
+    var body = document.getElementById('body');
+      var obj = document.getElementsByName("doc-theme-layout");
+    if (cookieContent == "light"){      
+       obj[1].checked = true;
+      body.className = "mdui-drawer-body-left mdui-theme-accent-pink mdui-theme-layout-" + "light";
+    };
+    if (cookieContent == "dark"){
+      obj[2].checked = true;
+      body.className = "mdui-drawer-body-left mdui-theme-accent-pink mdui-theme-layout-" + "dark";
+
+    }
+
+
+  </script>
+
+
+</html>

@@ -1,10 +1,10 @@
-{% extends "index.html" %}
+{% extends "base.html" %}
 
 
 {% block container %}
 <div class="mdui-list">
     {%for dir in dirs%}
-    <a class="mdui-list-item mdui-ripple" href="#">
+    <a class="mdui-list-item mdui-ripple" href="./files/{{ dir }}">
         <i class="mdui-list-item-icon mdui-icon material-icons">folder</i>
         <div class="mdui-list-item-content">{{ dir }}</div>
     </a>
