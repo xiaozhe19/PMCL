@@ -3,6 +3,7 @@ import os
 import time
 import fileOpt
 import luncher
+import autoUpdate
 from flask import Flask, render_template,send_from_directory
 
 
@@ -11,7 +12,8 @@ from flask import Flask, render_template,send_from_directory
 app = Flask(__name__)
 @app.route("/")
 def Index():#首页
-    return render_template("index.html",home_active="mdui-list-item-active")
+    check = autoUpdate.checkVersion()
+    return render_template("index.html",check=check[0],content=check[1],home_active="mdui-list-item-active",apdate=autoUpdate)
 
 @app.route("/files")
 def Files():
@@ -29,7 +31,7 @@ def Downloads():
 
 @app.route("/settings")
 def Settings():
-    return render_template("index.html",settings_active="mdui-list-item-active")
+    return render_template("settings.html",settings_active="mdui-list-item-active")
 
 @app.route("/lunch")
 def Lunch():
@@ -37,6 +39,6 @@ def Lunch():
     return render_template("lunch.html")
     
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True,port=43433)
 
 

@@ -1,6 +1,7 @@
 {
-    "version": "0.0.1-beta",
+    "version": "0.0.3-beta",
     "publish_time": "Wed Oct  7 18:55:18 2020",
-    "packname":"0.0.1.zip"
+    "packname":"0.0.1.zip",
+    "content":"安全性更新"
 
 }

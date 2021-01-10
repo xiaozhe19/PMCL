@@ -1,6 +1,8 @@
 import json
 import os
 import re
+import threading
+import time
 #启动器主逻辑
 
 def forgeLuncher(java_path,game_path,game_version,username,height,width):
@@ -53,6 +55,26 @@ def forgeLuncher(java_path,game_path,game_version,username,height,width):
     os.system(command)
     print("[log]starting game,please wait")
 
+'''
+class MyThread(threading.Thread):
+    def __init__(self,n):
+        super(MyThread,self).__init__()
+        self.n = n
+    def run(self):
+        print("task", self.n)
+        time.sleep(1)
+        print('2s')
+        time.sleep(1)
+        print('1s')
+        time.sleep(1)
+        print('0s')
+        time.sleep(1)
 
+
+t1 = MyThread("t1")
+t2 = MyThread("t2")
+t1.start()
+t2.start()
+'''
 
 #forgeLuncher("java","./.minecraft","1.7.10-Forge10.13.4.1614-1.7.10","Yixixi","480","854")

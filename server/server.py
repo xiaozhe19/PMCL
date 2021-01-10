@@ -27,7 +27,7 @@ def get_all_path(open_file_path,version):#写入新版本
     return True
 
 
-def updateData(version):#获取当亲最新版本
+def updateData(version):#获取当前最新版本
     file = open(r"server\update.json",'r',encoding="utf-8")
     data = json.loads(file.read())
     if version == data["version"]:
@@ -54,16 +54,18 @@ def hello_world():
     data = open(r"server\update.json",encoding='utf-8')
     data = json.load(data)
     VERSION = data["version"]
-    return VERSION
+    content = data["content"]
+    dir = {"version":VERSION,"content":content}
+    dir = json.dumps(dir)
+    return dir
 
-@app.route("/update/<Nversion>",methods=['GET'])#获取更新
-def update(Nversion):
-    check = updateData(Nversion)
-    if check == "fku":
-        return "False"
-    else:
-        directory = os.getcwd()+'/server'  # 当前目录
-        return send_from_directory(directory,filename=check,as_attachment=True)
+@app.route("/update",methods=['GET'])#获取更新
+def update():
+    data = open(r"server\update.json",encoding='utf-8')
+    data = json.load(data)
+    check = data["version"]+r".zip"
+    directory = os.getcwd()+'/server'  # 当前目录
+    return send_from_directory(directory,filename=check,as_attachment=True)
 
 if __name__ == "__main__":
     app.run(debug=True)

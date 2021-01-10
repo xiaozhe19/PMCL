@@ -59,5 +59,11 @@
     height: 60px;
   }
 </style>
-<script></script>
+{% if check %}
+<script>
+mdui.confirm('发现了新版本，是否更新？更新内容:</br>{{ content }}', '发现更新', function(){
+  mdui.alert('点击了确认按钮');
+});
+</script>
+{% endif %}
 {% endblock %}
