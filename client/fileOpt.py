@@ -21,9 +21,10 @@ def getVersion(path):  # 获取所有存在的版本
         for file in files:
             if 'json' in file:  # 获取json文档
                 versions.append(os.path.splitext(file)[0])
-            else:
-                versions.append("None")
+
     return versions
+
+
 
 
 def allFiles(path):

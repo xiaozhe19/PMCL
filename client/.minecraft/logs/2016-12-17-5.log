@@ -1,0 +1,523 @@
+[17:56:45] [main/INFO]: Setting user: Diao__ling
+[17:56:48] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:57:28] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Chest Transporter, FMLFileResourcePack:SlashBladeZephyr, FMLFileResourcePack:Thaumcraft NEI Plugin, FMLFileResourcePack:NEI Addons, FMLFileResourcePack:NEI Addons: Developer Tools, FMLFileResourcePack:NEI Addons: Applied Energistics 2, FMLFileResourcePack:NEI Addons: Botany, FMLFileResourcePack:NEI Addons: Forestry, FMLFileResourcePack:NEI Addons: Crafting Tables, FMLFileResourcePack:NEI Addons: Ex Nihilo, FMLFileResourcePack:NEI Integration, FMLFileResourcePack:Not Enough Resources, FMLFileResourcePack:DummyCore, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:balumg, FMLFileResourcePack:Botania, FMLFileResourcePack:CustomNpcs, FMLFileResourcePack:ExtraBotany, FMLFileResourcePack:Forbidden Magic, FMLFileResourcePack:UnicodeFontFixer, FMLFileResourcePack:BiblioCraft, FMLFileResourcePack:FastCraft, FMLFileResourcePack:Et Futurum, FMLFileResourcePack:The Twilight Forest, FMLFileResourcePack:Headshots, FMLFileResourcePack:Durability Show, FMLFileResourcePack:Hammerz, FMLFileResourcePack:TofuCraft, FMLFileResourcePack:Inventory Tweaks, FMLFileResourcePack:Warp Book, FMLFileResourcePack:CraftGuide, FMLFileResourcePack:Dynamic Lights, FMLFileResourcePack:Dynamic Lights Burning Entity Module, FMLFileResourcePack:Dynamic Lights Creeper Module, FMLFileResourcePack:Dynamic Lights EntityItem Module, FMLFileResourcePack:Dynamic Lights Entity Light Module, FMLFileResourcePack:Dynamic Lights Mob Equipment Light Module, FMLFileResourcePack:Dynamic Lights Fiery Arrows Light Module, FMLFileResourcePack:Dynamic Lights Flood Light, FMLFileResourcePack:Dynamic Lights OtherPlayers Light Module, FMLFileResourcePack:Dynamic Lights Player Light Module, FMLFileResourcePack:Tinkers' Construct, FMLFileResourcePack:Mantle, FMLFileResourcePack:Wallpaper, FMLFileResourcePack:Fast Leaf Decay, FMLFileResourcePack:Loot Bags, FMLFileResourcePack:Mine & Blade Battlegear 2 - Bullseye, FMLFileResourcePack:More Crafting Recipes Mod, FMLFileResourcePack:Balkon's WeaponMod, FMLFileResourcePack:Iron Chest, FMLFileResourcePack:Backpack, FMLFileResourcePack:BambooMod, FMLFileResourcePack:Damage Indicators, FMLFileResourcePack:AimBow, FMLFileResourcePack:Statues, FMLFileResourcePack:asielib, FMLFileResourcePack:SlashBlade, FMLFileResourcePack:Vein Miner, FMLFileResourcePack:Mod Support, FMLFileResourcePack:plo, FMLFileResourcePack:No Nether Needed, FMLFileResourcePack:NoMoreRecipeConflict, FMLFileResourcePack:Tainted Magic, FMLFileResourcePack:Grimoire of Gaia 3, FMLFileResourcePack:Baubles
+[17:57:28] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: OceanMonument.txt in C:\Documents and Settings\Administrator\My Documents\1.7.10罪恶物语整合包\.minecraft\mods\《1.7.10》把未来带回现实MOD.jar
+[17:57:49] [Sound Library Loader/INFO]: Sound engine started
+[17:57:49] [Client thread/WARN]: File customnpcs:sounds/human/female/villager/What Do You Need.ogg does not exist, cannot add it to event customnpcs:human.female.villager.what_do_you_need
+[17:57:49] [Client thread/WARN]: File customnpcs:sounds/human/female/villager/Would You Like To Trade.ogg does not exist, cannot add it to event customnpcs:human.female.villager.trade
+[17:57:49] [Client thread/WARN]: File customnpcs:sounds/human/girl/villager/What do you need.ogg does not exist, cannot add it to event customnpcs:human.girl.villager.what_do_you_need
+[17:57:49] [Client thread/WARN]: File customnpcs:sounds/human/girl/villager/Would you like to trade.ogg does not exist, cannot add it to event customnpcs:human.girl.villager.trade
+[17:57:50] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[17:57:50] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[17:58:02] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Chest Transporter, FMLFileResourcePack:SlashBladeZephyr, FMLFileResourcePack:Thaumcraft NEI Plugin, FMLFileResourcePack:NEI Addons, FMLFileResourcePack:NEI Addons: Developer Tools, FMLFileResourcePack:NEI Addons: Applied Energistics 2, FMLFileResourcePack:NEI Addons: Botany, FMLFileResourcePack:NEI Addons: Forestry, FMLFileResourcePack:NEI Addons: Crafting Tables, FMLFileResourcePack:NEI Addons: Ex Nihilo, FMLFileResourcePack:NEI Integration, FMLFileResourcePack:Not Enough Resources, FMLFileResourcePack:DummyCore, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:balumg, FMLFileResourcePack:Botania, FMLFileResourcePack:CustomNpcs, FMLFileResourcePack:ExtraBotany, FMLFileResourcePack:Forbidden Magic, FMLFileResourcePack:UnicodeFontFixer, FMLFileResourcePack:BiblioCraft, FMLFileResourcePack:FastCraft, FMLFileResourcePack:Et Futurum, FMLFileResourcePack:The Twilight Forest, FMLFileResourcePack:Headshots, FMLFileResourcePack:Durability Show, FMLFileResourcePack:Hammerz, FMLFileResourcePack:豆腐Craft (TofuCraft), FMLFileResourcePack:Inventory Tweaks, FMLFileResourcePack:Warp Book, FMLFileResourcePack:CraftGuide, FMLFileResourcePack:Dynamic Lights, FMLFileResourcePack:Dynamic Lights Burning Entity Module, FMLFileResourcePack:Dynamic Lights Creeper Module, FMLFileResourcePack:Dynamic Lights EntityItem Module, FMLFileResourcePack:Dynamic Lights Entity Light Module, FMLFileResourcePack:Dynamic Lights Mob Equipment Light Module, FMLFileResourcePack:Dynamic Lights Fiery Arrows Light Module, FMLFileResourcePack:Dynamic Lights Flood Light, FMLFileResourcePack:Dynamic Lights OtherPlayers Light Module, FMLFileResourcePack:Dynamic Lights Player Light Module, FMLFileResourcePack:Tinkers' Construct, FMLFileResourcePack:Mantle, FMLFileResourcePack:Wallpaper, FMLFileResourcePack:Fast Leaf Decay, FMLFileResourcePack:Loot Bags, FMLFileResourcePack:Mine & Blade Battlegear 2 - Bullseye, FMLFileResourcePack:More Crafting Recipes Mod, FMLFileResourcePack:Balkon's WeaponMod, FMLFileResourcePack:Iron Chest, FMLFileResourcePack:Backpack, FMLFileResourcePack:BambooMod, FMLFileResourcePack:Damage Indicators, FMLFileResourcePack:AimBow, FMLFileResourcePack:Statues, FMLFileResourcePack:asielib, FMLFileResourcePack:SlashBlade, FMLFileResourcePack:Vein Miner, FMLFileResourcePack:Mod Support, FMLFileResourcePack:plo, FMLFileResourcePack:No Nether Needed, FMLFileResourcePack:NoMoreRecipeConflict, FMLFileResourcePack:Tainted Magic, FMLFileResourcePack:Grimoire of Gaia 3, FMLFileResourcePack:Baubles
+[17:58:02] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: OceanMonument.txt in C:\Documents and Settings\Administrator\My Documents\1.7.10罪恶物语整合包\.minecraft\mods\《1.7.10》把未来带回现实MOD.jar
+[17:58:22] [Sound Library Loader/INFO]: Sound engine started
+[17:58:22] [Client thread/WARN]: File customnpcs:sounds/human/female/villager/What Do You Need.ogg does not exist, cannot add it to event customnpcs:human.female.villager.what_do_you_need
+[17:58:22] [Client thread/WARN]: File customnpcs:sounds/human/female/villager/Would You Like To Trade.ogg does not exist, cannot add it to event customnpcs:human.female.villager.trade
+[17:58:22] [Client thread/WARN]: File customnpcs:sounds/human/girl/villager/What do you need.ogg does not exist, cannot add it to event customnpcs:human.girl.villager.what_do_you_need
+[17:58:22] [Client thread/WARN]: File customnpcs:sounds/human/girl/villager/Would you like to trade.ogg does not exist, cannot add it to event customnpcs:human.girl.villager.trade
+[17:58:45] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[17:58:45] [Server thread/INFO]: Generating keypair
+[17:59:05] [Server thread/INFO]: Preparing start region for level 0
+[17:59:06] [Server thread/INFO]: Preparing spawn area: 20%
+[17:59:07] [Server thread/INFO]: Preparing spawn area: 37%
+[17:59:08] [Server thread/INFO]: Preparing spawn area: 53%
+[17:59:09] [Server thread/INFO]: Preparing spawn area: 72%
+[17:59:10] [Server thread/INFO]: Preparing spawn area: 88%
+[18:01:24] [Client thread/INFO]: Stopping!
+[18:13:53] [main/INFO]: Setting user: Diao__ling
+[18:13:56] [Client thread/INFO]: LWJGL Version: 2.9.1
+[18:14:29] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Chest Transporter, FMLFileResourcePack:SlashBladeZephyr, FMLFileResourcePack:Thaumcraft NEI Plugin, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:balumg, FMLFileResourcePack:Botania, FMLFileResourcePack:CustomNpcs, FMLFileResourcePack:ExtraBotany, FMLFileResourcePack:Forbidden Magic, FMLFileResourcePack:UnicodeFontFixer, FMLFileResourcePack:BiblioCraft, FMLFileResourcePack:FastCraft, FMLFileResourcePack:Et Futurum, FMLFileResourcePack:The Twilight Forest, FMLFileResourcePack:Headshots, FMLFileResourcePack:Durability Show, FMLFileResourcePack:Hammerz, FMLFileResourcePack:Inventory Tweaks, FMLFileResourcePack:Warp Book, FMLFileResourcePack:CraftGuide, FMLFileResourcePack:Dynamic Lights, FMLFileResourcePack:Dynamic Lights Burning Entity Module, FMLFileResourcePack:Dynamic Lights Creeper Module, FMLFileResourcePack:Dynamic Lights EntityItem Module, FMLFileResourcePack:Dynamic Lights Entity Light Module, FMLFileResourcePack:Dynamic Lights Mob Equipment Light Module, FMLFileResourcePack:Dynamic Lights Fiery Arrows Light Module, FMLFileResourcePack:Dynamic Lights Flood Light, FMLFileResourcePack:Dynamic Lights OtherPlayers Light Module, FMLFileResourcePack:Dynamic Lights Player Light Module, FMLFileResourcePack:Tinkers' Construct, FMLFileResourcePack:Mantle, FMLFileResourcePack:Wallpaper, FMLFileResourcePack:Fast Leaf Decay, FMLFileResourcePack:Loot Bags, FMLFileResourcePack:Mine & Blade Battlegear 2 - Bullseye, FMLFileResourcePack:Balkon's WeaponMod, FMLFileResourcePack:Iron Chest, FMLFileResourcePack:Backpack, FMLFileResourcePack:BambooMod, FMLFileResourcePack:Damage Indicators, FMLFileResourcePack:AimBow, FMLFileResourcePack:SlashBlade, FMLFileResourcePack:Vein Miner, FMLFileResourcePack:Mod Support, FMLFileResourcePack:plo, FMLFileResourcePack:No Nether Needed, FMLFileResourcePack:NoMoreRecipeConflict, FMLFileResourcePack:Tainted Magic, FMLFileResourcePack:Grimoire of Gaia 3, FMLFileResourcePack:Baubles
+[18:14:29] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: OceanMonument.txt in C:\Documents and Settings\Administrator\My Documents\1.7.10罪恶物语整合包\.minecraft\mods\《1.7.10》把未来带回现实MOD.jar
+[18:14:50] [Sound Library Loader/INFO]: Sound engine started
+[18:14:50] [Client thread/WARN]: File customnpcs:sounds/human/female/villager/What Do You Need.ogg does not exist, cannot add it to event customnpcs:human.female.villager.what_do_you_need
+[18:14:50] [Client thread/WARN]: File customnpcs:sounds/human/female/villager/Would You Like To Trade.ogg does not exist, cannot add it to event customnpcs:human.female.villager.trade
+[18:14:50] [Client thread/WARN]: File customnpcs:sounds/human/girl/villager/What do you need.ogg does not exist, cannot add it to event customnpcs:human.girl.villager.what_do_you_need
+[18:14:50] [Client thread/WARN]: File customnpcs:sounds/human/girl/villager/Would you like to trade.ogg does not exist, cannot add it to event customnpcs:human.girl.villager.trade
+[18:14:51] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[18:14:51] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[18:15:02] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Chest Transporter, FMLFileResourcePack:SlashBladeZephyr, FMLFileResourcePack:Thaumcraft NEI Plugin, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:balumg, FMLFileResourcePack:Botania, FMLFileResourcePack:CustomNpcs, FMLFileResourcePack:ExtraBotany, FMLFileResourcePack:Forbidden Magic, FMLFileResourcePack:UnicodeFontFixer, FMLFileResourcePack:BiblioCraft, FMLFileResourcePack:FastCraft, FMLFileResourcePack:Et Futurum, FMLFileResourcePack:The Twilight Forest, FMLFileResourcePack:Headshots, FMLFileResourcePack:Durability Show, FMLFileResourcePack:Hammerz, FMLFileResourcePack:Inventory Tweaks, FMLFileResourcePack:Warp Book, FMLFileResourcePack:CraftGuide, FMLFileResourcePack:Dynamic Lights, FMLFileResourcePack:Dynamic Lights Burning Entity Module, FMLFileResourcePack:Dynamic Lights Creeper Module, FMLFileResourcePack:Dynamic Lights EntityItem Module, FMLFileResourcePack:Dynamic Lights Entity Light Module, FMLFileResourcePack:Dynamic Lights Mob Equipment Light Module, FMLFileResourcePack:Dynamic Lights Fiery Arrows Light Module, FMLFileResourcePack:Dynamic Lights Flood Light, FMLFileResourcePack:Dynamic Lights OtherPlayers Light Module, FMLFileResourcePack:Dynamic Lights Player Light Module, FMLFileResourcePack:Tinkers' Construct, FMLFileResourcePack:Mantle, FMLFileResourcePack:Wallpaper, FMLFileResourcePack:Fast Leaf Decay, FMLFileResourcePack:Loot Bags, FMLFileResourcePack:Mine & Blade Battlegear 2 - Bullseye, FMLFileResourcePack:Balkon's WeaponMod, FMLFileResourcePack:Iron Chest, FMLFileResourcePack:Backpack, FMLFileResourcePack:BambooMod, FMLFileResourcePack:Damage Indicators, FMLFileResourcePack:AimBow, FMLFileResourcePack:SlashBlade, FMLFileResourcePack:Vein Miner, FMLFileResourcePack:Mod Support, FMLFileResourcePack:plo, FMLFileResourcePack:No Nether Needed, FMLFileResourcePack:NoMoreRecipeConflict, FMLFileResourcePack:Tainted Magic, FMLFileResourcePack:Grimoire of Gaia 3, FMLFileResourcePack:Baubles
+[18:15:02] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: OceanMonument.txt in C:\Documents and Settings\Administrator\My Documents\1.7.10罪恶物语整合包\.minecraft\mods\《1.7.10》把未来带回现实MOD.jar
+[18:15:09] [Client thread/INFO]: Created: 2048x1024 textures/items-atlas
+[18:15:13] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[18:15:16] [Sound Library Loader/INFO]: Sound engine started
+[18:15:18] [Client thread/WARN]: File customnpcs:sounds/human/female/villager/What Do You Need.ogg does not exist, cannot add it to event customnpcs:human.female.villager.what_do_you_need
+[18:15:18] [Client thread/WARN]: File customnpcs:sounds/human/female/villager/Would You Like To Trade.ogg does not exist, cannot add it to event customnpcs:human.female.villager.trade
+[18:15:18] [Client thread/WARN]: File customnpcs:sounds/human/girl/villager/What do you need.ogg does not exist, cannot add it to event customnpcs:human.girl.villager.what_do_you_need
+[18:15:18] [Client thread/WARN]: File customnpcs:sounds/human/girl/villager/Would you like to trade.ogg does not exist, cannot add it to event customnpcs:human.girl.villager.trade
+[18:15:34] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[18:15:34] [Server thread/INFO]: Generating keypair
+[18:15:45] [Server thread/INFO]: Preparing start region for level 0
+[18:15:46] [Server thread/INFO]: Preparing spawn area: 18%
+[18:15:47] [Server thread/INFO]: Preparing spawn area: 32%
+[18:15:48] [Server thread/INFO]: Preparing spawn area: 46%
+[18:15:49] [Server thread/INFO]: Preparing spawn area: 60%
+[18:15:50] [Server thread/INFO]: Preparing spawn area: 76%
+[18:15:51] [Server thread/INFO]: Preparing spawn area: 89%
+[18:16:00] [Server thread/INFO]: Changing view distance to 12, from 10
+[18:16:01] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7547ms behind, skipping 150 tick(s)
+[18:16:01] [Server thread/INFO]: Diao__ling[local:E:b4b8253d] logged in with entity id 468 at (-329.5, 4.0, -723.5)
+[18:16:01] [Server thread/INFO]: Diao__ling 加入了游戏
+[18:16:04] [Thread-8/INFO]: [CHAT] §2CustomNpcs§f installed. For more info §9§nClick here
+[18:16:19] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7297ms behind, skipping 145 tick(s)
+[18:16:23] [Client thread/INFO]: [CHAT] §cTainted Magic is out of date! The latest version is §ar7.6
+[18:16:23] [Client thread/INFO]: [CHAT] veinminer使用客户端热键绑定。参考MOD配置文件详情。
+[18:16:24] [Client thread/INFO]: [CHAT] Version 1.0.5.120 of NotEnoughItems is available
+[18:16:27] [Client thread/INFO]: [CHAT] Damage Indicators was unable to check for updates!
+[18:16:30] [Client thread/INFO]: [CHAT] InvTweaks: 配置文件已载入
+[18:16:40] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 9609ms behind, skipping 192 tick(s)
+[18:16:42] [Server thread/INFO]: Saving and pausing game...
+[18:16:43] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[18:16:44] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[18:16:44] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[18:16:44] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[18:16:44] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[18:16:54] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8156ms behind, skipping 163 tick(s)
+[18:17:00] [Server thread/INFO]: Diao__ling 刚刚获得了 [打开物品栏] 成就！
+[18:17:02] [Client thread/INFO]: [CHAT] Diao__ling 刚刚获得了 [打开物品栏] 成就！
+[18:17:13] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8235ms behind, skipping 164 tick(s)
+[18:17:31] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6718ms behind, skipping 134 tick(s)
+[18:17:53] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8125ms behind, skipping 162 tick(s)
+[18:18:13] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8296ms behind, skipping 165 tick(s)
+[18:18:28] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7078ms behind, skipping 141 tick(s)
+[18:18:34] [Server thread/INFO]: Saving and pausing game...
+[18:18:34] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[18:18:35] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[18:18:35] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[18:18:35] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[18:18:35] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[18:19:03] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2672ms behind, skipping 53 tick(s)
+[18:19:25] [Server thread/INFO]: Saving and pausing game...
+[18:19:25] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[18:19:25] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[18:19:25] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[18:19:25] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[18:19:25] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[18:19:25] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2985ms behind, skipping 59 tick(s)
+[18:19:30] [Server thread/INFO]: Saving and pausing game...
+[18:19:30] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[18:19:30] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[18:19:30] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[18:19:30] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[18:19:30] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[18:19:35] [Server thread/INFO]: Saving and pausing game...
+[18:19:35] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[18:19:35] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[18:19:35] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[18:19:35] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[18:19:35] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[18:19:43] [Server thread/INFO]: Saving and pausing game...
+[18:19:43] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[18:19:43] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[18:19:43] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[18:19:43] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[18:19:43] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[18:19:48] [Server thread/INFO]: Saving and pausing game...
+[18:19:48] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[18:19:48] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[18:19:48] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[18:19:48] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[18:19:48] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[18:19:58] [Server thread/INFO]: Saving and pausing game...
+[18:19:58] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[18:19:58] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[18:19:58] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[18:19:58] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[18:19:58] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[18:20:33] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2328ms behind, skipping 46 tick(s)
+[18:20:57] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 10187ms behind, skipping 203 tick(s)
+[18:21:10] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6062ms behind, skipping 121 tick(s)
+[18:21:15] [Server thread/INFO]: Diao__ling 掉出了这个世界
+[18:21:15] [Client thread/INFO]: [CHAT] Diao__ling 掉出了这个世界
+[18:21:15] [Client thread/INFO]: [CHAT] 哎哟！那看起来很疼
+[18:21:36] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 10922ms behind, skipping 218 tick(s)
+[18:21:52] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7328ms behind, skipping 146 tick(s)
+[18:22:07] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7610ms behind, skipping 152 tick(s)
+[18:22:11] [Server thread/INFO]: Saving and pausing game...
+[18:22:11] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[18:22:11] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[18:22:11] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[18:22:11] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[18:22:11] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[18:22:20] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2922ms behind, skipping 58 tick(s)
+[18:22:21] [Server thread/INFO]: Saving and pausing game...
+[18:22:21] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[18:22:21] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[18:22:21] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[18:22:21] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[18:22:21] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[18:22:34] [Server thread/INFO]: Saving and pausing game...
+[18:22:34] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[18:22:35] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[18:22:35] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[18:22:35] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[18:22:35] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[18:22:35] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2500ms behind, skipping 50 tick(s)
+[18:22:58] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7781ms behind, skipping 155 tick(s)
+[18:23:12] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6312ms behind, skipping 126 tick(s)
+[18:23:32] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8328ms behind, skipping 166 tick(s)
+[18:23:46] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6078ms behind, skipping 121 tick(s)
+[18:24:04] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7125ms behind, skipping 142 tick(s)
+[18:24:23] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7203ms behind, skipping 144 tick(s)
+[18:24:44] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8266ms behind, skipping 165 tick(s)
+[18:24:50] [Server thread/INFO]: Saving and pausing game...
+[18:24:50] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[18:24:50] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[18:24:50] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[18:24:50] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[18:24:50] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[18:24:51] [Server thread/INFO]: Stopping server
+[18:24:51] [Server thread/INFO]: Saving players
+[18:24:51] [Server thread/INFO]: Saving worlds
+[18:24:51] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[18:24:51] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[18:24:51] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[18:24:51] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[18:24:51] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[18:24:55] [Client thread/INFO]: Stopping!
+[18:28:21] [main/INFO]: Setting user: Diao__ling
+[18:28:23] [Client thread/INFO]: LWJGL Version: 2.9.1
+[18:28:56] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Chest Transporter, FMLFileResourcePack:SlashBladeZephyr, FMLFileResourcePack:Thaumcraft NEI Plugin, FMLFileResourcePack:DummyCore, FMLFileResourcePack:Thaumic Tinkerer, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:balumg, FMLFileResourcePack:Botania, FMLFileResourcePack:CustomNpcs, FMLFileResourcePack:ExtraBotany, FMLFileResourcePack:Forbidden Magic, FMLFileResourcePack:UnicodeFontFixer, FMLFileResourcePack:BiblioCraft, FMLFileResourcePack:FastCraft, FMLFileResourcePack:Et Futurum, FMLFileResourcePack:The Twilight Forest, FMLFileResourcePack:Headshots, FMLFileResourcePack:Durability Show, FMLFileResourcePack:Hammerz, FMLFileResourcePack:Inventory Tweaks, FMLFileResourcePack:Warp Book, FMLFileResourcePack:CraftGuide, FMLFileResourcePack:Dynamic Lights, FMLFileResourcePack:Dynamic Lights Burning Entity Module, FMLFileResourcePack:Dynamic Lights Creeper Module, FMLFileResourcePack:Dynamic Lights EntityItem Module, FMLFileResourcePack:Dynamic Lights Entity Light Module, FMLFileResourcePack:Dynamic Lights Mob Equipment Light Module, FMLFileResourcePack:Dynamic Lights Fiery Arrows Light Module, FMLFileResourcePack:Dynamic Lights Flood Light, FMLFileResourcePack:Dynamic Lights OtherPlayers Light Module, FMLFileResourcePack:Dynamic Lights Player Light Module, FMLFileResourcePack:Tinkers' Construct, FMLFileResourcePack:Mantle, FMLFileResourcePack:Wallpaper, FMLFileResourcePack:Fast Leaf Decay, FMLFileResourcePack:Loot Bags, FMLFileResourcePack:Mine & Blade Battlegear 2 - Bullseye, FMLFileResourcePack:Balkon's WeaponMod, FMLFileResourcePack:Iron Chest, FMLFileResourcePack:Backpack, FMLFileResourcePack:BambooMod, FMLFileResourcePack:Damage Indicators, FMLFileResourcePack:AimBow, FMLFileResourcePack:SlashBlade, FMLFileResourcePack:Vein Miner, FMLFileResourcePack:Mod Support, FMLFileResourcePack:plo, FMLFileResourcePack:No Nether Needed, FMLFileResourcePack:NoMoreRecipeConflict, FMLFileResourcePack:Tainted Magic, FMLFileResourcePack:Grimoire of Gaia 3, FMLFileResourcePack:Baubles
+[18:28:57] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: OceanMonument.txt in C:\Documents and Settings\Administrator\My Documents\1.7.10罪恶物语整合包\.minecraft\mods\《1.7.10》把未来带回现实MOD.jar
+[18:29:21] [Client thread/WARN]: File customnpcs:sounds/human/female/villager/What Do You Need.ogg does not exist, cannot add it to event customnpcs:human.female.villager.what_do_you_need
+[18:29:21] [Client thread/WARN]: File customnpcs:sounds/human/female/villager/Would You Like To Trade.ogg does not exist, cannot add it to event customnpcs:human.female.villager.trade
+[18:29:21] [Client thread/WARN]: File customnpcs:sounds/human/girl/villager/What do you need.ogg does not exist, cannot add it to event customnpcs:human.girl.villager.what_do_you_need
+[18:29:21] [Client thread/WARN]: File customnpcs:sounds/human/girl/villager/Would you like to trade.ogg does not exist, cannot add it to event customnpcs:human.girl.villager.trade
+[18:29:22] [Sound Library Loader/INFO]: Sound engine started
+[18:29:22] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[18:29:22] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[18:29:35] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Chest Transporter, FMLFileResourcePack:SlashBladeZephyr, FMLFileResourcePack:Thaumcraft NEI Plugin, FMLFileResourcePack:DummyCore, FMLFileResourcePack:Thaumic Tinkerer, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:balumg, FMLFileResourcePack:Botania, FMLFileResourcePack:CustomNpcs, FMLFileResourcePack:ExtraBotany, FMLFileResourcePack:Forbidden Magic, FMLFileResourcePack:UnicodeFontFixer, FMLFileResourcePack:BiblioCraft, FMLFileResourcePack:FastCraft, FMLFileResourcePack:Et Futurum, FMLFileResourcePack:The Twilight Forest, FMLFileResourcePack:Headshots, FMLFileResourcePack:Durability Show, FMLFileResourcePack:Hammerz, FMLFileResourcePack:Inventory Tweaks, FMLFileResourcePack:Warp Book, FMLFileResourcePack:CraftGuide, FMLFileResourcePack:Dynamic Lights, FMLFileResourcePack:Dynamic Lights Burning Entity Module, FMLFileResourcePack:Dynamic Lights Creeper Module, FMLFileResourcePack:Dynamic Lights EntityItem Module, FMLFileResourcePack:Dynamic Lights Entity Light Module, FMLFileResourcePack:Dynamic Lights Mob Equipment Light Module, FMLFileResourcePack:Dynamic Lights Fiery Arrows Light Module, FMLFileResourcePack:Dynamic Lights Flood Light, FMLFileResourcePack:Dynamic Lights OtherPlayers Light Module, FMLFileResourcePack:Dynamic Lights Player Light Module, FMLFileResourcePack:Tinkers' Construct, FMLFileResourcePack:Mantle, FMLFileResourcePack:Wallpaper, FMLFileResourcePack:Fast Leaf Decay, FMLFileResourcePack:Loot Bags, FMLFileResourcePack:Mine & Blade Battlegear 2 - Bullseye, FMLFileResourcePack:Balkon's WeaponMod, FMLFileResourcePack:Iron Chest, FMLFileResourcePack:Backpack, FMLFileResourcePack:BambooMod, FMLFileResourcePack:Damage Indicators, FMLFileResourcePack:AimBow, FMLFileResourcePack:SlashBlade, FMLFileResourcePack:Vein Miner, FMLFileResourcePack:Mod Support, FMLFileResourcePack:plo, FMLFileResourcePack:No Nether Needed, FMLFileResourcePack:NoMoreRecipeConflict, FMLFileResourcePack:Tainted Magic, FMLFileResourcePack:Grimoire of Gaia 3, FMLFileResourcePack:Baubles
+[18:29:35] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: OceanMonument.txt in C:\Documents and Settings\Administrator\My Documents\1.7.10罪恶物语整合包\.minecraft\mods\《1.7.10》把未来带回现实MOD.jar
+[18:29:50] [Sound Library Loader/INFO]: Sound engine started
+[18:29:50] [Client thread/WARN]: File customnpcs:sounds/human/female/villager/What Do You Need.ogg does not exist, cannot add it to event customnpcs:human.female.villager.what_do_you_need
+[18:29:50] [Client thread/WARN]: File customnpcs:sounds/human/female/villager/Would You Like To Trade.ogg does not exist, cannot add it to event customnpcs:human.female.villager.trade
+[18:29:50] [Client thread/WARN]: File customnpcs:sounds/human/girl/villager/What do you need.ogg does not exist, cannot add it to event customnpcs:human.girl.villager.what_do_you_need
+[18:29:50] [Client thread/WARN]: File customnpcs:sounds/human/girl/villager/Would you like to trade.ogg does not exist, cannot add it to event customnpcs:human.girl.villager.trade
+[18:32:05] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[18:32:05] [Server thread/INFO]: Generating keypair
+[18:32:07] [Server thread/INFO]: Preparing start region for level 0
+[18:32:08] [Server thread/INFO]: Preparing spawn area: 89%
+[18:32:16] [Server thread/INFO]: Changing view distance to 12, from 10
+[18:32:17] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7297ms behind, skipping 145 tick(s)
+[18:32:18] [Server thread/INFO]: Diao__ling[local:E:5df1fd7b] logged in with entity id 747 at (-380.5821667621502, 9.903453748442548, -750.4751983225425)
+[18:32:18] [Server thread/INFO]: Diao__ling 加入了游戏
+[18:32:19] [Thread-8/INFO]: [CHAT] §2CustomNpcs§f installed. For more info §9§nClick here
+[18:32:30] [Client thread/INFO]: [CHAT] §cTainted Magic is out of date! The latest version is §ar7.6
+[18:32:31] [Client thread/INFO]: [CHAT] veinminer使用客户端热键绑定。参考MOD配置文件详情。
+[18:32:31] [Client thread/INFO]: [CHAT] Version 1.0.5.120 of NotEnoughItems is available
+[18:32:33] [Client thread/INFO]: [CHAT] Damage Indicators was unable to check for updates!
+[18:32:34] [Client thread/INFO]: [CHAT] InvTweaks: 配置文件已载入
+[18:32:54] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 21312ms behind, skipping 426 tick(s)
+[18:32:57] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2938ms behind, skipping 58 tick(s)
+[18:33:15] [Server thread/INFO]: Saving and pausing game...
+[18:33:16] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[18:33:16] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[18:33:16] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[18:33:16] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[18:33:16] [Server thread/INFO]: Saving chunks for level '新的世界'/Bedrock
+[18:33:16] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[18:33:16] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5094ms behind, skipping 101 tick(s)
+[18:33:31] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2109ms behind, skipping 42 tick(s)
+[18:34:03] [pool-3-thread-2/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@1808b07[id=fa84d75c-8164-710b-47b1-6d402bcf888f,name=Diao__ling,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:65) ~[YggdrasilAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:135) [YggdrasilMinecraftSessionService.class:?]
+	at net.minecraft.client.resources.SkinManager$3.run(SourceFile:106) [brm.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.7.0_67]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.7.0_67]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.7.0_67]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.7.0_67]
+	at java.lang.Thread.run(Unknown Source) [?:1.7.0_67]
+[18:34:45] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 47672ms behind, skipping 953 tick(s)
+[18:34:48] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2953ms behind, skipping 59 tick(s)
+[18:35:12] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 9843ms behind, skipping 196 tick(s)
+[18:35:25] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6359ms behind, skipping 127 tick(s)
+[18:35:49] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 9688ms behind, skipping 193 tick(s)
+[18:36:02] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5797ms behind, skipping 115 tick(s)
+[18:36:24] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8812ms behind, skipping 176 tick(s)
+[18:36:41] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7704ms behind, skipping 154 tick(s)
+[18:37:00] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7500ms behind, skipping 150 tick(s)
+[18:37:20] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7718ms behind, skipping 154 tick(s)
+[18:37:41] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8344ms behind, skipping 166 tick(s)
+[18:37:53] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5640ms behind, skipping 112 tick(s)
+[18:38:14] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8609ms behind, skipping 172 tick(s)
+[18:38:27] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5547ms behind, skipping 110 tick(s)
+[18:38:47] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7906ms behind, skipping 158 tick(s)
+[18:39:08] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8234ms behind, skipping 164 tick(s)
+[18:39:21] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5969ms behind, skipping 119 tick(s)
+[18:39:38] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6328ms behind, skipping 126 tick(s)
+[18:39:57] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7187ms behind, skipping 143 tick(s)
+[18:40:17] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7313ms behind, skipping 146 tick(s)
+[18:40:35] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6969ms behind, skipping 139 tick(s)
+[18:40:55] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7469ms behind, skipping 149 tick(s)
+[18:41:13] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6672ms behind, skipping 133 tick(s)
+[18:41:25] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2235ms behind, skipping 44 tick(s)
+[18:42:13] [Server thread/INFO]: Saving and pausing game...
+[18:42:13] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[18:42:13] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[18:42:13] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[18:42:13] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[18:42:13] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[18:46:18] [Server thread/INFO]: Saving and pausing game...
+[18:46:18] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[18:46:18] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[18:46:18] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[18:46:18] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[18:46:18] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[18:46:21] [Server thread/INFO]: Saving and pausing game...
+[18:46:21] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[18:46:22] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[18:46:22] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[18:46:22] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[18:46:22] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[18:49:27] [Client thread/WARN]: Could not find uniform named InSize in the specified shader program.
+[18:49:27] [Client thread/WARN]: Could not find uniform named Time in the specified shader program.
+[18:49:27] [Client thread/WARN]: Could not find uniform named ScreenSize in the specified shader program.
+[18:49:39] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2297ms behind, skipping 45 tick(s)
+[18:50:07] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 9406ms behind, skipping 188 tick(s)
+[18:50:19] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5813ms behind, skipping 116 tick(s)
+[18:50:31] [Client thread/WARN]: Could not find uniform named InSize in the specified shader program.
+[18:50:31] [Client thread/WARN]: Could not find uniform named Time in the specified shader program.
+[18:50:31] [Client thread/WARN]: Could not find uniform named ScreenSize in the specified shader program.
+[18:50:34] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3797ms behind, skipping 75 tick(s)
+[18:50:56] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8532ms behind, skipping 170 tick(s)
+[18:52:38] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2500ms behind, skipping 50 tick(s)
+[18:53:01] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 9250ms behind, skipping 185 tick(s)
+[18:53:19] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 9547ms behind, skipping 190 tick(s)
+[18:53:35] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7782ms behind, skipping 155 tick(s)
+[18:53:52] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8344ms behind, skipping 166 tick(s)
+[18:54:07] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7547ms behind, skipping 150 tick(s)
+[18:54:18] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2047ms behind, skipping 40 tick(s)
+[18:54:43] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2234ms behind, skipping 44 tick(s)
+[18:55:20] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 17062ms behind, skipping 341 tick(s)
+[18:55:23] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3156ms behind, skipping 63 tick(s)
+[18:55:40] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4609ms behind, skipping 92 tick(s)
+[18:55:54] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2844ms behind, skipping 56 tick(s)
+[18:56:11] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2563ms behind, skipping 51 tick(s)
+[18:56:30] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2266ms behind, skipping 45 tick(s)
+[18:56:47] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2406ms behind, skipping 48 tick(s)
+[18:57:06] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5813ms behind, skipping 116 tick(s)
+[18:57:20] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3687ms behind, skipping 73 tick(s)
+[18:57:39] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6953ms behind, skipping 139 tick(s)
+[18:57:57] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8828ms behind, skipping 176 tick(s)
+[18:58:08] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3343ms behind, skipping 66 tick(s)
+[18:58:34] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8016ms behind, skipping 160 tick(s)
+[18:58:52] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5172ms behind, skipping 103 tick(s)
+[18:59:09] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6094ms behind, skipping 121 tick(s)
+[18:59:27] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5406ms behind, skipping 108 tick(s)
+[18:59:54] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 10734ms behind, skipping 214 tick(s)
+[19:00:03] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4750ms behind, skipping 95 tick(s)
+[19:00:30] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 10656ms behind, skipping 213 tick(s)
+[19:00:53] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3422ms behind, skipping 68 tick(s)
+[19:01:16] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 10218ms behind, skipping 204 tick(s)
+[19:01:33] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8047ms behind, skipping 160 tick(s)
+[19:01:46] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4047ms behind, skipping 80 tick(s)
+[19:02:05] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5860ms behind, skipping 117 tick(s)
+[19:02:42] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 19438ms behind, skipping 388 tick(s)
+[19:02:46] [Server thread/INFO]: Saving and pausing game...
+[19:02:46] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[19:02:46] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[19:02:46] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[19:02:46] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[19:02:46] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[19:02:46] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3562ms behind, skipping 71 tick(s)
+[19:03:08] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8328ms behind, skipping 166 tick(s)
+[19:03:08] [Server thread/INFO]: Saving and pausing game...
+[19:03:08] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[19:03:08] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[19:03:08] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[19:03:08] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[19:03:08] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[19:03:09] [Server thread/INFO]: Stopping server
+[19:03:10] [Server thread/INFO]: Saving players
+[19:03:10] [Server thread/INFO]: Saving worlds
+[19:03:10] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[19:03:10] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[19:03:10] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[19:03:10] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[19:03:10] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[19:03:17] [Client thread/INFO]: Stopping!
+[23:20:43] [main/INFO]: Setting user: Diao__ling
+[23:20:47] [Client thread/INFO]: LWJGL Version: 2.9.1
+[23:21:28] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Chest Transporter, FMLFileResourcePack:SlashBladeZephyr, FMLFileResourcePack:Thaumcraft NEI Plugin, FMLFileResourcePack:Thaumic Tinkerer, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:balumg, FMLFileResourcePack:Botania, FMLFileResourcePack:CustomNpcs, FMLFileResourcePack:ExtraBotany, FMLFileResourcePack:Forbidden Magic, FMLFileResourcePack:UnicodeFontFixer, FMLFileResourcePack:BiblioCraft, FMLFileResourcePack:FastCraft, FMLFileResourcePack:Et Futurum, FMLFileResourcePack:The Twilight Forest, FMLFileResourcePack:Durability Show, FMLFileResourcePack:Hammerz, FMLFileResourcePack:Inventory Tweaks, FMLFileResourcePack:Warp Book, FMLFileResourcePack:CraftGuide, FMLFileResourcePack:Dynamic Lights, FMLFileResourcePack:Dynamic Lights Burning Entity Module, FMLFileResourcePack:Dynamic Lights Creeper Module, FMLFileResourcePack:Dynamic Lights EntityItem Module, FMLFileResourcePack:Dynamic Lights Entity Light Module, FMLFileResourcePack:Dynamic Lights Mob Equipment Light Module, FMLFileResourcePack:Dynamic Lights Fiery Arrows Light Module, FMLFileResourcePack:Dynamic Lights Flood Light, FMLFileResourcePack:Dynamic Lights OtherPlayers Light Module, FMLFileResourcePack:Dynamic Lights Player Light Module, FMLFileResourcePack:Tinkers' Construct, FMLFileResourcePack:Mantle, FMLFileResourcePack:Wallpaper, FMLFileResourcePack:Fast Leaf Decay, FMLFileResourcePack:Loot Bags, FMLFileResourcePack:Mine & Blade Battlegear 2 - Bullseye, FMLFileResourcePack:Balkon's WeaponMod, FMLFileResourcePack:Iron Chest, FMLFileResourcePack:Backpack, FMLFileResourcePack:BambooMod, FMLFileResourcePack:Damage Indicators, FMLFileResourcePack:SlashBlade, FMLFileResourcePack:Vein Miner, FMLFileResourcePack:Mod Support, FMLFileResourcePack:plo, FMLFileResourcePack:No Nether Needed, FMLFileResourcePack:NoMoreRecipeConflict, FMLFileResourcePack:Tainted Magic, FMLFileResourcePack:Grimoire of Gaia 3, FMLFileResourcePack:Baubles
+[23:21:28] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: OceanMonument.txt in C:\Documents and Settings\Administrator\My Documents\1.7.10罪恶物语整合包\.minecraft\mods\《1.7.10》把未来带回现实MOD.jar
+[23:21:51] [Sound Library Loader/INFO]: Sound engine started
+[23:21:52] [Client thread/WARN]: File customnpcs:sounds/human/female/villager/What Do You Need.ogg does not exist, cannot add it to event customnpcs:human.female.villager.what_do_you_need
+[23:21:52] [Client thread/WARN]: File customnpcs:sounds/human/female/villager/Would You Like To Trade.ogg does not exist, cannot add it to event customnpcs:human.female.villager.trade
+[23:21:52] [Client thread/WARN]: File customnpcs:sounds/human/girl/villager/What do you need.ogg does not exist, cannot add it to event customnpcs:human.girl.villager.what_do_you_need
+[23:21:52] [Client thread/WARN]: File customnpcs:sounds/human/girl/villager/Would you like to trade.ogg does not exist, cannot add it to event customnpcs:human.girl.villager.trade
+[23:21:52] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[23:21:52] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[23:22:06] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Chest Transporter, FMLFileResourcePack:SlashBladeZephyr, FMLFileResourcePack:Thaumcraft NEI Plugin, FMLFileResourcePack:Thaumic Tinkerer, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:balumg, FMLFileResourcePack:Botania, FMLFileResourcePack:CustomNpcs, FMLFileResourcePack:ExtraBotany, FMLFileResourcePack:Forbidden Magic, FMLFileResourcePack:UnicodeFontFixer, FMLFileResourcePack:BiblioCraft, FMLFileResourcePack:FastCraft, FMLFileResourcePack:Et Futurum, FMLFileResourcePack:The Twilight Forest, FMLFileResourcePack:Durability Show, FMLFileResourcePack:Hammerz, FMLFileResourcePack:Inventory Tweaks, FMLFileResourcePack:Warp Book, FMLFileResourcePack:CraftGuide, FMLFileResourcePack:Dynamic Lights, FMLFileResourcePack:Dynamic Lights Burning Entity Module, FMLFileResourcePack:Dynamic Lights Creeper Module, FMLFileResourcePack:Dynamic Lights EntityItem Module, FMLFileResourcePack:Dynamic Lights Entity Light Module, FMLFileResourcePack:Dynamic Lights Mob Equipment Light Module, FMLFileResourcePack:Dynamic Lights Fiery Arrows Light Module, FMLFileResourcePack:Dynamic Lights Flood Light, FMLFileResourcePack:Dynamic Lights OtherPlayers Light Module, FMLFileResourcePack:Dynamic Lights Player Light Module, FMLFileResourcePack:Tinkers' Construct, FMLFileResourcePack:Mantle, FMLFileResourcePack:Wallpaper, FMLFileResourcePack:Fast Leaf Decay, FMLFileResourcePack:Loot Bags, FMLFileResourcePack:Mine & Blade Battlegear 2 - Bullseye, FMLFileResourcePack:Balkon's WeaponMod, FMLFileResourcePack:Iron Chest, FMLFileResourcePack:Backpack, FMLFileResourcePack:BambooMod, FMLFileResourcePack:Damage Indicators, FMLFileResourcePack:SlashBlade, FMLFileResourcePack:Vein Miner, FMLFileResourcePack:Mod Support, FMLFileResourcePack:plo, FMLFileResourcePack:No Nether Needed, FMLFileResourcePack:NoMoreRecipeConflict, FMLFileResourcePack:Tainted Magic, FMLFileResourcePack:Grimoire of Gaia 3, FMLFileResourcePack:Baubles
+[23:22:06] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: OceanMonument.txt in C:\Documents and Settings\Administrator\My Documents\1.7.10罪恶物语整合包\.minecraft\mods\《1.7.10》把未来带回现实MOD.jar
+[23:22:19] [Client thread/INFO]: Created: 2048x1024 textures/items-atlas
+[23:22:32] [Client thread/INFO]: Created: 1024x1024 textures/blocks-atlas
+[23:22:35] [Sound Library Loader/INFO]: Sound engine started
+[23:22:36] [Client thread/WARN]: File customnpcs:sounds/human/female/villager/What Do You Need.ogg does not exist, cannot add it to event customnpcs:human.female.villager.what_do_you_need
+[23:22:36] [Client thread/WARN]: File customnpcs:sounds/human/female/villager/Would You Like To Trade.ogg does not exist, cannot add it to event customnpcs:human.female.villager.trade
+[23:22:36] [Client thread/WARN]: File customnpcs:sounds/human/girl/villager/What do you need.ogg does not exist, cannot add it to event customnpcs:human.girl.villager.what_do_you_need
+[23:22:36] [Client thread/WARN]: File customnpcs:sounds/human/girl/villager/Would you like to trade.ogg does not exist, cannot add it to event customnpcs:human.girl.villager.trade
+[23:27:22] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[23:27:22] [Server thread/INFO]: Generating keypair
+[23:27:24] [Server thread/INFO]: Preparing start region for level 0
+[23:27:25] [Server thread/INFO]: Preparing spawn area: 53%
+[23:27:26] [Server thread/INFO]: Preparing spawn area: 96%
+[23:27:33] [Server thread/INFO]: Changing view distance to 12, from 10
+[23:27:33] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6234ms behind, skipping 124 tick(s)
+[23:27:34] [Server thread/INFO]: Diao__ling[local:E:fcfd0ead] logged in with entity id 674 at (-382.1673120133494, 5.670946947550773, -1071.206328978567)
+[23:27:34] [Server thread/INFO]: Diao__ling 加入了游戏
+[23:27:37] [Thread-8/INFO]: [CHAT] §2CustomNpcs§f installed. For more info §9§nClick here
+[23:27:39] [Client thread/INFO]: [CHAT] Damage Indicators was unable to check for updates!
+[23:27:40] [Client thread/INFO]: [CHAT] InvTweaks: 配置文件已载入
+[23:27:49] [Client thread/INFO]: [CHAT] §cTainted Magic is out of date! The latest version is §ar7.6
+[23:27:49] [Client thread/INFO]: [CHAT] veinminer使用客户端热键绑定。参考MOD配置文件详情。
+[23:28:00] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 17656ms behind, skipping 353 tick(s)
+[23:28:04] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4500ms behind, skipping 90 tick(s)
+[23:28:08] [Server thread/INFO]: Saving and pausing game...
+[23:28:09] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[23:28:09] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[23:28:09] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[23:28:09] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[23:28:09] [Server thread/INFO]: Saving chunks for level '新的世界'/Bedrock
+[23:28:09] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[23:28:26] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3515ms behind, skipping 70 tick(s)
+[23:28:29] [Server thread/INFO]: Saving and pausing game...
+[23:28:29] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[23:28:29] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[23:28:29] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[23:28:29] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[23:28:29] [Server thread/INFO]: Saving chunks for level '新的世界'/Bedrock
+[23:28:29] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[23:28:44] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2219ms behind, skipping 44 tick(s)
+[23:29:06] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7297ms behind, skipping 145 tick(s)
+[23:29:21] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5141ms behind, skipping 102 tick(s)
+[23:29:38] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4985ms behind, skipping 99 tick(s)
+[23:30:02] [Client thread/INFO]: [CHAT] /gamemode, /give, /gamerule, /getShieldAmount, /givewarp
+[23:30:02] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 9140ms behind, skipping 182 tick(s)
+[23:30:05] [Client thread/INFO]: [CHAT] /tp, /time, /tc, /testforblock, /toggledownfall, /tell, /tfprogress, /thaumcraft, /tellraw, /thaum, /testfor
+[23:30:07] [Client thread/INFO]: [CHAT] /tp, /time, /tc, /testforblock, /toggledownfall, /tell, /tfprogress, /thaumcraft, /tellraw, /thaum, /testfor
+[23:30:08] [Client thread/INFO]: [CHAT] /tp, /time, /tc, /testforblock, /toggledownfall, /tell, /tfprogress, /thaumcraft, /tellraw, /thaum, /testfor
+[23:30:08] [Client thread/INFO]: [CHAT] set, add
+[23:30:10] [Client thread/INFO]: [CHAT] day, night
+[23:30:10] [Server thread/INFO]: [Diao__ling: 将时间设为 1000]
+[23:30:10] [Client thread/INFO]: [CHAT] 将时间设为 1000
+[23:30:19] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2062ms behind, skipping 41 tick(s)
+[23:30:41] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4546ms behind, skipping 90 tick(s)
+[23:31:07] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 12188ms behind, skipping 243 tick(s)
+[23:31:17] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6250ms behind, skipping 125 tick(s)
+[23:31:36] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 9813ms behind, skipping 196 tick(s)
+[23:31:58] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 11531ms behind, skipping 230 tick(s)
+[23:32:09] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6984ms behind, skipping 139 tick(s)
+[23:32:28] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6250ms behind, skipping 125 tick(s)
+[23:32:43] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5750ms behind, skipping 115 tick(s)
+[23:33:08] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 10735ms behind, skipping 214 tick(s)
+[23:33:23] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7703ms behind, skipping 154 tick(s)
+[23:33:40] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8141ms behind, skipping 162 tick(s)
+[23:33:55] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6906ms behind, skipping 138 tick(s)
+[23:34:11] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2125ms behind, skipping 42 tick(s)
+[23:34:31] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3656ms behind, skipping 73 tick(s)
+[23:34:48] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3688ms behind, skipping 73 tick(s)
+[23:35:07] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4593ms behind, skipping 91 tick(s)
+[23:35:36] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 11922ms behind, skipping 238 tick(s)
+[23:35:45] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3609ms behind, skipping 72 tick(s)
+[23:36:07] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5922ms behind, skipping 118 tick(s)
+[23:36:22] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5813ms behind, skipping 116 tick(s)
+[23:36:35] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2547ms behind, skipping 50 tick(s)
+[23:37:01] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2281ms behind, skipping 45 tick(s)
+[23:37:20] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4687ms behind, skipping 93 tick(s)
+[23:37:52] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 13047ms behind, skipping 260 tick(s)
+[23:37:57] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2219ms behind, skipping 44 tick(s)
+[23:38:21] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2531ms behind, skipping 50 tick(s)
+[23:38:52] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2515ms behind, skipping 50 tick(s)
+[23:39:13] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6844ms behind, skipping 136 tick(s)
+[23:39:37] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2359ms behind, skipping 47 tick(s)
+[23:40:03] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 10344ms behind, skipping 206 tick(s)
+[23:40:16] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6437ms behind, skipping 128 tick(s)
+[23:40:30] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3922ms behind, skipping 78 tick(s)
+[23:40:58] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2047ms behind, skipping 40 tick(s)
+[23:41:17] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5281ms behind, skipping 105 tick(s)
+[23:41:33] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4672ms behind, skipping 93 tick(s)
+[23:41:52] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4984ms behind, skipping 99 tick(s)
+[23:42:05] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2375ms behind, skipping 47 tick(s)
+[23:42:34] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 12750ms behind, skipping 255 tick(s)
+[23:42:51] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2359ms behind, skipping 47 tick(s)
+[23:46:38] [Server thread/INFO]: Saving and pausing game...
+[23:46:38] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[23:46:38] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[23:46:38] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[23:46:38] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[23:46:38] [Server thread/INFO]: Saving chunks for level '新的世界'/Bedrock
+[23:46:38] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[23:46:41] [Server thread/INFO]: Saving and pausing game...
+[23:46:41] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[23:46:42] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[23:46:42] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[23:46:42] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[23:46:42] [Server thread/INFO]: Saving chunks for level '新的世界'/Bedrock
+[23:46:42] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[23:47:47] [Server thread/INFO]: Saving and pausing game...
+[23:47:47] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[23:47:47] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[23:47:47] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[23:47:47] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[23:47:47] [Server thread/INFO]: Saving chunks for level '新的世界'/Bedrock
+[23:47:47] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[23:51:00] [Server thread/INFO]: Saving and pausing game...
+[23:51:00] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[23:51:00] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[23:51:00] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[23:51:00] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[23:51:01] [Server thread/INFO]: Saving chunks for level '新的世界'/Bedrock
+[23:51:01] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[23:51:08] [Server thread/INFO]: Saving and pausing game...
+[23:51:08] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[23:51:09] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[23:51:09] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[23:51:09] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[23:51:09] [Server thread/INFO]: Saving chunks for level '新的世界'/Bedrock
+[23:51:09] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[23:51:30] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2531ms behind, skipping 50 tick(s)
+[23:51:41] [Server thread/INFO]: Saving and pausing game...
+[23:51:41] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[23:51:41] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[23:51:41] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[23:51:41] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[23:51:41] [Server thread/INFO]: Saving chunks for level '新的世界'/Bedrock
+[23:51:41] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[23:51:50] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3281ms behind, skipping 65 tick(s)
+[23:52:18] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 12438ms behind, skipping 248 tick(s)
+[23:52:27] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5485ms behind, skipping 109 tick(s)
+[23:52:55] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 11968ms behind, skipping 239 tick(s)
+[23:53:03] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5093ms behind, skipping 101 tick(s)
+[23:53:09] [Server thread/INFO]: Saving and pausing game...
+[23:53:09] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[23:53:09] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[23:53:09] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[23:53:09] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[23:53:09] [Server thread/INFO]: Saving chunks for level '新的世界'/Bedrock
+[23:53:09] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[23:53:19] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3062ms behind, skipping 61 tick(s)
+[23:53:37] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5172ms behind, skipping 103 tick(s)
+[23:53:57] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5563ms behind, skipping 111 tick(s)
+[23:54:22] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 12578ms behind, skipping 251 tick(s)
+[23:54:28] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3094ms behind, skipping 61 tick(s)
+[23:54:51] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7187ms behind, skipping 143 tick(s)
+[23:55:03] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2031ms behind, skipping 40 tick(s)
+[23:55:23] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5750ms behind, skipping 115 tick(s)
+[23:55:44] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8484ms behind, skipping 169 tick(s)
+[23:55:57] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4375ms behind, skipping 87 tick(s)
+[23:56:16] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6016ms behind, skipping 120 tick(s)
+[23:56:35] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 9312ms behind, skipping 186 tick(s)
+[23:56:50] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7297ms behind, skipping 145 tick(s)
+[23:57:05] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7125ms behind, skipping 142 tick(s)
+[23:57:17] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2921ms behind, skipping 58 tick(s)
+[23:57:37] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7016ms behind, skipping 140 tick(s)
+[23:57:53] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5266ms behind, skipping 105 tick(s)
+[23:58:09] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5828ms behind, skipping 116 tick(s)
+[23:58:23] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2453ms behind, skipping 49 tick(s)
+[23:58:38] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2640ms behind, skipping 52 tick(s)
+[23:59:06] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 11719ms behind, skipping 234 tick(s)
+[23:59:22] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7594ms behind, skipping 151 tick(s)
+[23:59:37] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7437ms behind, skipping 148 tick(s)
+[23:59:39] [Client thread/INFO]: [CHAT] 骰子停在了16上,你发现它变成了另一样东西.
+[23:59:52] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6625ms behind, skipping 132 tick(s)

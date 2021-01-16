@@ -1,0 +1,225 @@
+---- Minecraft Crash Report ----
+// Don't be sad. I'll do better next time, I promise!
+
+Time: 16-12-25 下午11:10
+Description: Initializing game
+
+java.lang.NullPointerException: Initializing game
+	at net.minecraft.item.ItemStack.func_77960_j(ItemStack.java:217)
+	at thaumcraft.common.Thaumcraft.postInit(Thaumcraft.java:221)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cpw.mods.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:532)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.sendEventToModContainer(LoadController.java:212)
+	at cpw.mods.fml.common.LoadController.propogateStateMessage(LoadController.java:190)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.distributeStateMessage(LoadController.java:119)
+	at cpw.mods.fml.common.Loader.initializeMods(Loader.java:742)
+	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:311)
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:552)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:878)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jackhuang.hellominecraft.launcher.Launcher.main(Launcher.java:114)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.item.ItemStack.func_77960_j(ItemStack.java:217)
+	at thaumcraft.common.Thaumcraft.postInit(Thaumcraft.java:221)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cpw.mods.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:532)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.sendEventToModContainer(LoadController.java:212)
+	at cpw.mods.fml.common.LoadController.propogateStateMessage(LoadController.java:190)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.distributeStateMessage(LoadController.java:119)
+	at cpw.mods.fml.common.Loader.initializeMods(Loader.java:742)
+	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:311)
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:552)
+
+-- Initialization --
+Details:
+Stacktrace:
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:878)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jackhuang.hellominecraft.launcher.Launcher.main(Launcher.java:114)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows XP (x86) version 5.1
+	Java Version: 1.7.0_67, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) Client VM (mixed mode), Oracle Corporation
+	Memory: 256650832 bytes (244 MB) / 579846144 bytes (552 MB) up to 1060372480 bytes (1011 MB)
+	JVM Flags: 7 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:-UseAdaptiveSizePolicy -XX:-OmitStackTraceInFastThrow -Xmn128m -Xmx1024m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 84 mods loaded, 84 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJ	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJ	FML{7.10.99.99} [Forge Mod Loader] (forge-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJ	Forge{10.13.4.1614} [Minecraft Forge] (forge-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJ	appliedenergistics2-core{rv2-stable-1} [AppliedEnergistics2 Core] (minecraft.jar) 
+	UCHIJ	ThaumicTinkerer-preloader{0.1} [Thaumic Tinkerer Core] (minecraft.jar) 
+	UCHIJ	CodeChickenCore{1.0.4.35} [CodeChicken Core] (minecraft.jar) 
+	UCHIJ	technomCore{0.12.4} [Technomancy Core] (minecraft.jar) 
+	UCHIJ	NotEnoughItems{1.0.4.83} [Not Enough Items] (nei1710.jar) 
+	UCHIJ	PotionExtensionCore{1.7.10-1.1.0} [PotionExtensionCore] (minecraft.jar) 
+	UCHIJ	uniskinmod{1.2-dev4} [Universal Skin Mod] (minecraft.jar) 
+	UCHIJ	InputFix{1.7.10-v5} [InputFix] (minecraft.jar) 
+	UCHIJ	VeinMiner_coremod{null_build-null} [Core mod] (minecraft.jar) 
+	UCHIJ	<CoFH ASM>{000} [CoFH ASM] (minecraft.jar) 
+	UCHIJ	appliedenergistics2{rv2-stable-1} [Applied Energistics 2] ([应用能源]appliedenergistics2-rv2-stable-1.jar) 
+	UCHIJ	magicalcrops{4.0.0_PUBLIC_BETA_4b} [Magical Crops: Core] (%5B魔法作物基础%5Dmagicalcrops-4.0.0_PUBLIC_BETA_5%5BITERCN%5D.jar) 
+	UCHIJ	magicalcropsarmour{4.0.0_PUBLIC_BETA_4} [Magical Crops: Armoury] (%5B魔法作物装备%5Dmagicalcropsarmoury-4.0.0_PUBLIC_BETA_4%5BITERCN%5D.jar) 
+	UCHIJ	magicalcropsdeco{4.0.0_PUBLIC_BETA_4a} [Magical Crops: Decorative] (%5B魔法作物装饰%5Dmagicalcropsdeco-4.0.0_PUBLIC_BETA_4a%5BITERCN%5D.jar) 
+	UCHIJ	Mantle{1.7.10-0.3.2.jenkins184} [Mantle] ([匠魂手册]Mantle-1.7.10-0.3.2.jar) 
+	UCHIJ	CoFHCore{1.7.10R3.0.3} [CoFH Core] ([热力前置]CoFHCore-[1.7.10]3.0.3-303.jar) 
+	UCHIJ	Baubles{1.0.1.10} [Baubles] (Baubles-1.7.10-1.0.1.10.jar) 
+	UCHIJ	ThermalFoundation{1.7.10R1.2.0} [Thermal Foundation] ([热力资源]ThermalFoundation-[1.7.10]1.2.0-102.jar) 
+	UCHIJ	ExtraUtilities{1.2.11} [Extra Utilities] ([实用设备]extrautilities-1.2.11.jar) 
+	UCHIJ	ThermalExpansion{1.7.10R4.0.3B1} [Thermal Expansion] ([热力膨胀]ThermalExpansion-[1.7.10]4.0.3B1-218.jar) 
+	UCHIJ	TConstruct{1.7.10-1.8.7.build979} [Tinkers' Construct] ([匠魂本体]TConstruct-1.7.10-1.8.7.jar) 
+	UCHIJ	TiCTooltips{1.2.3} [TiC Tooltips] ([匠魂工具]TiCTooltips-mc1.7.10-1.2.3.jar) 
+	UCHIJ	BiblioCraft{1.10.4} [BiblioCraft] ([展示架]BiblioCraft[v1.10.4][MC1.7.10].jar) 
+	UCHIJ	Forestry{4.0.11.40} [Forestry for Minecraft] ([林业]forestry_1.7.10-4.0.11.40.jar) 
+	UCHIJ	BiblioWoodsForestry{1.7} [BiblioWoods Forestry Edition] ([展示架]BiblioWoods[Forestry][v1.7].jar) 
+	UCHIJ	BiblioWoodsNatura{1.5} [BiblioWoods Natura Edition] ([展示架]BiblioWoods[Natura][v1.5].jar) 
+	UCHIE	Thaumcraft{4.2.3.5} [Thaumcraft] ([神秘时代]Thaumcraft-1.7.10-4.2.3.5 (1).jar) 
+	UCHIJ	flammpfeil.slashblade{mc1.7.10-r71} [SlashBlade] (【1.7.X】拔刀剑MOD.jar) 
+	UCHIE	flammpfeil.slashblade.zephyr{1.7.2 r1.2} [SlashBladeZephyr] ([拔刀剑-神秘时代4-风雷太刀]SlashBlade_Zephyr-mc1.7.2-r1.2.2.jar) 
+	UCHIJ	EnderIO{1.7.10-2.2.8.381} [Ender IO] ([末影接口]EnderIO-1.7.10-2.2.8.381.jar) 
+	UCHIJ	ThermalDynamics{1.7.10R1.1.0} [Thermal Dynamics] ([热力管道]ThermalDynamics-[1.7.10]1.1.0-161.jar) 
+	UCHIJ	rfdrills{1.7.3} [RFDrills] ([热力钻头]RFDrills-1.7.10-1.7.3.jar) 
+	UCHIE	thaumcraftneiplugin{@VERSION@} [Thaumcraft NEI Plugin] ([物品管理器-神秘时代4插件]thaumcraftneiplugin-1.7.10-1.7a.jar) 
+	UCHIE	ThaumicTinkerer{unspecified} [Thaumic Tinkerer] ([神秘工匠]ThaumicTinkerer-2.5-1.7.10-164.jar) 
+	UCHIE	thaumicenergistics{0.8.10.10} [Thaumic Energistics] ([神秘时代4-应用能源2-神秘能源]thaumicenergistics-0.8.10.10.jar) 
+	UCHIJ	Botania{r1.8-249} [Botania] (Botania r1.8-249.jar) 
+	UCHIJ	MagicBees{1.7.10-2.4.0} [Magic Bees] ([神秘时代4-林业-魔法蜜蜂]magicbees-1.7.10-2.4.0.jar) 
+	UCHIE	Automagy{0.27.1} [Automagy] ([神秘自动化]Automagy-1.7.10-0.27.1.jar) 
+	UCHIJ	balumg{1.0.0} [balumg] (Balmung 1.7.10-r1.0-1.jar) 
+	UCHIJ	ExtraBotany{r1.0-20} [ExtraBotany] (ExtraBotany r1.0-20.jar) 
+	UCHIE	ForbiddenMagic{1.7.10-0.57} [Forbidden Magic] (Forbidden Magic-1.7.10-0.57.jar) 
+	UCHIJ	UnicodeFontFixer{1.1.9-mc1.7.10} [UnicodeFontFixer] (Mcmap.cc-[通用字体修复MOD][1.7.10].jar) 
+	UCHIJ	bonecraft{1.7.2b} [Pam's BoneCraft] (Pam's BoneCraft 1.7.2b[CN].zip) 
+	UCHIJ	clayspawn{1.7.2a} [Pam's Clay Spawn] (Pam's Clay Spawn 1.7.2a[CN].zip) 
+	UCHIJ	desertcraft{1.7.2b} [Pam's DesertCraft] (Pam's DesertCraft 1.7.10a.zip) 
+	UCHIJ	getalltheseeds{1.7.2a} [Pam's Get all the Seeds!] (Pam's Get all the Seeds 1.7.2a[CN].zip) 
+	UCHIJ	harvestthenether{1.7.10} [Pam's Harvest the Nether] (Pam's Harvest the Nether 1.7.10a.jar) 
+	UCHIJ	harvestcraft{1.7.10i} [Pam's HarvestCraft] (Pam's HarvestCraft 1.7.10i.jar) 
+	UCHIJ	mobdropcrops{1.7.2a} [Pam's Mob Drop Crops] (Pam's Mob Drop Crops 1.7.10a.zip) 
+	UCHIJ	randomplants{1.7.2a} [Pam's RandomPlants] (Pam's Random Pants 1.7.2a[CN].zip) 
+	UCHIJ	simplerecipes{1.7.2a} [Pam's Simple Recipes] (Pam's Simple Recipes 1.7.2a[CN].zip) 
+	UCHIJ	temperateplants{1.7.2b} [Pam's Temperate Plants] (Pam's Temperate Plants 1.7.2b[CN].zip) 
+	UCHIJ	weeeflowers{1.7.2b} [Pam's Weee! Flowers] (Pam's WeeeFlowers 1.7.2b[CN].zip) 
+	UCHIJ	FastCraft{1.21} [FastCraft] (《1.7.10》快速工艺MOD.jar) 
+	UCHIJ	cookingbook{1.0.134} [Cooking for Blockheads] (《1.7.10》烹饪傻瓜MOD.jar) 
+	UCHIJ	DurabilityShow{1.2.0} [Durability Show] (《1.7.10》耐久度显示MOD.jar) 
+	UCHIJ	inventorytweaks{1.59-dev-156-af3bc68} [Inventory Tweaks] (【1.7.10】R键整理MOD.jar) 
+	UCHIJ	craftguide{1.6.8.2} [CraftGuide] (【1.7.10】内置合成表MOD.jar) 
+	UCHIJ	DynamicLights{1.3.9} [Dynamic Lights] (【1.7.10】动态光源MOD.jar) 
+	UCHIJ	DynamicLights_onFire{1.0.5} [Dynamic Lights Burning Entity Module] (【1.7.10】动态光源MOD.jar) 
+	UCHIJ	DynamicLights_creepers{1.0.4} [Dynamic Lights Creeper Module] (【1.7.10】动态光源MOD.jar) 
+	UCHIJ	DynamicLights_dropItems{1.0.8} [Dynamic Lights EntityItem Module] (【1.7.10】动态光源MOD.jar) 
+	UCHIJ	DynamicLights_entityClasses{1.0.1} [Dynamic Lights Entity Light Module] (【1.7.10】动态光源MOD.jar) 
+	UCHIJ	DynamicLights_mobEquipment{1.0.8} [Dynamic Lights Mob Equipment Light Module] (【1.7.10】动态光源MOD.jar) 
+	UCHIJ	DynamicLights_flameArrows{1.0.0} [Dynamic Lights Fiery Arrows Light Module] (【1.7.10】动态光源MOD.jar) 
+	UCHIJ	DynamicLights_floodLights{1.0.2} [Dynamic Lights Flood Light] (【1.7.10】动态光源MOD.jar) 
+	UCHIJ	DynamicLights_otherPlayers{1.0.8} [Dynamic Lights OtherPlayers Light Module] (【1.7.10】动态光源MOD.jar) 
+	UCHIJ	DynamicLights_thePlayer{1.1.4} [Dynamic Lights Player Light Module] (【1.7.10】动态光源MOD.jar) 
+	UCHIJ	fastleafdecay{1.3} [Fast Leaf Decay] (【1.7.10】快速落叶MOD.jar) 
+	UCHIJ	lootbags{1.8.1} [Loot Bags] (【1.7.10】战利品MOD.jar) 
+	UCHIJ	More Crafting Recipes Mod{Minecraft 1.7.2} [More Crafting Recipes Mod] (【1.7.10】更多合成配方MOD.jar) 
+	UCHIJ	IronChest{6.0.62.742} [Iron Chest] (【1.7.10】更多箱子MOD.jar) 
+	UCHIJ	Backpack{2.0.0} [Backpack] (【1.7.10】更多背包MOD.zip) 
+	UCHIJ	BambooMod{Minecraft1.7.2 var2.6.6.13} [BambooMod] (【1.7.10】竹MOD.jar) 
+	UCHIJ	DamageIndicatorsMod{3.2.0} [Damage Indicators] (【1.7.10】血量显示MOD.jar) 
+	UCHIJ	VeinMiner{0.23.0} [Vein Miner] (【1.7.X】连锁採矿MOD.jar) 
+	UCHIJ	VeinMinerModSupport{0.23.0} [Mod Support] (【1.7.X】连锁採矿MOD.jar) 
+	UCHIJ	recipemod{0.2} [NoMoreRecipeConflict] (合成不冲突-0.2(1.7.10).jar) 
+	UCHIE	TaintedMagic{1.1.6.3} [Tainted Magic] (污秽魔法TaintedMagic-1.1.6.3.jar) 
+	UCHIJ	IguanaTweaksTConstruct{1.7.10-2.1.5.140} [Iguana Tinker Tweaks] ([匠魂附属]IguanaTinkerTweaks-1.7.10-2.1.5.jar) 
+	UCHIJ	technom{0.12.4} [Technomancy] (mcmap.cc-[量子魔法MOD][1.7.10].jar) 
+	GL info: ' Vendor: 'ATI Technologies Inc.' Version: '3.3.11554 Compatibility Profile Context' Renderer: 'ATI Mobility Radeon HD 3470'
+	AE2 Version: stable rv2-stable-1 for Forge 10.13.2.1291
+	Mantle Environment: Environment healthy.
+	CoFHCore: -[1.7.10]3.0.3-303
+	ThermalFoundation: -[1.7.10]1.2.0-102
+	ThermalExpansion: -[1.7.10]4.0.3B1-218
+	TConstruct Environment: Environment healthy.
+	ThermalDynamics: -[1.7.10]1.1.0-161
+	AE2 Integration: IC2:OFF, RotaryCraft:OFF, RC:OFF, BC:OFF, RF:ON, RFItem:ON, MFR:OFF, DSU:ON, FZ:OFF, FMP:OFF, RB:OFF, CLApi:OFF, Waila:OFF, InvTweaks:ON, NEI:ON, CraftGuide:ON, Mekanism:OFF, ImmibisMicroblocks:OFF, BetterStorage:OFF
+	Launched Version: 1.7.10-Forge10.13.4.1614-1.7.10
+	LWJGL: 2.9.1
+	OpenGL: ATI Mobility Radeon HD 3470 GL version 3.3.11554 Compatibility Profile Context, ATI Technologies Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: 简体中文 (中国)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

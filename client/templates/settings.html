@@ -1,12 +1,126 @@
 {% extends "base.html" %}
 
 {% block container %}
-<div id=""class="mdui-tab mdui-tab-full-width" mdui-tab>
-    <a href="#example4-tab1" class="mdui-ripple">普通设置</a>
-    <a href="#example4-tab2" class="mdui-ripple">高级设置</a>
-    <a href="#example4-tab3" class="mdui-ripple">PMCL设置</a>
+
+<div id="toptab" class="mdui-tab mdui-tab-full-width" mdui-tab>
+    <a href="#junior" class="mdui-ripple">普通设置</a>
+    <a href="#senior" class="mdui-ripple">高级设置</a>
+    <a href="#pmcl" class="mdui-ripple">PMCL设置</a>
 </div>
-<script>
-    var a  = document.getElementById
-</script>
+</br>
+
+
+<form id="junior">
+    <label>版本：</label>
+    <select class="mdui-select" id="versionSelector" mdui-select="{position: 'bottom'}">
+        {% for version in versions %}
+        <option value="{{version}}">{{version}}</option>
+        {% endfor %}
+    </select></br>
+    <div class="mdui-textfield mdui-textfield-floating-label">
+        <label class="mdui-textfield-label">游戏路径</label>
+        <input class="mdui-textfield-input" />
+    </div>
+    <div class="mdui-textfield mdui-textfield-floating-label">
+        <label class="mdui-textfield-label">JAVA路径</label>
+        <input class="mdui-textfield-input">
+    </div>
+    <div class="mdui-textfield mdui-textfield-floating-label">
+        <label class="mdui-textfield-label">最大内存</label>
+        <input class="mdui-textfield-input">
+    </div>
+    <div class="mdui-textfield mdui-textfield-floating-label">
+        <label class="mdui-textfield-label">分辨率</label>
+        <input class="mdui-textfield-input">
+    </div>
+    <button id="saveButton" class="mdui-btn mdui-btn-raised mdui-ripple">SAVE</button>
+</form>
+</div>
+
+<form id="senior" action="">
+    <div class="mdui-textfield mdui-textfield-floating-label">
+        <label class="mdui-textfield-label">Java虚拟机参数</label>
+        <input class="mdui-textfield-input" disabled />
+    </div>
+    <div class="mdui-textfield mdui-textfield-floating-label">
+        <label class="mdui-textfield-label">Minecraft额外参数</label>
+        <input class="mdui-textfield-input" disabled />
+    </div>
+    <div class="mdui-textfield mdui-textfield-floating-label">
+        <label class="mdui-textfield-label">内存永久保存区域</label>
+        <input class="mdui-textfield-input" disabled />
+    </div>
+    <div class="mdui-textfield mdui-textfield-floating-label">
+        <label class="mdui-textfield-label">直入服务器IP</label>
+        <input class="mdui-textfield-input" disabled />
+    </div>
+    <div>
+        <label class="mdui-checkbox">
+            <input type="checkbox" />
+            <i class="mdui-checkbox-icon" disabled></i>
+            调试模式
+        </label>
+        <label class="mdui-checkbox">
+            <input type="checkbox" />
+            <i class="mdui-checkbox-icon" disabled></i>
+            不添加JVM参数（使用JAVA9时必勾选）
+        </label>
+    </div>
+    <button id="saveButton" class="mdui-btn mdui-btn-raised mdui-ripple">SAVE</button>
+</form>
+
+<form id="pmcl" action="">
+    <div class="mdui-textfield mdui-textfield-floating-label">
+        <label class="mdui-textfield-label">背景地址</label>
+        <input class="mdui-textfield-input" />
+    </div>
+    <div class="mdui-textfield mdui-textfield-floating-label">
+        <label class="mdui-textfield-label">下载源</label>
+        <input class="mdui-textfield-input" />
+    </div> 
+     <div class="mdui-textfield mdui-textfield-floating-label">
+        <label class="mdui-textfield-label">端口</label>
+        <input class="mdui-textfield-input" />
+    </div>
+    <label>主题：</label>
+    <select class="mdui-select" disabled id="versionSelector" mdui-select="{position: 'bottom'}">
+        <option value="MDUI">MDUI</option>
+    </select>
+</br>
+    <label>主题记忆：</label>
+    <select class="mdui-select" disabled id="versionSelector" mdui-select="{position: 'bottom'}">
+        <option value="3h">3h</option>
+        <option value="1d">1d</option>
+        <option value="15d">15d</option>
+        <option value="30d">30d</option>
+    </select>
+  
+    </br>
+    </br>
+    <div>
+        <div class="mdui-col">
+            <button class="mdui-btn mdui-btn-block mdui-btn-raised  mdui-ripple">关于作者</button>
+        </div>
+        <div class="mdui-col">
+            <button class="mdui-btn mdui-btn-block mdui-btn-raised  mdui-ripple">检查更新</button>
+        </div>
+    </div>
+    </br>
+    <button id="saveButton" class="mdui-btn mdui-btn-raised mdui-ripple">SAVE</button>
+</form>
+
+<style>
+    #saveButton {
+        float: right;
+    }
+
+    #versionSelector {
+        width: 300px !important;
+    }
+
+    #senior {
+        display: none;
+    }
+</style>
+
 {% endblock %}

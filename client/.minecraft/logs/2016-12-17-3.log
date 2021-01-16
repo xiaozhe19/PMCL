@@ -1,0 +1,73 @@
+[17:32:39] [main/INFO]: Setting user: Diao__ling
+[17:32:43] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:33:15] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Chest Transporter, FMLFileResourcePack:SlashBladeZephyr, FMLFileResourcePack:Tainted Magic, FMLFileResourcePack:DummyCore, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:balumg, FMLFileResourcePack:Botania, FMLFileResourcePack:CustomNpcs, FMLFileResourcePack:ExtraBotany, FMLFileResourcePack:Forbidden Magic, FMLFileResourcePack:UnicodeFontFixer, FMLFileResourcePack:BiblioCraft, FMLFileResourcePack:FastCraft, FMLFileResourcePack:Et Futurum, FMLFileResourcePack:The Twilight Forest, FMLFileResourcePack:Headshots, FMLFileResourcePack:Durability Show, FMLFileResourcePack:Hammerz, FMLFileResourcePack:TofuCraft, FMLFileResourcePack:Inventory Tweaks, FMLFileResourcePack:Warp Book, FMLFileResourcePack:CraftGuide, FMLFileResourcePack:Dynamic Lights, FMLFileResourcePack:Dynamic Lights Burning Entity Module, FMLFileResourcePack:Dynamic Lights Creeper Module, FMLFileResourcePack:Dynamic Lights EntityItem Module, FMLFileResourcePack:Dynamic Lights Entity Light Module, FMLFileResourcePack:Dynamic Lights Mob Equipment Light Module, FMLFileResourcePack:Dynamic Lights Fiery Arrows Light Module, FMLFileResourcePack:Dynamic Lights Flood Light, FMLFileResourcePack:Dynamic Lights OtherPlayers Light Module, FMLFileResourcePack:Dynamic Lights Player Light Module, FMLFileResourcePack:Tinkers' Construct, FMLFileResourcePack:Mantle, FMLFileResourcePack:Wallpaper, FMLFileResourcePack:Fast Leaf Decay, FMLFileResourcePack:Loot Bags, FMLFileResourcePack:Mine & Blade Battlegear 2 - Bullseye, FMLFileResourcePack:More Crafting Recipes Mod, FMLFileResourcePack:Mo' Bends, FMLFileResourcePack:Balkon's WeaponMod, FMLFileResourcePack:Iron Chest, FMLFileResourcePack:Backpack, FMLFileResourcePack:BambooMod, FMLFileResourcePack:Damage Indicators, FMLFileResourcePack:AimBow, FMLFileResourcePack:Statues, FMLFileResourcePack:asielib, FMLFileResourcePack:SlashBlade, FMLFileResourcePack:Vein Miner, FMLFileResourcePack:Mod Support, FMLFileResourcePack:plo, FMLFileResourcePack:No Nether Needed, FMLFileResourcePack:NoMoreRecipeConflict, FMLFileResourcePack:Grimoire of Gaia 3, FMLFileResourcePack:Baubles
+[17:33:16] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: OceanMonument.txt in C:\Documents and Settings\Administrator\My Documents\1.7.10罪恶物语整合包\.minecraft\mods\《1.7.10》把未来带回现实MOD.jar
+[17:33:38] [Sound Library Loader/INFO]: Sound engine started
+[17:33:38] [Client thread/WARN]: File customnpcs:sounds/human/female/villager/What Do You Need.ogg does not exist, cannot add it to event customnpcs:human.female.villager.what_do_you_need
+[17:33:38] [Client thread/WARN]: File customnpcs:sounds/human/female/villager/Would You Like To Trade.ogg does not exist, cannot add it to event customnpcs:human.female.villager.trade
+[17:33:38] [Client thread/WARN]: File customnpcs:sounds/human/girl/villager/What do you need.ogg does not exist, cannot add it to event customnpcs:human.girl.villager.what_do_you_need
+[17:33:38] [Client thread/WARN]: File customnpcs:sounds/human/girl/villager/Would you like to trade.ogg does not exist, cannot add it to event customnpcs:human.girl.villager.trade
+[17:33:41] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[17:33:41] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[17:33:55] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Chest Transporter, FMLFileResourcePack:SlashBladeZephyr, FMLFileResourcePack:Tainted Magic, FMLFileResourcePack:DummyCore, FMLFileResourcePack:Thaumcraft, FMLFileResourcePack:balumg, FMLFileResourcePack:Botania, FMLFileResourcePack:CustomNpcs, FMLFileResourcePack:ExtraBotany, FMLFileResourcePack:Forbidden Magic, FMLFileResourcePack:UnicodeFontFixer, FMLFileResourcePack:BiblioCraft, FMLFileResourcePack:FastCraft, FMLFileResourcePack:Et Futurum, FMLFileResourcePack:The Twilight Forest, FMLFileResourcePack:Headshots, FMLFileResourcePack:Durability Show, FMLFileResourcePack:Hammerz, FMLFileResourcePack:豆腐Craft (TofuCraft), FMLFileResourcePack:Inventory Tweaks, FMLFileResourcePack:Warp Book, FMLFileResourcePack:CraftGuide, FMLFileResourcePack:Dynamic Lights, FMLFileResourcePack:Dynamic Lights Burning Entity Module, FMLFileResourcePack:Dynamic Lights Creeper Module, FMLFileResourcePack:Dynamic Lights EntityItem Module, FMLFileResourcePack:Dynamic Lights Entity Light Module, FMLFileResourcePack:Dynamic Lights Mob Equipment Light Module, FMLFileResourcePack:Dynamic Lights Fiery Arrows Light Module, FMLFileResourcePack:Dynamic Lights Flood Light, FMLFileResourcePack:Dynamic Lights OtherPlayers Light Module, FMLFileResourcePack:Dynamic Lights Player Light Module, FMLFileResourcePack:Tinkers' Construct, FMLFileResourcePack:Mantle, FMLFileResourcePack:Wallpaper, FMLFileResourcePack:Fast Leaf Decay, FMLFileResourcePack:Loot Bags, FMLFileResourcePack:Mine & Blade Battlegear 2 - Bullseye, FMLFileResourcePack:More Crafting Recipes Mod, FMLFileResourcePack:Mo' Bends, FMLFileResourcePack:Balkon's WeaponMod, FMLFileResourcePack:Iron Chest, FMLFileResourcePack:Backpack, FMLFileResourcePack:BambooMod, FMLFileResourcePack:Damage Indicators, FMLFileResourcePack:AimBow, FMLFileResourcePack:Statues, FMLFileResourcePack:asielib, FMLFileResourcePack:SlashBlade, FMLFileResourcePack:Vein Miner, FMLFileResourcePack:Mod Support, FMLFileResourcePack:plo, FMLFileResourcePack:No Nether Needed, FMLFileResourcePack:NoMoreRecipeConflict, FMLFileResourcePack:Grimoire of Gaia 3, FMLFileResourcePack:Baubles
+[17:33:55] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: OceanMonument.txt in C:\Documents and Settings\Administrator\My Documents\1.7.10罪恶物语整合包\.minecraft\mods\《1.7.10》把未来带回现实MOD.jar
+[17:34:10] [Sound Library Loader/INFO]: Sound engine started
+[17:34:11] [Client thread/WARN]: File customnpcs:sounds/human/female/villager/What Do You Need.ogg does not exist, cannot add it to event customnpcs:human.female.villager.what_do_you_need
+[17:34:11] [Client thread/WARN]: File customnpcs:sounds/human/female/villager/Would You Like To Trade.ogg does not exist, cannot add it to event customnpcs:human.female.villager.trade
+[17:34:11] [Client thread/WARN]: File customnpcs:sounds/human/girl/villager/What do you need.ogg does not exist, cannot add it to event customnpcs:human.girl.villager.what_do_you_need
+[17:34:11] [Client thread/WARN]: File customnpcs:sounds/human/girl/villager/Would you like to trade.ogg does not exist, cannot add it to event customnpcs:human.girl.villager.trade
+[17:34:27] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[17:34:27] [Server thread/INFO]: Generating keypair
+[17:34:27] [Server thread/INFO]: Converting map!
+[17:34:27] [Server thread/INFO]: Scanning folders...
+[17:34:27] [Server thread/INFO]: Total conversion count is 0
+[17:34:51] [Server thread/INFO]: Preparing start region for level 0
+[17:34:52] [Server thread/INFO]: Preparing spawn area: 17%
+[17:34:53] [Server thread/INFO]: Preparing spawn area: 30%
+[17:34:54] [Server thread/INFO]: Preparing spawn area: 46%
+[17:34:55] [Server thread/INFO]: Preparing spawn area: 60%
+[17:34:56] [Server thread/INFO]: Preparing spawn area: 76%
+[17:34:57] [Server thread/INFO]: Preparing spawn area: 92%
+[17:35:05] [Server thread/INFO]: Changing view distance to 12, from 10
+[17:35:05] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6953ms behind, skipping 139 tick(s)
+[17:35:06] [Server thread/INFO]: Diao__ling[local:E:d64c19a3] logged in with entity id 531 at (431.5, 4.0, 717.5)
+[17:35:06] [Server thread/INFO]: Diao__ling 加入了游戏
+[17:35:06] [Thread-10/INFO]: [CHAT] §2CustomNpcs§f installed. For more info §9§nClick here
+[17:35:06] [Server thread/INFO]: Saving and pausing game...
+[17:35:06] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[17:35:06] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[17:35:07] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[17:35:07] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[17:35:07] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[17:35:07] [Server thread/INFO]: Saving chunks for level '新的世界'/Tofu World
+[17:35:07] [Client thread/INFO]: [CHAT] BiblioCraft has been updated to version 2.0.1 for Minecraft v1.8.9! Fixed inverted custom paintings and a couple of crashes. Get it @ http://www.BiblioCraftMod.com
+[17:35:17] [Client thread/INFO]: [CHAT] §cTainted Magic is out of date! The latest version is §ar7.6
+[17:35:17] [Client thread/INFO]: [CHAT] Version 1.0.5.120 of NotEnoughItems is available
+[17:35:17] [Client thread/INFO]: [CHAT] A new §eOptiFine§f version is available: §eHD Ultra D6§f
+[17:35:18] [Client thread/INFO]: [CHAT] Damage Indicators was unable to check for updates!
+[17:35:19] [Client thread/INFO]: [CHAT] InvTweaks: 配置文件已载入
+[17:35:20] [Client thread/INFO]: [CHAT] veinminer使用客户端热键绑定。参考MOD配置文件详情。
+[17:35:48] [Server thread/INFO]: Diao__ling 刚刚获得了 [打开物品栏] 成就！
+[17:35:48] [Client thread/INFO]: [CHAT] Diao__ling 刚刚获得了 [打开物品栏] 成就！
+[17:35:51] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 30766ms behind, skipping 615 tick(s)
+[17:36:12] [Server thread/INFO]: Saving and pausing game...
+[17:36:12] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[17:36:13] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[17:36:13] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[17:36:13] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[17:36:13] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[17:36:41] [Server thread/INFO]: Saving and pausing game...
+[17:36:41] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[17:36:42] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[17:36:42] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[17:36:42] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[17:36:42] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[17:36:42] [Server thread/INFO]: Stopping server
+[17:36:42] [Server thread/INFO]: Saving players
+[17:36:42] [Server thread/INFO]: Saving worlds
+[17:36:42] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[17:36:42] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[17:36:42] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[17:36:42] [Server thread/INFO]: Saving chunks for level '新的世界'/Twilight Forest
+[17:36:42] [Server thread/INFO]: Saving chunks for level '新的世界'/The Outer Lands
+[17:36:45] [Client thread/INFO]: Stopping!

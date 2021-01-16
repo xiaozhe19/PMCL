@@ -1,0 +1,153 @@
+---- Minecraft Crash Report ----
+// I let you down. Sorry :(
+
+Time: 16-12-17 下午3:27
+Description: There was a severe problem during mod loading that has caused the game to fail
+
+cpw.mods.fml.common.LoaderException: java.lang.ClassNotFoundException: forestry.Forestry
+	at cpw.mods.fml.common.LoadController.transition(LoadController.java:163)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:544)
+	at cpw.mods.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:208)
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:480)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:878)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jackhuang.hellominecraft.launcher.Launcher.main(Launcher.java:114)
+Caused by: java.lang.ClassNotFoundException: forestry.Forestry
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at cpw.mods.fml.common.ModClassLoader.loadClass(ModClassLoader.java:58)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at cpw.mods.fml.common.FMLModContainer.constructMod(FMLModContainer.java:440)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.sendEventToModContainer(LoadController.java:212)
+	at cpw.mods.fml.common.LoadController.propogateStateMessage(LoadController.java:190)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.distributeStateMessage(LoadController.java:119)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:513)
+	... 15 more
+Caused by: java.lang.UnsupportedClassVersionError: forestry/Forestry : Unsupported major.minor version 51.0
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClassCond(Unknown Source)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:182)
+	... 42 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows XP (x86) version 5.1
+	Java Version: 1.6.0_45, Sun Microsystems Inc.
+	Java VM Version: Java HotSpot(TM) Client VM (mixed mode), Sun Microsystems Inc.
+	Memory: 138868472 bytes (132 MB) / 375586816 bytes (358 MB) up to 523501568 bytes (499 MB)
+	JVM Flags: 7 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:-UseAdaptiveSizePolicy -XX:-OmitStackTraceInFastThrow -Xmn128m -Xmx512m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 Optifine OptiFine_1.7.10_HD_U_C1 71 mods loaded, 71 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UC	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UC	FML{7.10.99.99} [Forge Mod Loader] (forge-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UC	Forge{10.13.4.1614} [Minecraft Forge] (forge-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UC	appliedenergistics2-core{rv2-stable-10} [AppliedEnergistics2 Core] (minecraft.jar) 
+	UC	CodeChickenCore{1.0.7.47} [CodeChicken Core] (minecraft.jar) 
+	UC	NotEnoughItems{1.0.5.118} [Not Enough Items] ([物品管理器]NotEnoughItems-1.7.10-1.0.5.118-universal.jar) 
+	UC	uniskinmod{1.2-dev3} [Universal Skin Mod] (minecraft.jar) 
+	UC	ThaumicTinkerer-preloader{0.1} [Thaumic Tinkerer Core] (minecraft.jar) 
+	UC	WitchingGadgetsCore{1.1.10} [Witching Gadgets Core] (minecraft.jar) 
+	UC	InputFix{1.7.10-v5} [InputFix] (minecraft.jar) 
+	UC	AM2-Preloader{0.0.2} [AMCore] (minecraft.jar) 
+	UC	appliedenergistics2{rv2-stable-10} [Applied Energistics 2] ([应用能源2]appliedenergistics2-rv2-stable-10.jar) 
+	UC	magicalcrops{4.0.0_PUBLIC_BETA_4b} [Magical Crops: Core] (%5B魔法作物基础%5Dmagicalcrops-4.0.0_PUBLIC_BETA_5%5BITERCN%5D.jar) 
+	UC	magicalcropsarmour{4.0.0_PUBLIC_BETA_4} [Magical Crops: Armoury] (%5B魔法作物装备%5Dmagicalcropsarmoury-4.0.0_PUBLIC_BETA_4%5BITERCN%5D.jar) 
+	UC	magicalcropsdeco{4.0.0_PUBLIC_BETA_4a} [Magical Crops: Decorative] (%5B魔法作物装饰%5Dmagicalcropsdeco-4.0.0_PUBLIC_BETA_4a%5BITERCN%5D.jar) 
+	UC	inventorytweaks{1.58-147-645ca10} [Inventory Tweaks] ([R键整理]InventoryTweaks-1.58-147.jar) 
+	UC	craftguide{1.6.8.2} [CraftGuide] ([内置合成表]CraftGuide-1.6.8.2-forge[hukk汉化].jar) 
+	UC	DynamicLights{1.3.9} [Dynamic Lights] ([动态光源]DynamicLights-1.7.10.jar) 
+	UC	DynamicLights_onFire{1.0.5} [Dynamic Lights Burning Entity Module] ([动态光源]DynamicLights-1.7.10.jar) 
+	UC	DynamicLights_creepers{1.0.4} [Dynamic Lights Creeper Module] ([动态光源]DynamicLights-1.7.10.jar) 
+	UC	DynamicLights_dropItems{1.0.8} [Dynamic Lights EntityItem Module] ([动态光源]DynamicLights-1.7.10.jar) 
+	UC	DynamicLights_entityClasses{1.0.1} [Dynamic Lights Entity Light Module] ([动态光源]DynamicLights-1.7.10.jar) 
+	UC	DynamicLights_mobEquipment{1.0.8} [Dynamic Lights Mob Equipment Light Module] ([动态光源]DynamicLights-1.7.10.jar) 
+	UC	DynamicLights_flameArrows{1.0.0} [Dynamic Lights Fiery Arrows Light Module] ([动态光源]DynamicLights-1.7.10.jar) 
+	UC	DynamicLights_floodLights{1.0.2} [Dynamic Lights Flood Light] ([动态光源]DynamicLights-1.7.10.jar) 
+	UC	DynamicLights_otherPlayers{1.0.8} [Dynamic Lights OtherPlayers Light Module] ([动态光源]DynamicLights-1.7.10.jar) 
+	UC	DynamicLights_thePlayer{1.1.4} [Dynamic Lights Player Light Module] ([动态光源]DynamicLights-1.7.10.jar) 
+	UC	recipemod{0.2} [NoMoreRecipeConflict] ([合成冲突消除器]NoMoreRecipeConflict-0.2(1.7.10).jar) 
+	UC	AWWayofTime{v1.3.3} [Blood Magic: Alchemical Wizardry] ([血魔法] v1.3.3-17.jar) 
+	UC	Waila{1.5.10} [Waila] ([高亮显示]Waila-1.5.10_1.7.10.jar) 
+	UC	witchery{0.24.1} [Witchery] ([巫术]witchery-1.7.10-0.24.1.jar) 
+	UC	flammpfeil.slashblade{mc1.7.10-r73} [SlashBlade] ([拔刀剑]SlashBlade-mc1.7.10-r73.jar) 
+	UC	Baubles{1.0.1.10} [Baubles] (Baubles-1.7.10-1.0.1.10.jar) 
+	UC	Thaumcraft{4.2.3.5} [Thaumcraft] ([神秘时代]Thaumcraft-1.7.10-4.2.3.5.jar) 
+	UC	flammpfeil.slashblade.zephyr{1.7.2 r1.2} [SlashBladeZephyr] ([拔刀剑-神秘时代4-风雷太刀]SlashBlade_Zephyr-mc1.7.2-r1.2.2.jar) 
+	UC	journeymap{5.1.1} [JourneyMap] ([旅行地图]journeymap-1.7.10-5.1.1-unlimited.jar) 
+	UC	IronChest{6.0.62.742} [Iron Chest] ([更多箱子]ironchest-1.7.10-6.0.62.742-universal.jar) 
+	UE	Forestry{4.0.11.40} [Forestry for Minecraft] ([林业]forestry_1.7.10-4.0.11.40.jar) 
+	UC	Botania{r1.7-237} [Botania] ([植物魔法]Botania r1.7-237.jar) 
+	UC	ThaumicTinkerer{unspecified} [Thaumic Tinkerer] ([神秘工匠]ThaumicTinkerer-2.5-1.7.10-164.jar) 
+	UC	TaintedMagic{1.1.6.4} [Tainted Magic] ([污秽魔法]TaintedMagic-1.1.6.4.jar) 
+	UC	InfusionBrewing{1.7.10-1.1} [InfusionBrewing] ([注魔酿造]IB1.7.10v1.1.jar) 
+	UC	thaumcraftneiplugin{@VERSION@} [Thaumcraft NEI Plugin] ([物品管理器-神秘时代4插件]thaumcraftneiplugin-1.7.10-1.7a.jar) 
+	UC	NEIAddons{1.12.14.40} [NEI Addons] ([物品管理器-通用插件]neiaddons-1.12.14.40-mc1.7.10.jar) 
+	UC	NEIAddons|Developer{1.12.14.40} [NEI Addons: Developer Tools] ([物品管理器-通用插件]neiaddons-1.12.14.40-mc1.7.10.jar) 
+	UC	NEIAddons|AppEng{1.12.14.40} [NEI Addons: Applied Energistics 2] ([物品管理器-通用插件]neiaddons-1.12.14.40-mc1.7.10.jar) 
+	UC	NEIAddons|Botany{1.12.14.40} [NEI Addons: Botany] ([物品管理器-通用插件]neiaddons-1.12.14.40-mc1.7.10.jar) 
+	UC	NEIAddons|Forestry{1.12.14.40} [NEI Addons: Forestry] ([物品管理器-通用插件]neiaddons-1.12.14.40-mc1.7.10.jar) 
+	UC	NEIAddons|CraftingTables{1.12.14.40} [NEI Addons: Crafting Tables] ([物品管理器-通用插件]neiaddons-1.12.14.40-mc1.7.10.jar) 
+	UC	NEIAddons|ExNihilo{1.12.14.40} [NEI Addons: Ex Nihilo] ([物品管理器-通用插件]neiaddons-1.12.14.40-mc1.7.10.jar) 
+	UC	neiintegration{1.0.13} [NEI Integration] ([物品管理器-通用插件]NEIIntegration-MC1.7.10-1.0.13.jar) 
+	UC	neresources{0.1.0.106} [Not Enough Resources] ([物品管理器-通用插件]NotEnoughResources-1.7.10-0.1.0.106.jar) 
+	UC	DummyCore{1.13} [DummyCore] ([神秘基础学前置]DummyCore1.13.jar) 
+	UC	TravellersGear{1.16.6} [Traveller's Gear] ([神秘巫术]TravellersGear-1.7.10-1.16.6.jar) 
+	UC	Mantle{1.7.10-0.3.1.jenkins180} [Mantle] (匠魂宝典0.3.1.jar) 
+	UC	TConstruct{1.7.10-1.6.0.build611} [Tinkers' Construct] (匠魂TConstruct_mc1.7.10_1.6.0d40.1.jar) 
+	UE	MagicBees{1.7.10-2.4.0} [Magic Bees] ([神秘时代4-林业-魔法蜜蜂]magicbees-1.7.10-2.4.0.jar) 
+	UC	WitchingGadgets{1.1.10} [Witching Gadgets] ([神秘巫术]WitchingGadgets-1.7.10-1.1.10.jar) 
+	UC	thaumicenergistics{0.8.10.10} [Thaumic Energistics] ([神秘时代4-应用能源2-神秘能源]thaumicenergistics-0.8.10.10.jar) 
+	UC	thaumicinfusion{4.05} [Thaumic Infusion] ([神秘注魔]ThaumicInfusion-4.06.jar) 
+	UC	insane_IlluminatedBows{1.7.1f} [Illuminated Bows] ([神秘照明弓]IlluminatedBows-1.7.10-1.7.1f.jar) 
+	UC	arcanearteries{5} [Arcane Arteries] ([神秘献祭]ArcaneArteries0.7.2.jar) 
+	UC	Automagy{0.27.1} [Automagy] ([神秘自动化]Automagy-1.7.10-0.27.1.jar) 
+	UC	ThaumicHorizons{1.1.5} [Thaumic Horizons] ([神秘视界]Thaumichorizons-1.7.10-1.1.6（汉化）.jar) 
+	UC	ForbiddenMagic{1.7.10-0.57} [Forbidden Magic] ([禁忌魔法]Forbidden Magic-1.7.10-0.57.jar) 
+	UC	DamageIndicatorsMod{3.2.3} [Damage Indicators] ([血量显示]DamageIndicatorsMod-3.2.3.jar) 
+	UC	UnicodeFontFixer{1.1.9-mc1.7.10} [UnicodeFontFixer] ([通用字体修复]UnicodeFontFixer-1.1.9-mc1.7.10.jar) 
+	UC	wawla{1.3.1} [What Are We Looking At] ([高亮显示-扩展]Wawla-1.3.1-1.7.10.jar) 
+	UC	AnimationAPI{1.2.4} [AnimationAPI] ([魔法艺术]AnimationAPI-1.7.10-1.2.4.jar) 
+	UC	arsmagica2{1.4.0.008} [Ars Magica 2] ([魔法艺术]1.7.10_AM2-1.4.0.008.jar) 
+	UC	BambooMod{Minecraft1.7.2 var2.6.6.13} [BambooMod] (我的世界1.7.10竹mod.jar) 
+	GL info: ' Vendor: 'ATI Technologies Inc.' Version: '3.3.11554 Compatibility Profile Context' Renderer: 'ATI Mobility Radeon HD 3470'
+	AE2 Version: stable rv2-stable-10 for Forge 10.13.2.1291
+	Mantle Environment: DO NOT REPORT THIS CRASH! Unsupported mods in environment: optifine
+	TConstruct Environment: Environment healthy.

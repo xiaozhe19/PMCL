@@ -1,0 +1,171 @@
+---- Minecraft Crash Report ----
+// You're mean.
+
+Time: 20-12-27 下午1:44
+Description: There was a severe problem during mod loading that has caused the game to fail
+
+cpw.mods.fml.common.LoaderException: java.lang.NoClassDefFoundError: net/minecraft/client/renderer/texture/TextureMap
+	at cpw.mods.fml.common.LoadController.transition(LoadController.java:163)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:544)
+	at cpw.mods.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:208)
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:480)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:878)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jackhuang.hellominecraft.launcher.Launcher.main(Launcher.java:114)
+Caused by: java.lang.NoClassDefFoundError: net/minecraft/client/renderer/texture/TextureMap
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.getConstructor(Unknown Source)
+	at cpw.mods.fml.common.eventhandler.EventBus.register(EventBus.java:101)
+	at cpw.mods.fml.common.eventhandler.EventBus.register(EventBus.java:85)
+	at thaumicenergistics.proxy.ClientProxy.<init>(ClientProxy.java:14)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at cpw.mods.fml.common.ProxyInjector.inject(ProxyInjector.java:59)
+	at cpw.mods.fml.common.FMLModContainer.constructMod(FMLModContainer.java:512)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.sendEventToModContainer(LoadController.java:212)
+	at cpw.mods.fml.common.LoadController.propogateStateMessage(LoadController.java:190)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.distributeStateMessage(LoadController.java:119)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:513)
+	... 15 more
+Caused by: java.lang.ClassNotFoundException: net.minecraft.client.renderer.texture.TextureMap
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:101)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 50 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_241, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 210454816 bytes (200 MB) / 392101888 bytes (373 MB) up to 1060372480 bytes (1011 MB)
+	JVM Flags: 7 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:-UseAdaptiveSizePolicy -XX:-OmitStackTraceInFastThrow -Xmn128m -Xmx1024m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 Optifine OptiFine_1.7.10_HD_U_E3 73 mods loaded, 73 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UC	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UC	FML{7.10.99.99} [Forge Mod Loader] (forge-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UC	Forge{10.13.4.1614} [Minecraft Forge] (forge-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UC	appliedenergistics2-core{rv2-stable-1} [AppliedEnergistics2 Core] (minecraft.jar) 
+	UC	ThaumicTinkerer-preloader{0.1} [Thaumic Tinkerer Core] (minecraft.jar) 
+	UC	CodeChickenCore{1.0.4.35} [CodeChicken Core] (minecraft.jar) 
+	UC	technomCore{0.12.4} [Technomancy Core] (minecraft.jar) 
+	UC	NotEnoughItems{1.0.4.83} [Not Enough Items] (nei1710.jar) 
+	UC	PotionExtensionCore{1.7.10-1.1.0} [PotionExtensionCore] (minecraft.jar) 
+	UC	uniskinmod{1.2-dev4} [Universal Skin Mod] (minecraft.jar) 
+	UC	InputFix{1.7.10-v5} [InputFix] (minecraft.jar) 
+	UC	<CoFH ASM>{000} [CoFH ASM] (minecraft.jar) 
+	UC	appliedenergistics2{rv2-stable-1} [Applied Energistics 2] ([应用能源]appliedenergistics2-rv2-stable-1.jar) 
+	UC	magicalcrops{4.0.0_PUBLIC_BETA_4b} [Magical Crops: Core] (%5B魔法作物基础%5Dmagicalcrops-4.0.0_PUBLIC_BETA_5%5BITERCN%5D.jar) 
+	UC	magicalcropsarmour{4.0.0_PUBLIC_BETA_4} [Magical Crops: Armoury] (%5B魔法作物装备%5Dmagicalcropsarmoury-4.0.0_PUBLIC_BETA_4%5BITERCN%5D.jar) 
+	UC	magicalcropsdeco{4.0.0_PUBLIC_BETA_4a} [Magical Crops: Decorative] (%5B魔法作物装饰%5Dmagicalcropsdeco-4.0.0_PUBLIC_BETA_4a%5BITERCN%5D.jar) 
+	UC	IC2{2.2.814-experimental} [IndustrialCraft 2] ([1.7.10]-工业2实验版-IndustrialCraft2Experimental-v2.2.814.jar) 
+	UC	CoFHCore{1.7.10R3.0.3} [CoFH Core] ([热力前置]CoFHCore-[1.7.10]3.0.3-303.jar) 
+	UC	Baubles{1.0.1.10} [Baubles] (Baubles-1.7.10-1.0.1.10.jar) 
+	UE	ThermalFoundation{1.7.10R1.2.0} [Thermal Foundation] ([热力资源]ThermalFoundation-[1.7.10]1.2.0-102.jar) 
+	UC	ExtraUtilities{1.2.11} [Extra Utilities] ([实用设备]extrautilities-1.2.11.jar) 
+	UC	BiblioCraft{1.10.4} [BiblioCraft] ([展示架]BiblioCraft[v1.10.4][MC1.7.10].jar) 
+	UE	Forestry{4.0.11.40} [Forestry for Minecraft] ([林业]forestry_1.7.10-4.0.11.40.jar) 
+	UC	BiblioWoodsForestry{1.7} [BiblioWoods Forestry Edition] ([展示架]BiblioWoods[Forestry][v1.7].jar) 
+	UC	BiblioWoodsNatura{1.5} [BiblioWoods Natura Edition] ([展示架]BiblioWoods[Natura][v1.5].jar) 
+	UC	Thaumcraft{4.2.3.5} [Thaumcraft] ([神秘时代]Thaumcraft-1.7.10-4.2.3.5 (1).jar) 
+	UC	flammpfeil.slashblade{mc1.7.10-r71} [SlashBlade] (【1.7.X】拔刀剑MOD.jar) 
+	UC	flammpfeil.slashblade.zephyr{1.7.2 r1.2} [SlashBladeZephyr] ([拔刀剑-神秘时代4-风雷太刀]SlashBlade_Zephyr-mc1.7.2-r1.2.2.jar) 
+	UC	EnderIO{1.7.10-2.2.8.381} [Ender IO] ([末影接口]EnderIO-1.7.10-2.2.8.381.jar) 
+	UC	harvestcraft{1.7.10i} [Pam's HarvestCraft] ([潘马斯农]Pam's HarvestCraft 1.7.10i.jar) 
+	UE	ThermalDynamics{1.7.10R1.1.0} [Thermal Dynamics] ([热力管道]ThermalDynamics-[1.7.10]1.1.0-161.jar) 
+	UE	ThermalExpansion{1.7.10R4.0.3B1} [Thermal Expansion] ([热力膨胀]ThermalExpansion-[1.7.10]4.0.3B1-218.jar) 
+	UC	rfdrills{1.7.3} [RFDrills] ([热力钻头]RFDrills-1.7.10-1.7.3.jar) 
+	UC	thaumcraftneiplugin{@VERSION@} [Thaumcraft NEI Plugin] ([物品管理器-神秘时代4插件]thaumcraftneiplugin-1.7.10-1.7a.jar) 
+	UC	ThaumicTinkerer{unspecified} [Thaumic Tinkerer] ([神秘工匠]ThaumicTinkerer-2.5-1.7.10-164.jar) 
+	UE	thaumicenergistics{0.8.10.10} [Thaumic Energistics] ([神秘时代4-应用能源2-神秘能源]thaumicenergistics-0.8.10.10.jar) 
+	UC	Botania{r1.8-249} [Botania] (Botania r1.8-249.jar) 
+	UE	MagicBees{1.7.10-2.4.0} [Magic Bees] ([神秘时代4-林业-魔法蜜蜂]magicbees-1.7.10-2.4.0.jar) 
+	UC	Automagy{0.27.1} [Automagy] ([神秘自动化]Automagy-1.7.10-0.27.1.jar) 
+	UC	balumg{1.0.0} [balumg] (Balmung 1.7.10-r1.0-1.jar) 
+	UC	ExtraBotany{r1.0-20} [ExtraBotany] (ExtraBotany r1.0-20.jar) 
+	UC	ForbiddenMagic{1.7.10-0.57} [Forbidden Magic] (Forbidden Magic-1.7.10-0.57.jar) 
+	UC	UnicodeFontFixer{1.1.9-mc1.7.10} [UnicodeFontFixer] (Mcmap.cc-[通用字体修复MOD][1.7.10].jar) 
+	UC	flammpfeil.nihil{mc1.7.x-r8} [Nihil] (Nihil-mc1.7.x-r8.jar) 
+	UC	desertcraft{1.7.2b} [Pam's DesertCraft] (Pam's DesertCraft 1.7.10a.zip) 
+	UC	harvestthenether{1.7.10} [Pam's Harvest the Nether] (Pam's Harvest the Nether 1.7.10a.jar) 
+	UC	mobdropcrops{1.7.2a} [Pam's Mob Drop Crops] (Pam's Mob Drop Crops 1.7.10a.zip) 
+	UC	flammpfeil.slashbladewa{mc1.7.2-r1} [SlashBladeWa] (SlashBladeWa-mc1.7.2-r1.jar) 
+	UC	FastCraft{1.21} [FastCraft] (《1.7.10》快速工艺MOD.jar) 
+	UC	cookingbook{1.0.134} [Cooking for Blockheads] (《1.7.10》烹饪傻瓜MOD.jar) 
+	UC	DurabilityShow{1.2.0} [Durability Show] (《1.7.10》耐久度显示MOD.jar) 
+	UC	inventorytweaks{1.59-dev-156-af3bc68} [Inventory Tweaks] (【1.7.10】R键整理MOD.jar) 
+	UC	craftguide{1.6.8.2} [CraftGuide] (【1.7.10】内置合成表MOD.jar) 
+	UC	DynamicLights{1.3.9} [Dynamic Lights] (【1.7.10】动态光源MOD.jar) 
+	UC	DynamicLights_onFire{1.0.5} [Dynamic Lights Burning Entity Module] (【1.7.10】动态光源MOD.jar) 
+	UC	DynamicLights_creepers{1.0.4} [Dynamic Lights Creeper Module] (【1.7.10】动态光源MOD.jar) 
+	UC	DynamicLights_dropItems{1.0.8} [Dynamic Lights EntityItem Module] (【1.7.10】动态光源MOD.jar) 
+	UC	DynamicLights_entityClasses{1.0.1} [Dynamic Lights Entity Light Module] (【1.7.10】动态光源MOD.jar) 
+	UC	DynamicLights_mobEquipment{1.0.8} [Dynamic Lights Mob Equipment Light Module] (【1.7.10】动态光源MOD.jar) 
+	UC	DynamicLights_flameArrows{1.0.0} [Dynamic Lights Fiery Arrows Light Module] (【1.7.10】动态光源MOD.jar) 
+	UC	DynamicLights_floodLights{1.0.2} [Dynamic Lights Flood Light] (【1.7.10】动态光源MOD.jar) 
+	UC	DynamicLights_otherPlayers{1.0.8} [Dynamic Lights OtherPlayers Light Module] (【1.7.10】动态光源MOD.jar) 
+	UC	DynamicLights_thePlayer{1.1.4} [Dynamic Lights Player Light Module] (【1.7.10】动态光源MOD.jar) 
+	UC	fastleafdecay{1.3} [Fast Leaf Decay] (【1.7.10】快速落叶MOD.jar) 
+	UC	lootbags{1.8.1} [Loot Bags] (【1.7.10】战利品MOD.jar) 
+	UC	More Crafting Recipes Mod{Minecraft 1.7.2} [More Crafting Recipes Mod] (【1.7.10】更多合成配方MOD.jar) 
+	UC	IronChest{6.0.62.742} [Iron Chest] (【1.7.10】更多箱子MOD.jar) 
+	UC	Backpack{2.0.0} [Backpack] (【1.7.10】更多背包MOD.zip) 
+	UC	BambooMod{Minecraft1.7.2 var2.6.6.13} [BambooMod] (【1.7.10】竹MOD.jar) 
+	UC	DamageIndicatorsMod{3.2.0} [Damage Indicators] (【1.7.10】血量显示MOD.jar) 
+	UC	recipemod{0.2} [NoMoreRecipeConflict] (合成不冲突-0.2(1.7.10).jar) 
+	UC	TaintedMagic{1.1.6.3} [Tainted Magic] (污秽魔法TaintedMagic-1.1.6.3.jar) 
+	UC	technom{0.12.4} [Technomancy] (mcmap.cc-[量子魔法MOD][1.7.10].jar) 
+	GL info: ' Vendor: 'Intel' Version: '3.1.0 - Build 9.17.10.4459' Renderer: 'Intel(R) HD Graphics 3000'
+	AE2 Version: stable rv2-stable-1 for Forge 10.13.2.1291
+	CoFHCore: -[1.7.10]3.0.3-303
+	ThermalFoundation: -[1.7.10]1.2.0-102
+	OptiFine Version: OptiFine_1.7.10_HD_U_E3
+	Render Distance Chunks: 12
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 3.1.0 - Build 9.17.10.4459
+	OpenGlRenderer: Intel(R) HD Graphics 3000
+	OpenGlVendor: Intel
+	CpuCount: 4

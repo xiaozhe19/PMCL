@@ -31,7 +31,8 @@ def Downloads():
 
 @app.route("/settings")
 def Settings():
-    return render_template("settings.html",settings_active="mdui-list-item-active")
+    versions = fileOpt.getVersion("./.minecraft/versions")
+    return render_template("settings.html",versions=versions,settings_active="mdui-list-item-active")
 
 @app.route("/lunch")
 def Lunch():

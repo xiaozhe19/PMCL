@@ -1,0 +1,218 @@
+---- Minecraft Crash Report ----
+// This is a token for 1 free hug. Redeem at your nearest Mojangsta: [~~HUG~~]
+
+Time: 16-12-19 下午2:18
+Description: Rendering item
+
+java.lang.NoClassDefFoundError: com/enderio/core/client/render/ColorUtil
+	at vapourdrive.hammerz.items.PoweredItemRenderer.renderBar2(PoweredItemRenderer.java:87)
+	at vapourdrive.hammerz.items.PoweredItemRenderer.renderToInventory(PoweredItemRenderer.java:76)
+	at vapourdrive.hammerz.items.PoweredItemRenderer.renderItem(PoweredItemRenderer.java:39)
+	at net.minecraftforge.client.ForgeHooksClient.renderInventoryItem(ForgeHooksClient.java:202)
+	at net.minecraft.client.renderer.entity.RenderItem.func_82406_b(RenderItem.java:563)
+	at codechicken.nei.guihook.GuiContainerManager.drawSlotItem(GuiContainerManager.java:488)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_146977_a(GuiContainer.java:270)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_73863_a(GuiContainer.java:99)
+	at net.minecraft.client.renderer.InventoryEffectRenderer.func_73863_a(InventoryEffectRenderer.java:38)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.func_73863_a(GuiContainerCreative.java:638)
+	at net.minecraft.client.renderer.EntityRenderer.func_78480_b(EntityRenderer.java:1061)
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1001)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:898)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jackhuang.hellominecraft.launcher.Launcher.main(Launcher.java:114)
+Caused by: java.lang.ClassNotFoundException: com.enderio.core.client.render.ColorUtil
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 25 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 6
+	at org.objectweb.asm.ClassReader.readShort(Unknown Source)
+	at org.objectweb.asm.ClassReader.<init>(Unknown Source)
+	at org.objectweb.asm.ClassReader.<init>(Unknown Source)
+	at cpw.mods.fml.common.asm.transformers.DeobfuscationTransformer.transform(DeobfuscationTransformer.java:34)
+	at net.minecraft.launchwrapper.LaunchClassLoader.runTransformers(LaunchClassLoader.java:279)
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:176)
+	... 27 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at vapourdrive.hammerz.items.PoweredItemRenderer.renderBar2(PoweredItemRenderer.java:87)
+	at vapourdrive.hammerz.items.PoweredItemRenderer.renderToInventory(PoweredItemRenderer.java:76)
+	at vapourdrive.hammerz.items.PoweredItemRenderer.renderItem(PoweredItemRenderer.java:39)
+	at net.minecraftforge.client.ForgeHooksClient.renderInventoryItem(ForgeHooksClient.java:202)
+
+-- Item being rendered --
+Details:
+	Item Type: vapourdrive.hammerz.items.DarkHammer@ae7b7c
+	Item Aux: 0
+	Item NBT: {hammerz.hammer.energy:25000000,hammerz.upgrade.empowerment:4}
+	Item Foil: false
+Stacktrace:
+	at net.minecraft.client.renderer.entity.RenderItem.func_82406_b(RenderItem.java:563)
+	at codechicken.nei.guihook.GuiContainerManager.drawSlotItem(GuiContainerManager.java:488)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_146977_a(GuiContainer.java:270)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_73863_a(GuiContainer.java:99)
+	at net.minecraft.client.renderer.InventoryEffectRenderer.func_73863_a(InventoryEffectRenderer.java:38)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.func_73863_a(GuiContainerCreative.java:638)
+
+-- Screen render details --
+Details:
+	Screen name: net.minecraft.client.gui.inventory.GuiContainerCreative
+	Mouse location: Scaled: (335, 180). Absolute: (670, 383)
+	Screen size: Scaled: (640, 372). Absolute: (1280, 744). Scale factor of 2
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Diao__ling'/426, l='MpServer', x=-1475.07, y=5.62, z=356.83]]
+	Chunk stats: MultiplayerChunkCache: 282, 282
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-1375,4,336), Chunk: (at 1,0,0 in -86,21; contains blocks -1376,0,336 to -1361,255,351), Region: (-3,0; contains chunks -96,0 to -65,31, blocks -1536,0,0 to -1025,255,511)
+	Level time: 11802 game time, 11802 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 39 total; [EntitySlime['史莱姆'/368794, l='MpServer', x=-1503.13, y=4.00, z=311.42], EntitySlime['史莱姆'/114974, l='MpServer', x=-1464.16, y=4.94, z=323.15], EntitySlime['史莱姆'/533523, l='MpServer', x=-1402.73, y=4.00, z=382.16], EntitySlime['史莱姆'/413197, l='MpServer', x=-1472.53, y=4.00, z=278.13], EntitySlime['史莱姆'/40785, l='MpServer', x=-1483.25, y=4.69, z=297.20], EntityItem['item.item.slimeball'/22, l='MpServer', x=-1523.91, y=4.13, z=312.31], EntitySlime['史莱姆'/442622, l='MpServer', x=-1477.88, y=4.42, z=318.89], EntityItem['item.item.slimeball'/28, l='MpServer', x=-1508.28, y=4.13, z=331.78], EntityItem['item.item.slimeball'/31, l='MpServer', x=-1516.38, y=4.13, z=416.09], EntitySlime['史莱姆'/511525, l='MpServer', x=-1472.32, y=4.00, z=332.44], EntitySlime['史莱姆'/419163, l='MpServer', x=-1396.18, y=4.00, z=323.95], EntityCow['牛'/38, l='MpServer', x=-1495.91, y=4.00, z=331.94], EntityHorse['马'/37, l='MpServer', x=-1484.84, y=4.00, z=320.03], EntitySlime['史莱姆'/217631, l='MpServer', x=-1428.96, y=4.10, z=420.70], EntitySlime['史莱姆'/331543, l='MpServer', x=-1483.65, y=4.00, z=395.85], EntitySlime['史莱姆'/208684, l='MpServer', x=-1549.81, y=4.00, z=384.34], EntitySlime['史莱姆'/487469, l='MpServer', x=-1495.23, y=4.00, z=435.00], EntitySheep['羊'/68, l='MpServer', x=-1462.16, y=4.00, z=316.09], EntityCow['牛'/71, l='MpServer', x=-1476.53, y=4.00, z=323.91], EntityItem['item.tile.grassgarden'/76, l='MpServer', x=-1468.19, y=4.13, z=357.16], EntitySlime['史莱姆'/301586, l='MpServer', x=-1439.86, y=4.77, z=408.05], EntityCow['牛'/72, l='MpServer', x=-1452.41, y=4.00, z=336.25], EntityItem['item.item.beefRaw'/74, l='MpServer', x=-1469.81, y=4.13, z=339.56], EntityXPOrb['经验球'/75, l='MpServer', x=-1468.81, y=4.25, z=343.41], EntitySlime['史莱姆'/127292, l='MpServer', x=-1466.13, y=4.00, z=403.82], EntitySlime['史莱姆'/600453, l='MpServer', x=-1551.56, y=4.00, z=325.78], EntitySlime['史莱姆'/249503, l='MpServer', x=-1476.81, y=4.00, z=402.91], EntitySlime['史莱姆'/82, l='MpServer', x=-1459.09, y=4.00, z=409.63], EntitySheep['羊'/89, l='MpServer', x=-1445.19, y=4.00, z=373.88], EntityItemFrame['entity.ItemFrame.name'/88, l='MpServer', x=-1443.50, y=5.50, z=353.06], EntityItem['item.item.slimeball'/102, l='MpServer', x=-1435.16, y=4.13, z=389.81], EntityClientPlayerMP['Diao__ling'/426, l='MpServer', x=-1475.07, y=5.62, z=356.83], EntityItem['item.item.slimeball'/100, l='MpServer', x=-1433.16, y=4.13, z=382.69], EntityItem['item.item.slimeball'/99, l='MpServer', x=-1426.69, y=4.13, z=355.72], EntityItem['item.item.slimeball'/105, l='MpServer', x=-1428.63, y=4.13, z=412.31], EntitySlime['史莱姆'/574524, l='MpServer', x=-1451.46, y=4.96, z=309.87], EntityPig['猪'/115, l='MpServer', x=-1423.03, y=4.00, z=279.03], EntitySlime['史莱姆'/59431, l='MpServer', x=-1525.62, y=4.95, z=291.29], EntitySlime['史莱姆'/435466, l='MpServer', x=-1509.03, y=4.00, z=401.95]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.func_72914_a(WorldClient.java:373)
+	at net.minecraft.client.Minecraft.func_71396_d(Minecraft.java:2444)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:919)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.jackhuang.hellominecraft.launcher.Launcher.main(Launcher.java:114)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows XP (x86) version 5.1
+	Java Version: 1.7.0_67, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) Client VM (mixed mode), Oracle Corporation
+	Memory: 282130856 bytes (269 MB) / 672399360 bytes (641 MB) up to 1060372480 bytes (1011 MB)
+	JVM Flags: 7 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:-UseAdaptiveSizePolicy -XX:-OmitStackTraceInFastThrow -Xmn128m -Xmx1024m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 70 mods loaded, 70 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{7.10.99.99} [Forge Mod Loader] (forge-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJAAAA	Forge{10.13.4.1614} [Minecraft Forge] (forge-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJAAAA	appliedenergistics2-core{rv2-stable-1} [AppliedEnergistics2 Core] (minecraft.jar) 
+	UCHIJAAAA	ThaumicTinkerer-preloader{0.1} [Thaumic Tinkerer Core] (minecraft.jar) 
+	UCHIJAAAA	CodeChickenCore{1.0.4.35} [CodeChicken Core] (minecraft.jar) 
+	UCHIJAAAA	technomCore{0.12.4} [Technomancy Core] (minecraft.jar) 
+	UCHIJAAAA	NotEnoughItems{1.0.4.83} [Not Enough Items] (NEI物品管理器.jar) 
+	UCHIJAAAA	PotionExtensionCore{1.7.10-1.1.0} [PotionExtensionCore] (minecraft.jar) 
+	UCHIJAAAA	uniskinmod{1.2-dev4} [Universal Skin Mod] (minecraft.jar) 
+	UCHIJAAAA	InputFix{1.7.10-v5} [InputFix] (minecraft.jar) 
+	UCHIJAAAA	VeinMiner_coremod{null_build-null} [Core mod] (minecraft.jar) 
+	UCHIJAAAA	<CoFH ASM>{000} [CoFH ASM] (minecraft.jar) 
+	UCHIJAAAA	appliedenergistics2{rv2-stable-1} [Applied Energistics 2] ([应用能源]appliedenergistics2-rv2-stable-1.jar) 
+	UCHIJAAAA	magicalcrops{4.0.0_PUBLIC_BETA_4b} [Magical Crops: Core] (%5B魔法作物基础%5Dmagicalcrops-4.0.0_PUBLIC_BETA_5%5BITERCN%5D.jar) 
+	UCHIJAAAA	magicalcropsarmour{4.0.0_PUBLIC_BETA_4} [Magical Crops: Armoury] (%5B魔法作物装备%5Dmagicalcropsarmoury-4.0.0_PUBLIC_BETA_4%5BITERCN%5D.jar) 
+	UCHIJAAAA	magicalcropsdeco{4.0.0_PUBLIC_BETA_4a} [Magical Crops: Decorative] (%5B魔法作物装饰%5Dmagicalcropsdeco-4.0.0_PUBLIC_BETA_4a%5BITERCN%5D.jar) 
+	UCHIJAAAA	Mantle{1.7.10-0.3.2.jenkins184} [Mantle] ([匠魂手册]Mantle-1.7.10-0.3.2.jar) 
+	UCHIJAAAA	CoFHCore{1.7.10R3.0.3} [CoFH Core] ([热力前置]CoFHCore-[1.7.10]3.0.3-303.jar) 
+	UCHIJAAAA	Baubles{1.0.1.10} [Baubles] (Baubles-1.7.10-1.0.1.10.jar) 
+	UCHIJAAAA	ThermalFoundation{1.7.10R1.2.0} [Thermal Foundation] ([热力资源]ThermalFoundation-[1.7.10]1.2.0-102.jar) 
+	UCHIJAAAA	ExtraUtilities{1.2.11} [Extra Utilities] ([实用设备]extrautilities-1.2.11.jar) 
+	UCHIJAAAA	ThermalExpansion{1.7.10R4.0.3B1} [Thermal Expansion] ([热力膨胀]ThermalExpansion-[1.7.10]4.0.3B1-218.jar) 
+	UCHIJAAAA	TConstruct{1.7.10-1.8.7.build979} [Tinkers' Construct] ([匠魂本体]TConstruct-1.7.10-1.8.7.jar) 
+	UCHIJAAAA	BiblioCraft{1.10.4} [BiblioCraft] ([展示架]BiblioCraft[v1.10.4][MC1.7.10].jar) 
+	UCHIJAAAA	Forestry{4.0.11.40} [Forestry for Minecraft] ([林业]forestry_1.7.10-4.0.11.40.jar) 
+	UCHIJAAAA	BiblioWoodsForestry{1.7} [BiblioWoods Forestry Edition] ([展示架]BiblioWoods[Forestry][v1.7].jar) 
+	UCHIJAAAA	BiblioWoodsNatura{1.5} [BiblioWoods Natura Edition] ([展示架]BiblioWoods[Natura][v1.5].jar) 
+	UCHIJAAAA	Thaumcraft{4.2.3.5} [Thaumcraft] ([神秘时代]Thaumcraft-1.7.10-4.2.3.5 (1).jar) 
+	UCHIJAAAA	flammpfeil.slashblade{mc1.7.10-r71} [SlashBlade] (【1.7.X】拔刀剑MOD.jar) 
+	UCHIJAAAA	flammpfeil.slashblade.zephyr{1.7.2 r1.2} [SlashBladeZephyr] ([拔刀剑-神秘时代4-风雷太刀]SlashBlade_Zephyr-mc1.7.2-r1.2.2.jar) 
+	UCHIJAAAA	EnderIO{1.7.10-2.2.8.381} [Ender IO] ([末影接口]EnderIO-1.7.10-2.2.8.381.jar) 
+	UCHIJAAAA	harvestcraft{1.7.10i} [Pam's HarvestCraft] ([潘马斯农]Pam's HarvestCraft 1.7.10i.jar) 
+	UCHIJAAAA	ThermalDynamics{1.7.10R1.1.0} [Thermal Dynamics] ([热力管道]ThermalDynamics-[1.7.10]1.1.0-161.jar) 
+	UCHIJAAAA	thaumcraftneiplugin{@VERSION@} [Thaumcraft NEI Plugin] ([物品管理器-神秘时代4插件]thaumcraftneiplugin-1.7.10-1.7a.jar) 
+	UCHIJAAAA	ThaumicTinkerer{unspecified} [Thaumic Tinkerer] ([神秘工匠]ThaumicTinkerer-2.5-1.7.10-164.jar) 
+	UCHIJAAAA	thaumicenergistics{0.8.10.10} [Thaumic Energistics] ([神秘时代4-应用能源2-神秘能源]thaumicenergistics-0.8.10.10.jar) 
+	UCHIJAAAA	Botania{r1.8-249} [Botania] (Botania r1.8-249.jar) 
+	UCHIJAAAA	MagicBees{1.7.10-2.4.0} [Magic Bees] ([神秘时代4-林业-魔法蜜蜂]magicbees-1.7.10-2.4.0.jar) 
+	UCHIJAAAA	balumg{1.0.0} [balumg] (Balmung 1.7.10-r1.0-1.jar) 
+	UCHIJAAAA	ExtraBotany{r1.0-20} [ExtraBotany] (ExtraBotany r1.0-20.jar) 
+	UCHIJAAAA	ForbiddenMagic{1.7.10-0.57} [Forbidden Magic] (Forbidden Magic-1.7.10-0.57.jar) 
+	UCHIJAAAA	UnicodeFontFixer{1.1.9-mc1.7.10} [UnicodeFontFixer] (Mcmap.cc-[通用字体修复MOD][1.7.10].jar) 
+	UCHIJAAAA	FastCraft{1.21} [FastCraft] (《1.7.10》快速工艺MOD.jar) 
+	UCHIJAAAA	cookingbook{1.0.134} [Cooking for Blockheads] (《1.7.10》烹饪傻瓜MOD.jar) 
+	UCHIJAAAA	DurabilityShow{1.2.0} [Durability Show] (《1.7.10》耐久度显示MOD.jar) 
+	UCHIJAAAA	hammerz{0.1.7.37} [Hammerz] (《1.7.10》锤子MOD.jar) 
+	UCHIJAAAA	inventorytweaks{1.59-dev-156-af3bc68} [Inventory Tweaks] (【1.7.10】R键整理MOD.jar) 
+	UCHIJAAAA	craftguide{1.6.8.2} [CraftGuide] (【1.7.10】内置合成表MOD.jar) 
+	UCHIJAAAA	DynamicLights{1.3.9} [Dynamic Lights] (【1.7.10】动态光源MOD.jar) 
+	UCHIJAAAA	DynamicLights_onFire{1.0.5} [Dynamic Lights Burning Entity Module] (【1.7.10】动态光源MOD.jar) 
+	UCHIJAAAA	DynamicLights_creepers{1.0.4} [Dynamic Lights Creeper Module] (【1.7.10】动态光源MOD.jar) 
+	UCHIJAAAA	DynamicLights_dropItems{1.0.8} [Dynamic Lights EntityItem Module] (【1.7.10】动态光源MOD.jar) 
+	UCHIJAAAA	DynamicLights_entityClasses{1.0.1} [Dynamic Lights Entity Light Module] (【1.7.10】动态光源MOD.jar) 
+	UCHIJAAAA	DynamicLights_mobEquipment{1.0.8} [Dynamic Lights Mob Equipment Light Module] (【1.7.10】动态光源MOD.jar) 
+	UCHIJAAAA	DynamicLights_flameArrows{1.0.0} [Dynamic Lights Fiery Arrows Light Module] (【1.7.10】动态光源MOD.jar) 
+	UCHIJAAAA	DynamicLights_floodLights{1.0.2} [Dynamic Lights Flood Light] (【1.7.10】动态光源MOD.jar) 
+	UCHIJAAAA	DynamicLights_otherPlayers{1.0.8} [Dynamic Lights OtherPlayers Light Module] (【1.7.10】动态光源MOD.jar) 
+	UCHIJAAAA	DynamicLights_thePlayer{1.1.4} [Dynamic Lights Player Light Module] (【1.7.10】动态光源MOD.jar) 
+	UCHIJAAAA	fastleafdecay{1.3} [Fast Leaf Decay] (【1.7.10】快速落叶MOD.jar) 
+	UCHIJAAAA	lootbags{1.8.1} [Loot Bags] (【1.7.10】战利品MOD.jar) 
+	UCHIJAAAA	IronChest{6.0.62.742} [Iron Chest] (【1.7.10】更多箱子MOD.jar) 
+	UCHIJAAAA	Backpack{2.0.0} [Backpack] (【1.7.10】更多背包MOD.zip) 
+	UCHIJAAAA	BambooMod{Minecraft1.7.2 var2.6.6.13} [BambooMod] (【1.7.10】竹MOD.jar) 
+	UCHIJAAAA	DamageIndicatorsMod{3.2.0} [Damage Indicators] (【1.7.10】血量显示MOD.jar) 
+	UCHIJAAAA	VeinMiner{0.23.0} [Vein Miner] (【1.7.X】连锁採矿MOD.jar) 
+	UCHIJAAAA	VeinMinerModSupport{0.23.0} [Mod Support] (【1.7.X】连锁採矿MOD.jar) 
+	UCHIJAAAA	recipemod{0.2} [NoMoreRecipeConflict] (合成不冲突-0.2(1.7.10).jar) 
+	UCHIJAAAA	TaintedMagic{1.1.6.3} [Tainted Magic] (污秽魔法TaintedMagic-1.1.6.3.jar) 
+	UCHIJAAAA	technom{0.12.4} [Technomancy] (mcmap.cc-[量子魔法MOD][1.7.10].jar) 
+	GL info: ' Vendor: 'ATI Technologies Inc.' Version: '3.3.11554 Compatibility Profile Context' Renderer: 'ATI Mobility Radeon HD 3470'
+	AE2 Version: stable rv2-stable-1 for Forge 10.13.2.1291
+	Mantle Environment: Environment healthy.
+	CoFHCore: -[1.7.10]3.0.3-303
+	ThermalFoundation: -[1.7.10]1.2.0-102
+	ThermalExpansion: -[1.7.10]4.0.3B1-218
+	TConstruct Environment: Environment healthy.
+	ThermalDynamics: -[1.7.10]1.1.0-161
+	AE2 Integration: IC2:OFF, RotaryCraft:OFF, RC:OFF, BC:OFF, RF:ON, RFItem:ON, MFR:OFF, DSU:ON, FZ:OFF, FMP:OFF, RB:OFF, CLApi:OFF, Waila:OFF, InvTweaks:ON, NEI:ON, CraftGuide:ON, Mekanism:OFF, ImmibisMicroblocks:OFF, BetterStorage:OFF
+	Launched Version: 1.7.10-Forge10.13.4.1614-1.7.10
+	LWJGL: 2.9.1
+	OpenGL: ATI Mobility Radeon HD 3470 GL version 3.3.11554 Compatibility Profile Context, ATI Technologies Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: 简体中文 (中国)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)
