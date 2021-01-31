@@ -6,7 +6,7 @@ from flask import Flask, render_template,send_from_directory
 
 
 def get_all_path(open_file_path,version):#写入新版本
-    data = open(r"server\update.json",'w',encoding="utf-8")
+    data = open("./update.json",'w',encoding="utf-8")
     info = []
     index = ["name","path","last_alter_time","in_version"]
     output =[]
@@ -28,7 +28,7 @@ def get_all_path(open_file_path,version):#写入新版本
 
 
 def updateData(version):#获取当前最新版本
-    file = open(r"server\update.json",'r',encoding="utf-8")
+    file = open("./update.json",'r',encoding="utf-8")
     data = json.loads(file.read())
     if version == data["version"]:
         path = 'fku'
@@ -51,7 +51,7 @@ def countlin():
 
 @app.route("/update-get",methods=['GET'])#获取最新版本
 def hello_world():
-    data = open(r"server\update.json",encoding='utf-8')
+    data = open("./update.json",encoding='utf-8')
     data = json.load(data)
     VERSION = data["version"]
     content = data["content"]
@@ -59,12 +59,12 @@ def hello_world():
     dir = json.dumps(dir)
     return dir
 
-@app.route("/update",methods=['GET'])#获取更新
+@app.route("/update",methods=['GET','POST'])#获取更新
 def update():
-    data = open(r"server\update.json",encoding='utf-8')
+    data = open("./update.json",encoding='utf-8')
     data = json.load(data)
     check = data["version"]+r".zip"
-    directory = os.getcwd()+'/server'  # 当前目录
+    directory = os.getcwd()  # 当前目录
     return send_from_directory(directory,filename=check,as_attachment=True)
 
 if __name__ == "__main__":

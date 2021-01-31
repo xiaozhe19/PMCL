@@ -2,6 +2,7 @@
 
 {% block container %}
 
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 <div id="toptab" class="mdui-tab mdui-tab-full-width" mdui-tab>
     <a href="#junior" class="mdui-ripple">普通设置</a>
     <a href="#senior" class="mdui-ripple">高级设置</a>
@@ -19,21 +20,21 @@
     </select></br>
     <div class="mdui-textfield mdui-textfield-floating-label">
         <label class="mdui-textfield-label">游戏路径</label>
-        <input class="mdui-textfield-input" />
+        <input class="mdui-textfield-input" id="gamePath" />
     </div>
     <div class="mdui-textfield mdui-textfield-floating-label">
         <label class="mdui-textfield-label">JAVA路径</label>
-        <input class="mdui-textfield-input">
+        <input class="mdui-textfield-input" id="javaPath">
     </div>
     <div class="mdui-textfield mdui-textfield-floating-label">
         <label class="mdui-textfield-label">最大内存</label>
-        <input class="mdui-textfield-input">
+        <input class="mdui-textfield-input" id="maxMem">
     </div>
     <div class="mdui-textfield mdui-textfield-floating-label">
         <label class="mdui-textfield-label">分辨率</label>
-        <input class="mdui-textfield-input">
+        <input class="mdui-textfield-input" id ="length"><div>x</div><input id="height" class="mdui-textfield-input">
     </div>
-    <button id="saveButton" class="mdui-btn mdui-btn-raised mdui-ripple">SAVE</button>
+    <button onclick=junior()   class="mdui-btn mdui-btn-raised mdui-ripple">SAVE</button>
 </form>
 </div>
 
@@ -66,7 +67,7 @@
             不添加JVM参数（使用JAVA9时必勾选）
         </label>
     </div>
-    <button id="saveButton" class="mdui-btn mdui-btn-raised mdui-ripple">SAVE</button>
+    <button class="mdui-btn mdui-btn-raised mdui-ripple">SAVE</button>
 </form>
 
 <form id="pmcl" action="">
@@ -83,12 +84,12 @@
         <input class="mdui-textfield-input" />
     </div>
     <label>主题：</label>
-    <select class="mdui-select" disabled id="versionSelector" mdui-select="{position: 'bottom'}">
+    <select class="mdui-select" disabled  mdui-select="{position: 'bottom'}">
         <option value="MDUI">MDUI</option>
     </select>
 </br>
     <label>主题记忆：</label>
-    <select class="mdui-select" disabled id="versionSelector" mdui-select="{position: 'bottom'}">
+    <select class="mdui-select" disabled mdui-select="{position: 'bottom'}">
         <option value="3h">3h</option>
         <option value="1d">1d</option>
         <option value="15d">15d</option>
@@ -106,7 +107,7 @@
         </div>
     </div>
     </br>
-    <button id="saveButton" class="mdui-btn mdui-btn-raised mdui-ripple">SAVE</button>
+    <button class="mdui-btn mdui-btn-raised mdui-ripple">SAVE</button>
 </form>
 
 <style>
@@ -122,5 +123,19 @@
         display: none;
     }
 </style>
-
+<script>
+    function junior(){
+        var junior = {} 
+        junior.version=$("#versionSelector").val();
+        junior.gamePath = $("#gamePath").val();
+        junior.javaPath=$("#javaPath").val();
+        junior.maxMem=$("#maxMem").val();
+        junior.length=$("#length").val();
+        junior.height=$("#height").val(); 
+        var jsonstr = JSON.stringify(junior)
+        $.ajax({
+            url=''
+        })
+    }
+</script>
 {% endblock %}

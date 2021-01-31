@@ -2,13 +2,12 @@ import requests as r
 import os
 import zipfile
 import json
+import loadConfig
 
 def checkVersion():
-    data = open("./config.json")
-    aq = json.load(data)
-    data.close()
-    version = aq["version"]
-    url = aq["update-url"]
+    data=loadConfig.loadConfig()
+    version = data[0]
+    url = data[1]
     url = url+r"/update-get"
     try:  # 检验连接
         re = r.get(url)  # 尝试连接
@@ -21,11 +20,9 @@ def checkVersion():
         return [False,exc]
 
 def update():
-    data = open("./config.json")
-    aq = json.load(data)
-    data.close()
-    version = aq["version"]
-    url = aq["update-url"]
+    data=loadConfig.loadConfig()
+    version = data[0]
+    url = data[1]
     url = url+r"/update"
     re = r.get(url)  # 尝试连接
     try:  # 检验连接
@@ -41,6 +38,7 @@ def update():
         # 解压
         #zfile = zipfile.ZipFile("./download.zip", "r")
         #zfile.extractall()
-
+        return True
     except Exception as exc:
-        print('There was a problem: %s' % (exc))
+        return ('There was a problem: %s' % (exc))
+

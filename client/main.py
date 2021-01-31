@@ -4,12 +4,14 @@ import time
 import fileOpt
 import luncher
 import autoUpdate
-from flask import Flask, render_template,send_from_directory
-
+from flask import Flask, render_template,send_from_directory,jsonify,request
+import loadConfig
 
 
 
 app = Flask(__name__)
+config = loadConfig.loadConfig()
+
 @app.route("/")
 def Index():#首页
     check = autoUpdate.checkVersion()
@@ -38,8 +40,14 @@ def Settings():
 def Lunch():
     luncher.forgeLuncher(r"F:\Java8\bin\javaw.exe","./.minecraft","1.7.10-Forge10.13.4.1614-1.7.10","Yixixi","480","854")
     return render_template("lunch.html")
-    
+
+@app.route("/changejson",methods=["POST"])
+def changejson():
+    data_list = []
+    data = json.loads(request.get_data(as_text=True))   # request.get_data(as_text=True) ： 获取前端POST请求传过来的 json 数据
+    print(data)
+
 if __name__ == "__main__":
-    app.run(debug=True,port=43433)
+    app.run(debug=config[4],port=43433)
 
 
