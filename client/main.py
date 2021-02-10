@@ -2,15 +2,14 @@ import json
 import os
 import time
 import fileOpt
-import luncher
+import launcher
 import autoUpdate
 from flask import Flask, render_template,send_from_directory,jsonify,request
-import loadConfig
+import config
 
 
 
 app = Flask(__name__)
-config = loadConfig.loadConfig()
 
 @app.route("/")
 def Index():#首页
@@ -23,6 +22,7 @@ def Files():
         files = list["files"]
         dirs = list["dirs"]
         return render_template("files.html",files = files,dirs=dirs,files_active="mdui-list-item-active")
+
 @app.route("/mods")
 def Mods():
     return render_template("mods.html",mods_active="mdui-list-item-active")
@@ -38,16 +38,28 @@ def Settings():
 
 @app.route("/lunch")
 def Lunch():
-    luncher.forgeLuncher(r"F:\Java8\bin\javaw.exe","./.minecraft","1.7.10-Forge10.13.4.1614-1.7.10","Yixixi","480","854")
+    launcher.launcher(r"F:\Java8\bin\javaw.exe","./.minecraft","1.7.10","1024m","2048m","Yixixi","480","854")
     return render_template("lunch.html")
+ 
 
-@app.route("/changejson",methods=["POST"])
-def changejson():
+
+@app.route("/juniorjson",methods=["POST"])
+def juniorjson():
     data_list = []
     data = json.loads(request.get_data(as_text=True))   # request.get_data(as_text=True) ： 获取前端POST请求传过来的 json 数据
     print(data)
+    config.juniorJson(data["version"],data["gamePath"],data["javaPath"],data["maxMem"],data["height"],data["length"])
+    return data
+
+
+@app.route("/pmcljson",methods=["POST"])
+def pmcljson():
+    data_list = []
+    data = json.loads(request.get_data(as_text=True))   # request.get_data(as_text=True) ： 获取前端POST请求传过来的 json 数据
+    print(data)
+    return data
 
 if __name__ == "__main__":
-    app.run(debug=config[4],port=43433)
+    app.run(debug=config.debug,port=43433)
 
 

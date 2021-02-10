@@ -73,15 +73,15 @@
 <form id="pmcl" action="">
     <div class="mdui-textfield mdui-textfield-floating-label">
         <label class="mdui-textfield-label">背景地址</label>
-        <input class="mdui-textfield-input" />
+        <input id="bkimg" class="mdui-textfield-input" />
     </div>
     <div class="mdui-textfield mdui-textfield-floating-label">
         <label class="mdui-textfield-label">下载源</label>
-        <input class="mdui-textfield-input" />
+        <input id="downloadsource" class="mdui-textfield-input" />
     </div> 
      <div class="mdui-textfield mdui-textfield-floating-label">
         <label class="mdui-textfield-label">端口</label>
-        <input class="mdui-textfield-input" />
+        <input id="port" class="mdui-textfield-input" />
     </div>
     <label>主题：</label>
     <select class="mdui-select" disabled  mdui-select="{position: 'bottom'}">
@@ -97,6 +97,11 @@
     </select>
   
     </br>
+    <label class="mdui-checkbox">
+        <input id="debug" type="checkbox"/>
+        <i class="mdui-checkbox-icon"></i>
+        Debug模式
+      </label> 
     </br>
     <div>
         <div class="mdui-col">
@@ -107,7 +112,7 @@
         </div>
     </div>
     </br>
-    <button class="mdui-btn mdui-btn-raised mdui-ripple">SAVE</button>
+    <button onclick=pmcl() class="mdui-btn mdui-btn-raised mdui-ripple">SAVE</button>
 </form>
 
 <style>
@@ -134,8 +139,38 @@
         junior.height=$("#height").val(); 
         var jsonstr = JSON.stringify(junior)
         $.ajax({
-            url=''
+            type:"POST",
+            url:'/juniorjson',
+            contentType: "application/json;charset=utf-8",
+            data:jsonstr,
+            success:function (message) {
+                alert("提交成功"+JSON.stringify(message));
+            },
+            error:function (message) {
+                alert("提交失败"+JSON.stringify(message));
+            }
         })
     }
+    function pmcl(){
+        var pmcl = {} 
+        pmcl.bkimg=$("#bkimg").val();
+        pmcl.downloadsource = $("#downloadsource").val();
+        pmcl.port=$("#port").val();
+        pmcl.debug=$("#debug").val();
+        var jsonstr = JSON.stringify(pmcl)
+        $.ajax({
+            type:"POST",
+            url:'/pmcljson',
+            contentType: "application/json;charset=utf-8",
+            data:jsonstr,
+            success:function (message) {
+                alert("提交成功"+JSON.stringify(message));
+            },
+            error:function (message) {
+                alert("提交失败"+JSON.stringify(message));
+            }
+        })
+    }
+
 </script>
 {% endblock %}

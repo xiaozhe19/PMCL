@@ -1,12 +1,14 @@
 {
-    "version":"0.0.1-beta",
-    "update-url":"http://localhost:5000",
-    "java-path":"java",
-    ".minecraft-path":"./.minecraft",
+    "version": "Version",
+    "update-url": "http://localhost:5000",
+    "java-path": "F:/Java8/bin/javaw.exe",
+    ".minecraft-path": "./minecraft",
     "debug": 1,
-    "last-game-version":"",
-    "maxMem":"",
-    "height":"",
-    "length":""
-    
+    "last-game-version": "1.11",
+    "maxMem": "2048",
+    "height": "439",
+    "length": "845",
+    "background":"",
+    "downloadsource":"",
+    "port":"43433"
 }

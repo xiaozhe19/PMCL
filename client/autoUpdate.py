@@ -2,12 +2,11 @@ import requests as r
 import os
 import zipfile
 import json
-import loadConfig
+import config
 
 def checkVersion():
-    data=loadConfig.loadConfig()
-    version = data[0]
-    url = data[1]
+    version = config.version
+    url = config.update_url
     url = url+r"/update-get"
     try:  # 检验连接
         re = r.get(url)  # 尝试连接
@@ -20,9 +19,8 @@ def checkVersion():
         return [False,exc]
 
 def update():
-    data=loadConfig.loadConfig()
-    version = data[0]
-    url = data[1]
+    version = config.version
+    url = config.update_url
     url = url+r"/update"
     re = r.get(url)  # 尝试连接
     try:  # 检验连接
