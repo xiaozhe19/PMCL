@@ -46,10 +46,7 @@ def launcher(java_path, game_path, game_version,Xmx,Xmn, username, height, width
     javaPackage = javaPackage + '"'
     command = java_path+" " +" "+XX +" "+libpath+" " + javaPackage +" "+mainClass+" "+minecraftArguments
     ret = subprocess.run(command, shell=True)
-    # print(ret)
-    asdasd = open("com.txt", "w")
-    asdasd.write(command)
-    asdasd.close()
+
 
 
 
