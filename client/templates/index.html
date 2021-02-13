@@ -1,28 +1,40 @@
 {% extends "base.html" %}
 
-    <div id="page-index" class="mdui-container">
-      {% block container %}
-      <div class="to">
-        <img src="./static/hahaha.jpg" />
-      </div>
-      <div class="main">
-        <div class="mdui-typo-display-2">Hello , xiao_zhe</div>
+<div id="page-index" class="mdui-container">
+  {% block container %}
+  <div class="to">
+    <img  class="mdui-img-circle" src="./static/hahaha.jpg" />
+  </div>
+  <div class="main">
+    {% if not user %}
+    <div id="signindiv" class="mdui-typo-display-2">Hello , 请<a  mdui-dialog="{target: '#login'}" id="signin">登录或注册</a></div>
+    <style>
+        #signindiv{
+          margin-left:-5%;
+        }
+    </style>
+    {% else %}
+    <div class="mdui-typo-display-2">Hello , {{ user }}</div>
+    {% endif %}
+    </br>
+    <button onclick="window.location.href='./launch'" id="launch" class="self-launch mdui-btn mdui-btn-raised">
+      <div class="mdui-typo-headline">开始游戏</div>
+    </button>
+  </div>
+</div>
 
-        </br>
-        <button onclick="window.location.href='./lunch'" id="lunch" class="self-lunch mdui-btn mdui-btn-raised"><div class="mdui-typo-headline">开始游戏</div></button>
-      </div>
-    </div>
 
 
 
 
-
-  <div class="mdui-dialog mdui-container" id="login">
-    <div class="mdui-tab mdui-tab-centered" mdui-tab>
-      <a href="#example3-tab1" class="mdui-ripple .mdui-tab-active">正版登录</a>
-      <a href="#example3-tab2" class="mdui-ripple">离线登录</a>
-      <a href="#example3-tab3" class="mdui-ripple">Color OS登录</a>
-    </div>
+<div class="mdui-dialog mdui-container" id="login">
+  {% if not user %}
+  <div class="mdui-tab mdui-tab-centered" mdui-tab>
+    <a href="#official" class="mdui-ripple mdui-tab-active">正版登录</a>
+    <a href="#offline" class="mdui-ripple">离线登录</a>
+    <a href="#coloros" class="mdui-ripple">Color OS登录</a>
+  </div>
+  <form id="official">
     <div class="mdui-textfield mdui-textfield-floating-label">
       <label class="mdui-textfield-label">账户</label>
       <input class="mdui-textfield-input" type="email" />
@@ -31,18 +43,69 @@
       <label class="mdui-textfield-label">密码</label>
       <input class="mdui-textfield-input" type="email" />
     </div>
-
     <div class="mdui-dialog-actions">
       <button class="mdui-btn mdui-ripple">登录</button>
-      <button class="mdui-btn mdui-ripple">注册（Color OS）</button>
     </div>
-  </div>
+  </form>
+
+  <form id="offline">
+    <div class="mdui-textfield mdui-textfield-floating-label">
+      <label class="mdui-textfield-label">昵称</label>
+      <input id="nick" class="mdui-textfield-input"/>
+      <div class="mdui-dialog-actions">
+        <button onclick="offline()" class="mdui-btn mdui-ripple">SAVE</button>
+      </div>
+    </div>
+  </form>
+
+  <form id="coloros">
+    <div class="mdui-textfield mdui-textfield-floating-label">
+      <label class="mdui-textfield-label">账户</label>
+      <input class="mdui-textfield-input" type="email" />
+    </div>
+    <div class="mdui-textfield mdui-textfield-floating-label">
+      <label class="mdui-textfield-label">密码</label>
+      <input class="mdui-textfield-input" type="email" />
+    </div>
+    <div class="mdui-dialog-actions">
+      <button class="mdui-btn mdui-ripple">登录</button>
+    </div>
+  </form>
+  {% else %}
+  <h2 id="io">用户信息</h2>
+  <div class="ios">用户名称：{{ user }}</div>
+  <div class="ios">登陆方式：{{ way }}</div>
+  <button onclick="signouta()" id="signout" class="mdui-btn mdui-btn-raised">注销</button>
+
+  <style>
+    #io{
+      text-align: center;
+    }
+    .ios{
+      font-size: large;
+      margin-left: 20px;
+    }
+    #signout{
+      float:right;
+      margin-bottom: 10px;
+    }
+  </style>
+  {% endif %}
+</div>
 
 <style>
+  #signin{
+    text-decoration:none;
+    color: rgb(0,229,255);
+  }
+  #signin:hover{
+    transition-duration:0.4s;
+    color: rgb(233,30,99);
+    cursor:pointer;
+  }
   .to img {
     width: 300px;
     height: 300px;
-    border-radius: 300px;
   }
 
   .to {
@@ -54,16 +117,41 @@
   .main {
     margin-left: 35%;
   }
-  .self-lunch{
+
+  .self-launch {
     width: 300px;
     height: 60px;
   }
 </style>
 {% if check %}
 <script>
-mdui.confirm('发现了新版本，是否更新？更新内容:</br>{{ content }}', '发现更新', function(){
-  mdui.alert('点击了确认按钮');
-});
+  mdui.confirm('发现了新版本，是否更新？更新内容:</br>{{ content }}', '发现更新', function () {
+    mdui.alert('点击了确认按钮');
+  });
+
 </script>
 {% endif %}
+<script>
+    function signouta(){
+        window.location.href ="./signout"
+        return 1
+    }
+    function offline(){
+      list={}
+      list.id = $('#nick').val()
+      var jsonstr = JSON.stringify(list)
+        $.ajax({
+            type:"POST",
+            url:'/offline',
+            contentType: "application/json;charset=utf-8",
+            data:jsonstr,
+            success:function (message) {
+                alert("提交成功"+JSON.stringify(message));
+            },
+            error:function (message) {
+                alert("提交失败"+JSON.stringify(message));
+            }
+        })
+    }
+</script>
 {% endblock %}

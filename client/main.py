@@ -4,62 +4,87 @@ import time
 import fileOpt
 import launcher
 import autoUpdate
-from flask import Flask, render_template,send_from_directory,jsonify,request
+from flask import Flask, render_template, send_from_directory, jsonify, request,redirect,url_for
 import config
-
-
+import importlib
+import webbrowser
 
 app = Flask(__name__)
 
+
 @app.route("/")
-def Index():#首页
+def Index():  # 首页
     check = autoUpdate.checkVersion()
-    return render_template("index.html",check=check[0],content=check[1],home_active="mdui-list-item-active",apdate=autoUpdate)
+    return render_template("index.html", check=check[0], content=check[1], home_active="mdui-list-item-active", apdate=autoUpdate,user=config.username,way=config.way)
+
 
 @app.route("/files")
 def Files():
-        list = fileOpt.allFiles(os.getcwd())
-        files = list["files"]
-        dirs = list["dirs"]
-        return render_template("files.html",files = files,dirs=dirs,files_active="mdui-list-item-active")
+    list = fileOpt.allFiles(os.getcwd())
+    files = list["files"]
+    dirs = list["dirs"]
+    return render_template("files.html", files=files, dirs=dirs, files_active="mdui-list-item-active")
+
 
 @app.route("/mods")
 def Mods():
-    return render_template("mods.html",mods_active="mdui-list-item-active")
+    return render_template("mods.html", mods_active="mdui-list-item-active")
+
 
 @app.route("/downloads")
 def Downloads():
-    return render_template("index.html",downloads_active="mdui-list-item-active")
+    return render_template("index.html", downloads_active="mdui-list-item-active")
+
 
 @app.route("/settings")
 def Settings():
     versions = fileOpt.getVersion("./.minecraft/versions")
-    return render_template("settings.html",versions=versions,settings_active="mdui-list-item-active")
-
-@app.route("/lunch")
-def Lunch():
-    launcher.launcher(r"F:\Java8\bin\javaw.exe","./.minecraft","1.7.10","1024m","2048m","Yixixi","480","854")
-    return render_template("lunch.html")
- 
+    return render_template("settings.html", versions=versions, chosen_version = config.last_game_version,settings_active="mdui-list-item-active", gamePath=config.mc_path, javaPath=config.java_path, maxMem=config.maxMem, length=config.length, height=config.height, 
+                            bkimg=config.bkimg, downloadsource=config.downloadsource, port=config.port,debug=config.debug)
 
 
-@app.route("/juniorjson",methods=["POST"])
+@app.route("/launch")
+def Launch():
+    launcher.launcher(config.java_path, config.mc_path, config.last_game_version,
+                      "516m", config.maxMem, config.username, config.height, config.length)
+    return render_template("launch.html")
+
+
+@app.route("/juniorjson", methods=["POST"])
 def juniorjson():
     data_list = []
-    data = json.loads(request.get_data(as_text=True))   # request.get_data(as_text=True) ： 获取前端POST请求传过来的 json 数据
-    print(data)
-    config.juniorJson(data["version"],data["gamePath"],data["javaPath"],data["maxMem"],data["height"],data["length"])
+    # request.get_data(as_text=True) ： 获取前端POST请求传过来的 json 数据
+    data = json.loads(request.get_data(as_text=True))
+    config.juniorJson(data["version"], data["gamePath"], data["javaPath"],
+                      data["maxMem"], data["height"], data["length"])
+    importlib.reload(config)
     return data
 
 
-@app.route("/pmcljson",methods=["POST"])
+@app.route("/pmcljson", methods=["POST"])
 def pmcljson():
     data_list = []
-    data = json.loads(request.get_data(as_text=True))   # request.get_data(as_text=True) ： 获取前端POST请求传过来的 json 数据
+    data = json.loads(request.get_data(as_text=True))
+    config.pmclJson(data["bkimg"],data["downloadsource"],data['port'],data["debug"])
     print(data)
+    importlib.reload(config)
     return data
 
+@app.route("/offline",methods=["POST"])
+def offline():
+    data_list = []
+    data = json.loads(request.get_data(as_text=True))
+    config.offlineJson(data["id"])
+    print(data)
+    importlib.reload(config)
+    return redirect("./")
+
+@app.route("/signout", methods=["POST","GET"])
+def signout():
+    config.offlineJson(False)
+    importlib.reload(config)
+    return redirect("./")
+
 if __name__ == "__main__":
-    app.run(debug=config.debug,port=43433)
-
-
+    webbrowser.open('http://127.0.0.1:'+config.port, 0, False)    
+    app.run(debug=config.debug, port=config.port)

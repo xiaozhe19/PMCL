@@ -2,7 +2,6 @@
 
 {% block container %}
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 <div id="toptab" class="mdui-tab mdui-tab-full-width" mdui-tab>
     <a href="#junior" class="mdui-ripple">普通设置</a>
     <a href="#senior" class="mdui-ripple">高级设置</a>
@@ -15,24 +14,28 @@
     <label>版本：</label>
     <select class="mdui-select" id="versionSelector" mdui-select="{position: 'bottom'}">
         {% for version in versions %}
+        {% if version==chosen_version %}
+        <option value="{{version}}" selected>{{version}}</option>
+        {% else %}
         <option value="{{version}}">{{version}}</option>
+        {% endif %}
         {% endfor %}
     </select></br>
     <div class="mdui-textfield mdui-textfield-floating-label">
         <label class="mdui-textfield-label">游戏路径</label>
-        <input class="mdui-textfield-input" id="gamePath" />
+        <input value="{{gamePath}}" class="mdui-textfield-input" id="gamePath" />
     </div>
     <div class="mdui-textfield mdui-textfield-floating-label">
         <label class="mdui-textfield-label">JAVA路径</label>
-        <input class="mdui-textfield-input" id="javaPath">
+        <input value="{{javaPath}}" class="mdui-textfield-input" id="javaPath">
     </div>
     <div class="mdui-textfield mdui-textfield-floating-label">
         <label class="mdui-textfield-label">最大内存</label>
-        <input class="mdui-textfield-input" id="maxMem">
+        <input value="{{maxMem}}" class="mdui-textfield-input" id="maxMem">
     </div>
     <div class="mdui-textfield mdui-textfield-floating-label">
         <label class="mdui-textfield-label">分辨率</label>
-        <input class="mdui-textfield-input" id ="length"><div>x</div><input id="height" class="mdui-textfield-input">
+        <input value="{{length}}" class="mdui-textfield-input" id ="length"><div>x</div><input value="{{height}}" id="height" class="mdui-textfield-input">
     </div>
     <button onclick=junior()   class="mdui-btn mdui-btn-raised mdui-ripple">SAVE</button>
 </form>
@@ -41,7 +44,7 @@
 <form id="senior" action="">
     <div class="mdui-textfield mdui-textfield-floating-label">
         <label class="mdui-textfield-label">Java虚拟机参数</label>
-        <input class="mdui-textfield-input" disabled />
+        <input  class="mdui-textfield-input" disabled />
     </div>
     <div class="mdui-textfield mdui-textfield-floating-label">
         <label class="mdui-textfield-label">Minecraft额外参数</label>
@@ -73,15 +76,15 @@
 <form id="pmcl" action="">
     <div class="mdui-textfield mdui-textfield-floating-label">
         <label class="mdui-textfield-label">背景地址</label>
-        <input id="bkimg" class="mdui-textfield-input" />
+        <input value="{{bkimg}}" id="bkimg" class="mdui-textfield-input" />
     </div>
     <div class="mdui-textfield mdui-textfield-floating-label">
         <label class="mdui-textfield-label">下载源</label>
-        <input id="downloadsource" class="mdui-textfield-input" />
+        <input value="{{downloadsource}}" id="downloadsource" class="mdui-textfield-input" />
     </div> 
      <div class="mdui-textfield mdui-textfield-floating-label">
         <label class="mdui-textfield-label">端口</label>
-        <input id="port" class="mdui-textfield-input" />
+        <input value="{{port}}" id="port" class="mdui-textfield-input" />
     </div>
     <label>主题：</label>
     <select class="mdui-select" disabled  mdui-select="{position: 'bottom'}">
@@ -98,7 +101,11 @@
   
     </br>
     <label class="mdui-checkbox">
-        <input id="debug" type="checkbox"/>
+        {% if debug == 1 %}
+        <input  id="debug" checked type="checkbox"/>
+        {% else %}
+        <input  id="debug" type="checkbox"/>
+        {% endif %}
         <i class="mdui-checkbox-icon"></i>
         Debug模式
       </label> 
@@ -156,7 +163,12 @@
         pmcl.bkimg=$("#bkimg").val();
         pmcl.downloadsource = $("#downloadsource").val();
         pmcl.port=$("#port").val();
-        pmcl.debug=$("#debug").val();
+        if($("#debug").val() == "on"){
+            pmcl.debug=1;
+        }
+        else{
+            pmcl.debug=0;
+        }
         var jsonstr = JSON.stringify(pmcl)
         $.ajax({
             type:"POST",
