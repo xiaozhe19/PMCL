@@ -4,6 +4,7 @@ import zipfile
 import json
 import config
 
+#update
 def checkVersion():
     version = config.version
     url = config.update_url
@@ -33,10 +34,13 @@ def update():
         download.close()
         # 重命名为压缩包
         os.rename("./download.txt", "download.zip")
-        # 解压
-        #zfile = zipfile.ZipFile("./download.zip", "r")
-        #zfile.extractall()
         return True
     except Exception as exc:
         return ('There was a problem: %s' % (exc))
 
+def unzip(name):
+    file = zipfile.ZipFile(name)
+    file.extractall()
+    file.close()
+
+#下载完成后，弹出对话框，是否安装，安装完毕之后重启

@@ -36,64 +36,43 @@ except Exception as e:
     port ="False"
     print(e)
 def juniorJson(Version,mcPath,javaPath,MaxMem,Height,Length):
-    datadic = {}
-    datadic["version"] =version
-    datadic["way"] =way
-    datadic["update-url"] = update_url
-    datadic["java-path"] =javaPath
-    datadic[r".minecraft-path"] = mcPath
-    datadic["debug"] = debug
-    datadic["last-game-version"] = Version
-    datadic["maxMem"] = MaxMem
-    datadic["height"] = Height
-    datadic["length"] = Length
-    datadic["background"] = bkimg
-    datadic["downloadsource"] = downloadsource
-    datadic["port"] = port
-    datadic["username"] = "xiao_zhe"
-    dataJson = json.dumps(datadic)
+    jsons["last-game-version"] = Version
+    jsons[r".minecraft-path"] = mcPath
+    jsons["java-path"] =javaPath
+    jsons["maxMem"] = MaxMem
+    jsons["height"] = Height
+    jsons["length"] = Length
+    dataJson = json.dumps(jsons)
     file= open("./config.json","w")
     file.write(dataJson)
     file.close()
 
 def pmclJson(Bkimg,Downloadsource,Port,Debug):
-    datadic = {}
-    datadic["version"] =version
-    datadic["update-url"] = update_url
-    datadic["java-path"] =java_path
-    datadic[r".minecraft-path"] = mc_path
-    datadic["debug"] = Debug
-    datadic["way"] =way
-    datadic["last-game-version"] = last_game_version
-    datadic["maxMem"] = maxMem
-    datadic["height"] = height
-    datadic["length"] = length
-    datadic["background"] = Bkimg
-    datadic["downloadsource"] = Downloadsource
-    datadic["port"] = Port
-    datadic["username"] = "xiao_zhe"
-    dataJson = json.dumps(datadic)
+    """启动器设置Json
+
+    Args:
+        Bkimg (String): [description]
+        Downloadsource (String): [description]
+        Port (String): [description]
+        Debug (String): [description]
+    """
+    jsons["background"] = Bkimg
+    jsons["downloadsource"] = Downloadsource
+    jsons["port"] = Port
+    jsons["debug"] = Debug
+    dataJson = json.dumps(jsons)
     file= open("./config.json","w")
     file.write(dataJson)
     file.close()
 
 def offlineJson(id):
-    datadic = {}
-    datadic["way"] ="offline"
-    datadic["version"] =version
-    datadic["update-url"] = update_url
-    datadic["java-path"] =java_path
-    datadic[r".minecraft-path"] = mc_path
-    datadic["debug"] = debug
-    datadic["last-game-version"] = last_game_version
-    datadic["maxMem"] = maxMem
-    datadic["height"] = height
-    datadic["length"] = length
-    datadic["background"] = bkimg
-    datadic["downloadsource"] = downloadsource
-    datadic["port"] = port
-    datadic["username"] = id
-    dataJson = json.dumps(datadic)
+    """离线模式启动json
+    Args:
+        id (String): 离线登录的id
+    """
+    jsons["way"] ="offline"
+    jsons["username"] = id
+    dataJson = json.dumps(jsons)
     file= open("./config.json","w")
     file.write(dataJson)
     file.close()

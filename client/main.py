@@ -1,10 +1,10 @@
 import json
 import os
 import time
-import fileOpt
+import fileS
 import launcher
 import autoUpdate
-from flask import Flask, render_template, send_from_directory, jsonify, request,redirect,url_for
+from flask import Flask, render_template, send_from_directory, jsonify, request, redirect, url_for
 import config
 import importlib
 import webbrowser
@@ -15,12 +15,12 @@ app = Flask(__name__)
 @app.route("/")
 def Index():  # 首页
     check = autoUpdate.checkVersion()
-    return render_template("index.html", check=check[0], content=check[1], home_active="mdui-list-item-active", apdate=autoUpdate,user=config.username,way=config.way)
+    return render_template("index.html", check=check[0], content=check[1], home_active="mdui-list-item-active", apdate=autoUpdate, user=config.username, way=config.way,icon="icon")
 
 
 @app.route("/files")
 def Files():
-    list = fileOpt.allFiles(os.getcwd())
+    list = fileS.allFiles(os.getcwd())
     files = list["files"]
     dirs = list["dirs"]
     return render_template("files.html", files=files, dirs=dirs, files_active="mdui-list-item-active")
@@ -38,9 +38,9 @@ def Downloads():
 
 @app.route("/settings")
 def Settings():
-    versions = fileOpt.getVersion("./.minecraft/versions")
-    return render_template("settings.html", versions=versions, chosen_version = config.last_game_version,settings_active="mdui-list-item-active", gamePath=config.mc_path, javaPath=config.java_path, maxMem=config.maxMem, length=config.length, height=config.height, 
-                            bkimg=config.bkimg, downloadsource=config.downloadsource, port=config.port,debug=config.debug)
+    versions = fileS.getVersion("./.minecraft/versions")
+    return render_template("settings.html", versions=versions, chosen_version=config.last_game_version, settings_active="mdui-list-item-active", gamePath=config.mc_path, javaPath=config.java_path, maxMem=config.maxMem, length=config.length, height=config.height,
+                           bkimg=config.bkimg, downloadsource=config.downloadsource, port=config.port, debug=config.debug)
 
 
 @app.route("/launch")
@@ -65,26 +65,28 @@ def juniorjson():
 def pmcljson():
     data_list = []
     data = json.loads(request.get_data(as_text=True))
-    config.pmclJson(data["bkimg"],data["downloadsource"],data['port'],data["debug"])
-    print(data)
+    config.pmclJson(data["bkimg"], data["downloadsource"],
+                    data['port'], data["debug"])
     importlib.reload(config)
     return data
 
-@app.route("/offline",methods=["POST"])
+
+@app.route("/offline", methods=["POST"])
 def offline():
     data_list = []
     data = json.loads(request.get_data(as_text=True))
     config.offlineJson(data["id"])
-    print(data)
     importlib.reload(config)
     return redirect("./")
 
-@app.route("/signout", methods=["POST","GET"])
+
+@app.route("/signout", methods=["POST", "GET"])
 def signout():
     config.offlineJson(False)
     importlib.reload(config)
     return redirect("./")
 
+
 if __name__ == "__main__":
-    webbrowser.open('http://127.0.0.1:'+config.port, 0, False)    
+    webbrowser.open('http://127.0.0.1:'+config.port, 0, False)
     app.run(debug=config.debug, port=config.port)
