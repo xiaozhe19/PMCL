@@ -28,6 +28,7 @@ def launcher(java_path, game_path, game_version,Xmx,Xmn, username, height, width
     data = open(game_path+'/versions/'+game_version+'/' +
                 game_version+'.json', encoding='utf-8')
     jsonString = json.load(data)
+    data.close()
     # 获取所需参数内容
     mainClass = jsonString['mainClass']
 
@@ -45,7 +46,6 @@ def launcher(java_path, game_path, game_version,Xmx,Xmn, username, height, width
     for i in range(0,len(a)):
         s= s+' '+a[i]
     minecraftArguments = s
-
     path = []
     libraries = jsonString['libraries']
     id = jsonString['id']
@@ -59,11 +59,24 @@ def launcher(java_path, game_path, game_version,Xmx,Xmn, username, height, width
         fourth = second + '-' + third
         path.append(game_path+'/libraries/'+first + '/' +
                     second + '/' + third+'/'+fourth+'.jar')
+    if "inheritsFrom" in jsonString:
+        fromver = jsonString["inheritsFrom"]
+        fromdata=open(game_path+r"/versions/"+fromver+"/"+fromver+".json",encoding='utf-8')
+        fromjson = json.load(fromdata)
+        fromdata.close()
+        fromlibraries = fromjson['libraries']
+        for i in range(0, len(fromlibraries)):
+            names = fromlibraries[i]
+            names = names['name'].split(':')
+            first = names[0].replace('.', '/')
+            second = names[1]
+            third = names[2]
+            fourth = second + '-' + third
+            path.append(game_path+'/libraries/'+first + '/' +
+                        second + '/' + third+'/'+fourth+'.jar')
+
     path.append("./.minecraft/versions/"+jar+'/'+jar+'.jar')
-    path.append(#需要修改
-        "./.minecraft/libraries/net/minecraftforge/forge/"+"1.8-11.14.4.1577"+"/"+"1.8-11.14.4.1577"+".jar")
-    path.append(
-        "./.minecraft/libraries/net/minecraft/launchwrapper/"+game_version+"/launchwrapper-"+game_version+".jar")
+
     mainClass = jsonString["mainClass"]
     javaPackage = '-cp' + ' "'
     extra_jvm=extra
@@ -72,7 +85,7 @@ def launcher(java_path, game_path, game_version,Xmx,Xmn, username, height, width
     javaPackage = javaPackage + '"'
     command = java_path+" " +" "+XX +" "+extra_jvm+"  "+libpath+" " + javaPackage +" "+mainClass+" "+minecraftArguments
     ret = subprocess.run(command, shell=True)
-    print(command)
+    #print(command)  
 
 launcher("F:/Java8/bin/java.exe", "./.minecraft", r"1.7.10","1024m","2048m", "Yixixi", "480", "854")
 
