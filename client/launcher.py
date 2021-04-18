@@ -4,12 +4,11 @@ import re
 import threading
 import time
 import subprocess
+
 # 启动器主逻辑
+# 重写完成 2021.4.18
 
-
-
-
-def launcher(java_path, game_path, game_version,Xmx,Xmn, username, height, width):
+def launcher(java_path, game_path, game_version,Xmx,Xmn, username, height, width,extra="",uuid="074d7f3c274533daab03840cbfc275a9",accessToken="05df4d5f10354b708fb515655e3c3693"):
     """启动mc的模块
 
     Args:
@@ -23,7 +22,7 @@ def launcher(java_path, game_path, game_version,Xmx,Xmn, username, height, width
         width (String): 窗口宽度
     """
     XX = "-XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M"
-    libpath = "-Djava.library.path="+"./.minecraft/versions/"+game_version+r"/"+"natives"
+    libpath = "-Djava.library.path="+game_path+"/versions/"+game_version+"/"+"natives"
     minMem = "-Xmn " + Xmn
     maxMem = "-Xmx " +Xmx
     data = open(game_path+'/versions/'+game_version+'/' +
@@ -31,7 +30,21 @@ def launcher(java_path, game_path, game_version,Xmx,Xmn, username, height, width
     jsonString = json.load(data)
     # 获取所需参数内容
     mainClass = jsonString['mainClass']
-    minecraftArguments = '--username %s --version %s --gameDir  "%s" --assetsDir  \"%s\" --assetIndex  %s --uuid 645a46ff8a5f39037e5b3677a9f6d0c9 --accessToken 645a46ff8a5f39037e5b3677a9f6d0c9 --userProperties {} --userType Legacy --tweakClass net.minecraftforge.fml.common.launcher.FMLTweaker --versionType Forge  --height  %s   --width %s'%(username,game_version,game_path,game_path+r"/assets",game_version,height,width)
+
+    #!需要优化
+    minecraftArguments = jsonString["minecraftArguments"] 
+    a = minecraftArguments.split(" ")
+    s = ''
+    b=[]
+    c = [username,game_version,game_path,game_path+r'/assets',jsonString['id'],uuid,accessToken,'{}','Mojang']
+    for i in range(0,len(a)):
+        if "$"in a[i]:
+            b.append(i)
+    for i in range(0,len(b)):
+        a[b[i]] = c[i]
+    for i in range(0,len(a)):
+        s= s+' '+a[i]
+    minecraftArguments = s
 
     path = []
     libraries = jsonString['libraries']
@@ -44,23 +57,22 @@ def launcher(java_path, game_path, game_version,Xmx,Xmn, username, height, width
         second = names[1]
         third = names[2]
         fourth = second + '-' + third
-        path.append('./.minecraft/libraries/'+first + '/' +
+        path.append(game_path+'/libraries/'+first + '/' +
                     second + '/' + third+'/'+fourth+'.jar')
     path.append("./.minecraft/versions/"+jar+'/'+jar+'.jar')
     path.append(#需要修改
         "./.minecraft/libraries/net/minecraftforge/forge/"+"1.8-11.14.4.1577"+"/"+"1.8-11.14.4.1577"+".jar")
     path.append(
         "./.minecraft/libraries/net/minecraft/launchwrapper/"+game_version+"/launchwrapper-"+game_version+".jar")
-    mainClass = "net.minecraft.client.main.Main"
+    mainClass = jsonString["mainClass"]
     javaPackage = '-cp' + ' "'
+    extra_jvm=extra
     for i in path:
         javaPackage = javaPackage + i+';'
     javaPackage = javaPackage + '"'
-    command = java_path+" " +" "+XX +" "+libpath+" " + javaPackage +" "+mainClass+" "+minecraftArguments
+    command = java_path+" " +" "+XX +" "+extra_jvm+"  "+libpath+" " + javaPackage +" "+mainClass+" "+minecraftArguments
     ret = subprocess.run(command, shell=True)
+    print(command)
 
+launcher("F:/Java8/bin/java.exe", "./.minecraft", r"1.7.10","1024m","2048m", "Yixixi", "480", "854")
 
-
-
-
-#launcher("F:/Java8/bin/java.exe", "./.minecraft", r"1.9","1024m","2048m", "Yixixi", "480", "854")
